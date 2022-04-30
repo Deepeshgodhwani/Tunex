@@ -1,0 +1,293 @@
+<html>
+  <head>
+     
+    <link rel="stylesheet" href="../css/artist.list.css">
+    <!-- <link rel="stylesheet" href="./home.css"> -->
+    <script src="https://kit.fontawesome.com/992825dbbb.js" crossorigin="anonymous"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  </head>
+    <body style="background-color: rgb(12,15,18); color: white; text-transform: capitalize; margin: 0; padding: 0;">
+        
+      <nav id="navbar">
+        <div id="logo">
+          
+           <span id="logo">
+
+            <a href="#"> <img id="logoimage" src='./music.png'></a>
+            </span>
+          <span id="logoname">
+                  <a href="#" style="text-decoration: none; color: red;"> tun<span style="font-size: 1.7rem; text-transform: none; color: white;" id="title">ex</span></a>
+                </span>
+              
+       </div> 
+       <nav  style="position: absolute; background-color: transparent;" >
+        <div class="container-fluid" style="background-color: transparent;">
+     
+          <button style="background-color: transparent; border: none; margin-bottom: 5px;"   type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span  class="navbar-toggler-icon"><i id="sidericon" class="fa-solid fa-bars"></i> </span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <div style="width: 100%; height: 100px; display: flex; justify-content: space-between; ">
+                 <span>
+                   <img id="userimage" src="./user.png" alt="">
+                   <img id="userimage2" src="./user2.png">
+                 </span>
+                <span id="login">
+                    Login / Sign Up
+                </span>
+              <button  type="button" style="color: rgb(200,200,201); border: none; background-color: transparent; position: absolute; top: 20  px; font-size: 1.5rem; right: 10px;" class="fa-solid fa-xmark" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+               <div style="margin-top: 70px; position: absolute; left: 40px; font-size: 1rem;">
+                 <p style="color: red;">
+                   Home
+                 </p>
+                 <p>Radio</p>
+                 <p>Podcast</p>
+                 <p>My music</p>
+                 <p>India's music</p>
+                 <p> Language <br> (Set Music Language)</p>
+                 
+
+               </div>
+               <div style="position: absolute; bottom: 10px; left: 0px; border-top: 1px solid rgb(45,47,51);
+                   width: 100%; ">
+               <div style="margin-top: 20px;">
+                <h5 style="margin-left: 37px; margin-bottom: 10px;">Quick Access</h5>
+                <p style=" font-size: 0.9rem; margin-left: 37px;">Trending songs</p>
+                <p style="font-size: 0.9rem;  margin-left: 37px;">New songs</p>
+                <p style=" font-size: 0.9rem; margin-left: 37px;">Old songs</p>
+                <p style=" font-size: 0.9rem; margin-left: 37px;"> Album</p>
+                <p style=" font-size: 0.9rem; margin-left: 37px;"> artist</p>
+                
+                  </div>
+
+               </div>
+              </div>
+            </div>  
+          </div>
+        </div>
+      </nav> 
+       <div id="searchbar" >
+        <span><i id="searchlogo" class="fa-solid fa-magnifying-glass"></i></span>
+        <input id="searchinput" type="text" name="search" placeholder="Search artists, songs, album" required>
+        </div>     
+
+       <div id="navpart2">
+         <div id="podcast">
+          <p id="new">new</p>
+         <p style="font-size: 1.1rem; font-weight: bold;">podcasts</p>
+
+         </div>
+        <i id="lightmode" onclick="darkmode()"> <img style="width: 20px; height: 20px; margin-top: 15px;"  src="./sun.png" alt=""></i>
+        <i  id="darkmode" onclick="darkmode()" class="fa-solid fa-moon"></i>  
+        <div id="language">
+          <p id="english">A</p>
+          <p id="hindi">
+            अ</p>
+        </div>
+
+          
+           <p id="logins">log in/sign up</p>
+       </div>
+    </nav>
+  
+        
+     <div>     
+     <div id="container">
+       <video controls >
+          <source src="./coldplayvideo.mp4" type="video/mp4" />
+       </video>
+         <div id="part2">
+        <img id="artistposter" src="./home-images/popular artists/coldplay.jpg">
+        <div id="information">
+        <h3 id="nameheading">coldplay</h3>
+        <p id="title">british band </p>
+        <p id="follower">851 followers</p>
+        <p id="briefpara" >
+       
+             coldplay is a british music band that has enjoyed continuous success since thier inception in 1996
+             through their intelligent and soulful songs . the band members are chris martin (lead vocals),jonny buckland 
+             (lead guitar) and will champion (Drums)</p>
+        <div id="playsongs" >
+            <button id="playbutton">
+                play all
+            </button>
+            <p style="margin-top: 15px;">
+                follow
+            </p>
+            <c>247 tracks | 1211 albums</c>
+        </div>
+      </div>
+      </div>
+     </div>
+
+     <div id="songslist">  
+        <div id="box1">
+            <img  id="boximage" src="./home-images//queue list/believer.jpg" >
+            <h4 id="boxheading">
+             believer
+            </h4>
+            <p id="boxp">imagine dragon</p>
+           
+             <div id="boxicon">
+                <i class="fa-solid fa-plus"></i>
+            <i class="fa-regular fa-heart"></i>
+            </div>
+          </div>
+          <div id="box1">
+            <img  id="boximage" src="./home-images//queue list/believer.jpg" >
+            <h4 id="boxheading">
+             believer
+            </h4>
+            <p id="boxp">imagine dragon</p>
+           
+             <div id="boxicon">
+                <i class="fa-solid fa-plus"></i>
+            <i class="fa-regular fa-heart"></i>
+            </div>
+          </div>
+          <div id="box1">
+            <img  id="boximage" src="./home-images//queue list/believer.jpg" >
+            <h4 id="boxheading">
+             believer
+            </h4>
+            <p id="boxp">imagine dragon</p>
+           
+             <div id="boxicon">
+                <i class="fa-solid fa-plus"></i>
+            <i class="fa-regular fa-heart"></i>
+            </div>
+          </div>
+          
+          <div id="box1">
+            <img  id="boximage" src="./home-images//queue list/believer.jpg" >
+            <h4 id="boxheading">
+             believer
+            </h4>
+            <p id="boxp">imagine dragon</p>
+           
+             <div id="boxicon">
+                <i class="fa-solid fa-plus"></i>
+            <i class="fa-regular fa-heart"></i>
+            </div>
+          </div>
+      
+          <div id="box1">
+            <img  id="boximage" src="./home-images//queue list/believer.jpg" >
+            <h4 id="boxheading">
+             believer
+            </h4>
+            <p id="boxp">imagine dragon</p>
+           
+             <div id="boxicon">
+                <i class="fa-solid fa-plus"></i>
+            <i class="fa-regular fa-heart"></i>
+            </div>
+          </div>
+          <div id="box1">
+            <img  id="boximage" src="./home-images//queue list/believer.jpg" >
+            <h4 id="boxheading">
+             believer
+            </h4>
+            <p id="boxp">imagine dragon</p>
+           
+             <div id="boxicon">
+                <i class="fa-solid fa-plus"></i>
+            <i class="fa-regular fa-heart"></i>
+            </div>
+          </div>
+          <div id="box1">
+            <img  id="boximage" src="./home-images//queue list/believer.jpg" >
+            <h4 id="boxheading">
+             believer
+            </h4>
+            <p id="boxp">imagine dragon</p>
+           
+             <div id="boxicon">
+                <i class="fa-solid fa-plus"></i>
+            <i class="fa-regular fa-heart"></i>
+            </div>
+          </div>
+     </div>
+
+     <aside id="aside">
+      <div id="headings">
+          <h3>
+              similiar artists
+          </h3>
+          <p>veiw all</p>
+      </div>
+      <div id="box2">
+        <img  id="boximage2" src="./home-images//queue list/believer.jpg" >
+        <p id="boxheading2">
+         imagine dragon
+        </p>
+        <p id="boxp2">believer</p>
+        <!-- <i id="boxicon2" class="fa-regular fa-heart"></i> -->
+        <div id="boxicon2" class="dropdown">
+            <button  style="background-color: transparent; border: none; color: rgb(140,158,171)" class="fa-solid fa-ellipsis" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+            </button>
+            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+            <li><a class="dropdown-item" href="#">
+                <span> <i class="fa-solid fa-play"></i></span><span>Play Now</span></a></li>
+            <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-plus"></i></span><span> Add To Queue</span> </a></li>
+            <li><a class="dropdown-item" href="#"><span><i class="fa-solid fa-list"></i></span><span>add to Favourites</span></a></li>
+            <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-circle-info"></i></span><span> get info</span></a></li>
+
+            </ul>
+        </div>
+        <p id="duration">4:00</p>
+      </div>
+      <div id="box2">
+        <img  id="boximage2" src="./home-images//queue list/believer.jpg" >
+        <p id="boxheading2">
+         imagine dragon
+        </p>
+        <p id="boxp2">believer</p>
+        <!-- <i id="boxicon2" class="fa-regular fa-heart"></i> -->
+        <div id="boxicon2" class="dropdown">
+            <button  style="background-color: transparent; border: none; color: rgb(140,158,171)" class="fa-solid fa-ellipsis" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+            </button>
+            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+            <li><a class="dropdown-item" href="#">
+                <span> <i class="fa-solid fa-play"></i></span><span>Play Now</span></a></li>
+            <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-plus"></i></span><span> Add To Queue</span> </a></li>
+            <li><a class="dropdown-item" href="#"><span><i class="fa-solid fa-list"></i></span><span>add to Favourites</span></a></li>
+            <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-circle-info"></i></span><span> get info</span></a></li>
+
+            </ul>
+        </div>
+        <p id="duration">4:00</p>
+      </div>
+      <div id="box2">
+        <img  id="boximage2" src="./home-images//queue list/believer.jpg" >
+        <p id="boxheading2">
+         imagine dragon
+        </p>
+        <p id="boxp2">believer</p>
+        <!-- <i id="boxicon2" class="fa-regular fa-heart"></i> -->
+        <div id="boxicon2" class="dropdown">
+            <button  style="background-color: transparent; border: none; color: rgb(140,158,171)" class="fa-solid fa-ellipsis" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+            </button>
+            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+            <li><a class="dropdown-item" href="#">
+                <span> <i class="fa-solid fa-play"></i></span><span>Play Now</span></a></li>
+            <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-plus"></i></span><span> Add To Queue</span> </a></li>
+            <li><a class="dropdown-item" href="#"><span><i class="fa-solid fa-list"></i></span><span>add to Favourites</span></a></li>
+            <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-circle-info"></i></span><span> get info</span></a></li>
+
+            </ul>
+        </div>
+        <p id="duration">4:00</p>
+      </div>
+
+      <h2>recently played</h2>
+      
+     </aside>
+
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>            
+      <script src="../javascript/jquery.js"></script>
+      <script src="../javascript/home.js"></script>
+    </body>
+
+</html>

@@ -1,0 +1,3423 @@
+ <!DOCTYPE html>
+<html>
+
+    <head>
+        <link rel="stylesheet"  href="./css/home.css">
+        <script src="https://kit.fontawesome.com/992825dbbb.js" crossorigin="anonymous"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    </head>
+    <body>
+   <div id="head">       
+    <nav id="navbar">
+        <div id="logo">
+          
+           <span id="logo">
+
+            <a href="#"> <img id="logoimage" src='./home-images/music.png'></a>
+            </span>
+          <span id="logoname">
+                  <a href="#" style="text-decoration: none; color: red;"> tun<span id="title">ex</span></a>
+                </span>
+              
+       </div> 
+       <nav  style="position: absolute; background-color: transparent;" >
+        <div class="container-fluid" style="background-color: transparent;">
+     
+          <button style="background-color: transparent; border: none; margin-bottom: 5px;"   type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span  class="navbar-toggler-icon"><i id="sidericon" class="fa-solid fa-bars"></i> </span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <div style="width: 100%; height: 100px; display: flex; justify-content: space-between; ">
+                 <span>
+                   <img id="userimage" src="./home-images/user.png" alt="">
+                   <img id="userimage2" src="./home-images/user2.png">
+                 </span>
+                <span id="login">
+                    Login / Sign Up
+                </span>
+              <button  type="button" style="color: rgb(200,200,201); border: none; background-color: transparent; position: absolute; top: 20  px; font-size: 1.5rem; right: 10px;" class="fa-solid fa-xmark" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+               <div style="margin-top: 70px; position: absolute; left: 40px; font-size: 1rem;">
+                 <p style="color: red;">
+                   Home
+                 </p>
+                 <p>Radio</p>
+                 <p>Podcast</p>
+                 <p>My music</p>
+                 <p>India's music</p>
+                 <p> Language <br> (Set Music Language)</p>
+                 
+
+               </div>
+               <div style="position: absolute; bottom: 10px; left: 0px; border-top: 1px solid rgb(45,47,51);
+                   width: 100%; ">
+               <div style="margin-top: 20px;">
+                <h5 style="margin-left: 37px; margin-bottom: 10px;">Quick Access</h5>
+                <p style=" font-size: 0.9rem; margin-left: 37px;">Trending songs</p>
+                <p style="font-size: 0.9rem;  margin-left: 37px;">New songs</p>
+                <p style=" font-size: 0.9rem; margin-left: 37px;">Old songs</p>
+                <p style=" font-size: 0.9rem; margin-left: 37px;"> Album</p>
+                <p style=" font-size: 0.9rem; margin-left: 37px;"> artist</p>
+                
+                  </div>
+
+               </div>
+              </div>
+            </div>  
+          </div>
+        </div>
+      </nav> 
+       <div id="searchbar" >
+        <span><i id="searchlogo" class="fa-solid fa-magnifying-glass"></i></span>
+        <input id="searchinput" type="text" name="search" placeholder="Search artists, songs, album" required>
+        </div>     
+
+       <div id="navpart2">
+         <div id="podcast">
+          <p id="new">new</p>
+         <p style="font-size: 1.1rem; font-weight: bold;">podcasts</p>
+
+         </div>
+        <i id="lightmode" onclick="darkmode()"> <img style="width: 20px; height: 20px;"  src="./home-images/sun.png" alt=""></i>
+        <i  id="darkmode" onclick="darkmode()" class="fa-solid fa-moon"></i>  
+        <div id="language">
+          <p id="english">A</p>
+          <p id="hindi">
+            अ</p>
+        </div>
+
+          
+           <p style="font-weight: bold;">log in/sign up</p>
+       </div>
+    </nav>
+  
+  <!-- HEADE IMAGE   -->
+ 
+
+
+
+
+<div id="sectiondivider">
+    <main id="main">    
+
+      <div id="headerimage">
+        <div id="slider">
+        <img class="himage" src="./home-images/headerimage1.webp">
+        <img class="himage" src="./home-images/headerimage2.webp">
+        <img class="himage" src="./home-images/headerimage3.webp">
+        <img class="himage" src="./home-images/headerimage4.webp">
+        <img class="himage" src="./home-images/headerimage5.webp">
+        <img class="himage" src="./home-images/headerimage6.webp">
+        </div>
+      </div>  
+      
+ <!-- LATEST RELEASES -->
+ <h3> latest release <p>see all</p></h3>
+     <div class="latestenglish">
+       <div id="song">
+         <div>
+          <img class="songimage2" src="./home-images//latest english/asitwas.png" alt="">
+
+          <!-- HOVER -->
+          <div class="hovers">
+            <div onclick="onPlay()";" class="playbutton2">
+            <i class="fa-solid fa-play"></i>    
+            </div>
+            <div class="dropdown" style="position: absolute;" >
+              <button  style="background-color: transparent; border: none; color: white; font-size: larger;" class="fa-solid fa-ellipsis-vertical" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+              </button>
+              <ul class="dropdown-menu dropdown-menu-dark" style="position: absolute;" aria-labelledby="dropdownMenuButton2">
+              <li><a class="dropdown-item" href="#">
+                  <span> <i class="fa-solid fa-play"></i></span><span>Play Now</span></a></li>
+              <li class="addtoqueue"><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-plus"></i></span><span> Add To Queue</span> </a></li>
+              <li><a class="dropdown-item" href="#"><span><i class="fa-solid fa-list"></i></span><span>add to Favourites</span></a></li>
+              <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-circle-info"></i></span><span> get info</span></a></li>
+              </ul>
+          </div>  
+      
+          </div>
+         </div>
+           <h6>as it was</h6>
+           <p> harry style</p>
+       </div>
+    
+     <div id="song">
+     <div>  
+      <img class="songimage2" src="./home-images/latest english/when you are gone.png" alt="">
+      <div class="hovers">
+        <div class="playbutton2">
+          <i class="fa-solid fa-play"></i>    
+
+          </div> 
+        <div class="dropdown" style="position: absolute;" >
+          <button  style="background-color: transparent; border: none; color: white; font-size: larger;" class="fa-solid fa-ellipsis-vertical" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+          </button>
+          <ul class="dropdown-menu dropdown-menu-dark" style="position: absolute;" aria-labelledby="dropdownMenuButton2">
+          <li><a class="dropdown-item" href="#">
+              <span> <i class="fa-solid fa-play"></i></span><span>Play Now</span></a></li>
+          <li class="addtoqueue"><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-plus"></i></span><span> Add To Queue</span> </a></li>
+          <li><a class="dropdown-item" href="#"><span><i class="fa-solid fa-list"></i></span><span>add to Favourites</span></a></li>
+          <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-circle-info"></i></span><span> get info</span></a></li>
+          </ul>
+      </div>       
+      </div>
+      </div>
+      <h6>when you are..</h6>
+      <p> shawn mendes</p>
+  </div>
+  <div id="song">
+    <div>
+    <img class="songimage2" src="./home-images//latest english/bananza.jpg" alt="">
+    <div class="hovers">
+      <div class="playbutton2">
+        <i class="fa-solid fa-play"></i>    
+
+        </div>    
+      <div class="dropdown" style="position: absolute;" >
+        <button  style="background-color: transparent; border: none; color: white; font-size: larger;" class="fa-solid fa-ellipsis-vertical" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+        </button>
+        <ul class="dropdown-menu dropdown-menu-dark" style="position: absolute;" aria-labelledby="dropdownMenuButton2">
+        <li><a class="dropdown-item" href="#">
+            <span> <i class="fa-solid fa-play"></i></span><span>Play Now</span></a></li>
+        <li class="addtoqueue"><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-plus"></i></span><span> Add To Queue</span> </a></li>
+        <li><a class="dropdown-item" href="#"><span><i class="fa-solid fa-list"></i></span><span>add to Favourites</span></a></li>
+        <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-circle-info"></i></span><span> get info</span></a></li>
+        </ul>
+    </div>    
+
+    </div>
+    </div>
+    <h6>bananza</h6>
+    <p> akon</p>
+  </div> 
+ <div id="song">
+   <div>
+  <img class="songimage2" src="./home-images//latest english/stay.jpg" alt="">
+  <div class="hovers">
+    <div class="playbutton2">
+      <i class="fa-solid fa-play"></i>    
+
+      </div>
+    <div class="dropdown" style="position: absolute;" >
+      <button  style="background-color: transparent; border: none; color: white; font-size: larger;" class="fa-solid fa-ellipsis-vertical" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+      </button>
+      <ul class="dropdown-menu dropdown-menu-dark" style="position: absolute;" aria-labelledby="dropdownMenuButton2">
+      <li><a class="dropdown-item" href="#">
+          <span> <i class="fa-solid fa-play"></i></span><span>Play Now</span></a></li>
+      <li class="addtoqueue"><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-plus"></i></span><span> Add To Queue</span> </a></li>
+      <li><a class="dropdown-item" href="#"><span><i class="fa-solid fa-list"></i></span><span>add to Favourites</span></a></li>
+      <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-circle-info"></i></span><span> get info</span></a></li>
+      </ul>
+  </div>       
+
+  </div>
+  </div>
+  <h6>stay</h6>
+  <p> justin bieber </p>
+  </div>
+  <div id="song">
+   <div> 
+  <img class="songimage2" src="./home-images//latest english/unstoppable.jpg" alt="">
+  <div class="hovers">
+    <div class="playbutton2">
+      <i class="fa-solid fa-play"></i>    
+
+      </div> 
+    <div class="dropdown" style="position: absolute;" >
+      <button  style="background-color: transparent; border: none; color: white; font-size: larger;" class="fa-solid fa-ellipsis-vertical" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+      </button>
+      <ul class="dropdown-menu dropdown-menu-dark" style="position: absolute;" aria-labelledby="dropdownMenuButton2">
+      <li><a class="dropdown-item" href="#">
+          <span> <i class="fa-solid fa-play"></i></span><span>Play Now</span></a></li>
+      <li class="addtoqueue"><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-plus"></i></span><span> Add To Queue</span> </a></li>
+      <li><a class="dropdown-item" href="#"><span><i class="fa-solid fa-list"></i></span><span>add to Favourites</span></a></li>
+      <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-circle-info"></i></span><span> get info</span></a></li>
+      </ul>
+  </div>       
+
+  </div>
+  </div>
+
+  <h6>unstoppable</h6>
+  <p> sia</p>
+  </div> 
+  <div id="song">
+    <div>
+  <img class="songimage2" src="./home-images//latest english/no lie.jpg" alt="">
+  <div class="hovers">
+    <div class="playbutton2">
+      <i class="fa-solid fa-play"></i>    
+
+      </div>   
+    <div class="dropdown" style="position: absolute;" >
+      <button  style="background-color: transparent; border: none; color: white; font-size: larger;" class="fa-solid fa-ellipsis-vertical" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+      </button>
+      <ul class="dropdown-menu dropdown-menu-dark" style="position: absolute;" aria-labelledby="dropdownMenuButton2">
+      <li><a class="dropdown-item" href="#">
+          <span> <i class="fa-solid fa-play"></i></span><span>Play Now</span></a></li>
+      <li class="addtoqueue"><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-plus"></i></span><span> Add To Queue</span> </a></li>
+      <li><a class="dropdown-item" href="#"><span><i class="fa-solid fa-list"></i></span><span>add to Favourites</span></a></li>
+      <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-circle-info"></i></span><span> get info</span></a></li>
+      </ul>
+  </div>     
+
+  </div>
+  </div>
+  <h6>no lie</h6>
+  <p>sean paul </p>
+   </div>
+   <div id="song">
+     <div>
+    <img class="songimage2" src="./home-images//latest english/no lie.jpg" alt="">
+    <div class="hovers">
+      <div class="playbutton2">
+        <i class="fa-solid fa-play"></i>    
+
+        </div> 
+      <div class="dropdown" style="position: absolute;" >
+        <button  style="background-color: transparent; border: none; color: white; font-size: larger;" class="fa-solid fa-ellipsis-vertical" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+        </button>
+        <ul class="dropdown-menu dropdown-menu-dark" style="position: absolute;" aria-labelledby="dropdownMenuButton2">
+        <li><a class="dropdown-item" href="#">
+            <span> <i class="fa-solid fa-play"></i></span><span>Play Now</span></a></li>
+        <li class="addtoqueue"><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-plus"></i></span><span> Add To Queue</span> </a></li>
+        <li><a class="dropdown-item" href="#"><span><i class="fa-solid fa-list"></i></span><span>add to Favourites</span></a></li>
+        <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-circle-info"></i></span><span> get info</span></a></li>
+        </ul>
+    </div>       
+
+      </div>
+    </div>
+    <h6>no lie</h6>
+    <p>sean paul </p>
+     </div>
+     <div id="song">
+     <div> 
+      <img class="songimage2" src="./home-images//latest english/no lie.jpg" alt="">
+      <div class="hovers">
+        <div class="playbutton2">
+          <i class="fa-solid fa-play"></i>    
+
+          </div>    
+        <div class="dropdown" style="position: absolute;" >
+          <button  style="background-color: transparent; border: none; color: white; font-size: larger;" class="fa-solid fa-ellipsis-vertical" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+          </button>
+          <ul class="dropdown-menu dropdown-menu-dark" style="position: absolute;" aria-labelledby="dropdownMenuButton2">
+          <li><a class="dropdown-item" href="#">
+              <span> <i class="fa-solid fa-play"></i></span><span>Play Now</span></a></li>
+          <li class="addtoqueue"><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-plus"></i></span><span> Add To Queue</span> </a></li>
+          <li><a class="dropdown-item" href="#"><span><i class="fa-solid fa-list"></i></span><span>add to Favourites</span></a></li>
+          <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-circle-info"></i></span><span> get info</span></a></li>
+          </ul>
+      </div>    
+  
+      </div>
+      </div>
+      <h6>no lie</h6>
+      <p>sean paul </p>
+
+       </div>
+       <div id="song">
+      <div>   
+        <img class="songimage2" src="./home-images//latest english/no lie.jpg" alt="">
+        <div class="hovers">
+          <div class="playbutton2">
+            <i class="fa-solid fa-play"></i>    
+
+            </div>
+          <div class="dropdown" style="position: absolute;" >
+            <button  style="background-color: transparent; border: none; color: white; font-size: larger;" class="fa-solid fa-ellipsis-vertical" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+            </button>
+            <ul class="dropdown-menu dropdown-menu-dark" style="position: absolute;" aria-labelledby="dropdownMenuButton2">
+            <li><a class="dropdown-item" href="#">
+                <span> <i class="fa-solid fa-play"></i></span><span>Play Now</span></a></li>
+            <li class="addtoqueue"><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-plus"></i></span><span> Add To Queue</span> </a></li>
+            <li><a class="dropdown-item" href="#"><span><i class="fa-solid fa-list"></i></span><span>add to Favourites</span></a></li>
+            <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-circle-info"></i></span><span> get info</span></a></li>
+            </ul>
+        </div>      
+        </div>
+        </div>
+        <h6>no lie</h6>
+        <p>sean paul </p>
+         </div>
+         <div id="song">
+          <diV>
+          <img class="songimage2" src="./home-images//latest english/no lie.jpg" alt="">
+          <div class="hovers">
+            <div class="playbutton2">
+              <i class="fa-solid fa-play"></i>    
+  
+              </div> 
+            <div class="dropdown" style="position: absolute;" >
+              <button  style="background-color: transparent; border: none; color: white; font-size: larger;" class="fa-solid fa-ellipsis-vertical" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+              </button>
+              <ul class="dropdown-menu dropdown-menu-dark" style="position: absolute;" aria-labelledby="dropdownMenuButton2">
+              <li><a class="dropdown-item" href="#">
+                  <span> <i class="fa-solid fa-play"></i></span><span>Play Now</span></a></li>
+              <li class="addtoqueue"><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-plus"></i></span><span> Add To Queue</span> </a></li>
+              <li><a class="dropdown-item" href="#"><span><i class="fa-solid fa-list"></i></span><span>add to Favourites</span></a></li>
+              <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-circle-info"></i></span><span> get info</span></a></li>
+              </ul>
+          </div>       
+      
+          </div>
+          </diV>
+
+          <h6>no lie</h6>
+          <p>sean paul </p>
+           </div>
+           <div id="song">
+             <div>
+         <img class="songimage2" src="./home-images//latest english/no lie.jpg" alt="">
+         <div class="hovers">
+          <div class="playbutton2">
+            <i class="fa-solid fa-play"></i>    
+
+            </div>
+          <div class="dropdown" style="position: absolute;" >
+            <button  style="background-color: transparent; border: none; color: white; font-size: larger;" class="fa-solid fa-ellipsis-vertical" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+            </button>
+            <ul class="dropdown-menu dropdown-menu-dark" style="position: absolute;" aria-labelledby="dropdownMenuButton2">
+            <li><a class="dropdown-item" href="#">
+                <span> <i class="fa-solid fa-play"></i></span><span>Play Now</span></a></li>
+            <li class="addtoqueue"><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-plus"></i></span><span> Add To Queue</span> </a></li>
+            <li><a class="dropdown-item" href="#"><span><i class="fa-solid fa-list"></i></span><span>add to Favourites</span></a></li>
+            <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-circle-info"></i></span><span> get info</span></a></li>
+            </ul>
+        </div>       
+    
+        </div>
+            </div>
+            <h6>no lie</h6>
+            <p>sean paul </p>
+             </div>
+             <div id="song">
+               <div>
+              <img class="songimage2" src="./home-images//latest english/no lie.jpg" alt="">
+              <div class="hovers">
+                <div class="playbutton2">
+                  <i class="fa-solid fa-play"></i>    
+      
+                  </div> 
+                <div class="dropdown" style="position: absolute;" >
+                  <button  style="background-color: transparent; border: none; color: white; font-size: larger;" class="fa-solid fa-ellipsis-vertical" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                  </button>
+                  <ul class="dropdown-menu dropdown-menu-dark" style="position: absolute;" aria-labelledby="dropdownMenuButton2">
+                  <li><a class="dropdown-item" href="#">
+                      <span> <i class="fa-solid fa-play"></i></span><span>Play Now</span></a></li>
+                  <li class="addtoqueue"><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-plus"></i></span><span> Add To Queue</span> </a></li>
+                  <li><a class="dropdown-item" href="#"><span><i class="fa-solid fa-list"></i></span><span>add to Favourites</span></a></li>
+                  <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-circle-info"></i></span><span> get info</span></a></li>
+                  </ul>
+              </div>       
+          
+              </div>
+              </div>
+          <h6>no lie</h6>
+           <p>sean paul </p>
+           </div>
+     
+           <div id="song">
+
+            <div>
+            <img class="songimage2" src="./home-images//latest english/no lie.jpg" alt="">
+            <div class="hovers">
+              <div class="playbutton2">
+                <i class="fa-solid fa-play"></i>    
+    
+                </div>  
+              <div class="dropdown" style="position: absolute;" >
+                <button  style="background-color: transparent; border: none; color: white; font-size: larger;" class="fa-solid fa-ellipsis-vertical" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                </button>
+                <ul class="dropdown-menu dropdown-menu-dark" style="position: absolute;" aria-labelledby="dropdownMenuButton2">
+                <li><a class="dropdown-item" href="#">
+                    <span> <i class="fa-solid fa-play"></i></span><span>Play Now</span></a></li>
+                <li class="addtoqueue"><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-plus"></i></span><span> Add To Queue</span> </a></li>
+                <li><a class="dropdown-item" href="#"><span><i class="fa-solid fa-list"></i></span><span>add to Favourites</span></a></li>
+                <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-circle-info"></i></span><span> get info</span></a></li>
+                </ul>
+            </div>      
+        </div>
+            </div>
+            <h6>no lie</h6>
+            <p>sean paul </p>
+             </div>       
+   </div>
+
+
+  <!-- indie music -->
+ <h3>indie music <p style="right: 8%;">see all</p></h3>
+   
+ <div id="latestenglish2">
+  <div class="song2">
+    <div>
+     <img class="songimage4" src="./home-images//latest english/asitwas.png" alt="">
+     <div id="hovers2">
+       <i  id="playbutton4" class="fa-solid fa-play"></i>      
+ 
+     </div>
+    </div>
+      <p> latest <b style="font-weight: 500px;">indie</b> </p>
+    
+  </div>
+  <div class="song2" style="background-color: rgb(7,205,163);"  >
+    <div>
+     <img class="songimage4" src="./home-images//latest english/asitwas.png" alt="">
+     <div id="hovers2">
+       <i  id="playbutton4" class="fa-solid fa-play"></i>      
+ 
+     </div>
+    </div>
+      <p> latest <b style="font-weight: 500px;">indie</b> </p>
+    
+  </div>
+  <div class="song2" style="background-color: rgb(158,5,164);" >
+    <div>
+     <img class="songimage4" src="./home-images//latest english/asitwas.png" alt="">
+     <div id="hovers2">
+       <i  id="playbutton4" class="fa-solid fa-play"></i>      
+ 
+     </div>
+    </div>
+      <p> latest <b style="font-weight: 500px;">indie</b> </p>
+    
+  </div>
+  <div class="song2" style="background-color: rgb(245,218,113) ;" >
+    <div>
+     <img class="songimage4" src="./home-images//latest english/asitwas.png" alt="">
+     <div id="hovers2">
+       <i  id="playbutton4" class="fa-solid fa-play"></i>      
+ 
+     </div>
+    </div>
+      <p> latest <b style="font-weight: 500px;">indie</b> </p>
+    
+  </div>
+  <div class="song2" style="background-color: rgb(145,77,255);" >
+    <div>
+     <img class="songimage4" src="./home-images//latest english/asitwas.png" alt="">
+     <div id="hovers2">
+       <i  id="playbutton4" class="fa-solid fa-play"></i>      
+ 
+     </div>
+    </div>
+      <p> latest <b style="font-weight: 500px;">indie</b> </p>
+    
+  </div>
+  <div class="song2" style="margin-right: 0; background-color:rgb(123,182,59) ; ">
+    <div>
+     <img class="songimage4" src="./home-images//latest english/asitwas.png" alt="">
+     <div id="hovers2">
+       <i  id="playbutton4" class="fa-solid fa-play"></i>      
+ 
+     </div>
+    </div>
+      <p> latest <b style="font-weight: 500px;">indie</b> </p>
+    
+  </div>  
+
+</div>
+
+<!-- popular artists    -->
+      <h3 >popular artist </h3>
+      <div id="popular-artist">
+    
+        <div id="artist1">
+           
+           <img class="artistsimage" src="./home-images/popular artists//image1.webp">
+           <div class="hovers4">     
+      
+          </div>
+           <br> <p>justin bieber</p>   
+        </div>
+        
+        <div id="artist1">
+
+            <img class="artistsimage" src="./home-images/popular artists//image2.jpg">
+            <div class="hovers4">     
+      
+            </div>
+            <br> <p>ed sheeran</p>   
+
+         </div>
+         
+        <div id="artist1">
+
+            <img class="artistsimage" src="./home-images/popular artists/image3.jpg">
+            <div class="hovers4">     
+      
+            </div>
+            <br> <p>bellie ellish</p>         
+         </div>
+         
+        <div id="artist1">
+
+            <img class="artistsimage" src="./home-images/popular artists/image4.webp">
+            <div class="hovers4">     
+      
+            </div>
+            <p>charlie puth</p>
+            </div>                      
+    
+        <div  id="artist1">
+
+           <img class="artistsimage"src="./home-images/popular artists/image5.jpg">
+             <a href="./artist-list.html" >  
+               <div class="hovers4">     
+      
+          </div></a>
+            <br> <p>cold play</p>
+          </div>  
+         
+        <div id="artist1">
+
+            <img class="artistsimage" src="./home-images/popular artists/image6.webp">
+            <div class="hovers4">     
+      
+            </div>
+            <br> <p>zayn malik</p>
+         </div>
+         <div id="artist1">
+
+          <img class="artistsimage" src="./home-images/popular artists/image6.webp">
+          <div class="hovers4">     
+      
+          </div>
+          <br> <p>zayn malik</p>         
+       </div>
+
+
+    </div>
+
+   <!-- SONG CARDS  -->
+     <div id="songscard">
+       <div id="card1">
+         <img  src="./home-images/songscategory/partyimage.jpg" alt="">
+         <p>party</p>
+         
+       </div>
+       <div id="card2">
+         <img src="./home-images/songscategory/roadtrip.jpg">
+        <p> road trip</p>
+      </div>
+      <div id="card3">
+        <img src="./home-images/songscategory/electronicimage.jpg">
+       <p>electronic</p>
+      </div>
+     </div>
+  
+ <!-- LATEST ENGLISH    -->
+     <h3>latest english <p>see all</p></h3>
+
+     <div class="latestenglish">
+      <div id="song">
+        <div>
+         <img class="songimage2" src="./home-images//latest english/asitwas.png" alt="">
+
+         <!-- HOVER -->
+         <div class="hovers">
+           <div onclick="onPlay()";" class="playbutton2">
+           <i class="fa-solid fa-play"></i>    
+           </div>
+           <div class="dropdown" style="position: absolute;" >
+             <button  style="background-color: transparent; border: none; color: white; font-size: larger;" class="fa-solid fa-ellipsis-vertical" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+             </button>
+             <ul class="dropdown-menu dropdown-menu-dark" style="position: absolute;" aria-labelledby="dropdownMenuButton2">
+             <li><a class="dropdown-item" href="#">
+                 <span> <i class="fa-solid fa-play"></i></span><span>Play Now</span></a></li>
+             <li class="addtoqueue"><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-plus"></i></span><span> Add To Queue</span> </a></li>
+             <li><a class="dropdown-item" href="#"><span><i class="fa-solid fa-list"></i></span><span>add to Favourites</span></a></li>
+             <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-circle-info"></i></span><span> get info</span></a></li>
+             </ul>
+         </div>  
+     
+         </div>
+        </div>
+          <h6>as it was</h6>
+          <p> harry style</p>
+      </div>
+   
+    <div id="song">
+    <div>  
+     <img class="songimage2" src="./home-images/latest english/when you are gone.png" alt="">
+     <div class="hovers">
+       <div class="playbutton2">
+         <i class="fa-solid fa-play"></i>    
+
+         </div> 
+       <div class="dropdown" style="position: absolute;" >
+         <button  style="background-color: transparent; border: none; color: white; font-size: larger;" class="fa-solid fa-ellipsis-vertical" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+         </button>
+         <ul class="dropdown-menu dropdown-menu-dark" style="position: absolute;" aria-labelledby="dropdownMenuButton2">
+         <li><a class="dropdown-item" href="#">
+             <span> <i class="fa-solid fa-play"></i></span><span>Play Now</span></a></li>
+         <li class="addtoqueue"><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-plus"></i></span><span> Add To Queue</span> </a></li>
+         <li><a class="dropdown-item" href="#"><span><i class="fa-solid fa-list"></i></span><span>add to Favourites</span></a></li>
+         <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-circle-info"></i></span><span> get info</span></a></li>
+         </ul>
+     </div>       
+     </div>
+     </div>
+     <h6>when you are..</h6>
+     <p> shawn mendes</p>
+ </div>
+ <div id="song">
+   <div>
+   <img class="songimage2" src="./home-images//latest english/bananza.jpg" alt="">
+   <div class="hovers">
+     <div class="playbutton2">
+       <i class="fa-solid fa-play"></i>    
+
+       </div>    
+     <div class="dropdown" style="position: absolute;" >
+       <button  style="background-color: transparent; border: none; color: white; font-size: larger;" class="fa-solid fa-ellipsis-vertical" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+       </button>
+       <ul class="dropdown-menu dropdown-menu-dark" style="position: absolute;" aria-labelledby="dropdownMenuButton2">
+       <li><a class="dropdown-item" href="#">
+           <span> <i class="fa-solid fa-play"></i></span><span>Play Now</span></a></li>
+       <li class="addtoqueue"><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-plus"></i></span><span> Add To Queue</span> </a></li>
+       <li><a class="dropdown-item" href="#"><span><i class="fa-solid fa-list"></i></span><span>add to Favourites</span></a></li>
+       <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-circle-info"></i></span><span> get info</span></a></li>
+       </ul>
+   </div>    
+
+   </div>
+   </div>
+   <h6>bananza</h6>
+   <p> akon</p>
+ </div> 
+<div id="song">
+  <div>
+ <img class="songimage2" src="./home-images//latest english/stay.jpg" alt="">
+ <div class="hovers">
+   <div class="playbutton2">
+     <i class="fa-solid fa-play"></i>    
+
+     </div>
+   <div class="dropdown" style="position: absolute;" >
+     <button  style="background-color: transparent; border: none; color: white; font-size: larger;" class="fa-solid fa-ellipsis-vertical" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+     </button>
+     <ul class="dropdown-menu dropdown-menu-dark" style="position: absolute;" aria-labelledby="dropdownMenuButton2">
+     <li><a class="dropdown-item" href="#">
+         <span> <i class="fa-solid fa-play"></i></span><span>Play Now</span></a></li>
+     <li class="addtoqueue"><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-plus"></i></span><span> Add To Queue</span> </a></li>
+     <li><a class="dropdown-item" href="#"><span><i class="fa-solid fa-list"></i></span><span>add to Favourites</span></a></li>
+     <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-circle-info"></i></span><span> get info</span></a></li>
+     </ul>
+ </div>       
+
+ </div>
+ </div>
+ <h6>stay</h6>
+ <p> justin bieber </p>
+ </div>
+ <div id="song">
+  <div> 
+ <img class="songimage2" src="./home-images//latest english/unstoppable.jpg" alt="">
+ <div class="hovers">
+   <div class="playbutton2">
+     <i class="fa-solid fa-play"></i>    
+
+     </div> 
+   <div class="dropdown" style="position: absolute;" >
+     <button  style="background-color: transparent; border: none; color: white; font-size: larger;" class="fa-solid fa-ellipsis-vertical" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+     </button>
+     <ul class="dropdown-menu dropdown-menu-dark" style="position: absolute;" aria-labelledby="dropdownMenuButton2">
+     <li><a class="dropdown-item" href="#">
+         <span> <i class="fa-solid fa-play"></i></span><span>Play Now</span></a></li>
+     <li class="addtoqueue"><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-plus"></i></span><span> Add To Queue</span> </a></li>
+     <li><a class="dropdown-item" href="#"><span><i class="fa-solid fa-list"></i></span><span>add to Favourites</span></a></li>
+     <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-circle-info"></i></span><span> get info</span></a></li>
+     </ul>
+ </div>       
+
+ </div>
+ </div>
+
+ <h6>unstoppable</h6>
+ <p> sia</p>
+ </div> 
+ <div id="song">
+   <div>
+ <img class="songimage2" src="./home-images//latest english/no lie.jpg" alt="">
+ <div class="hovers">
+   <div class="playbutton2">
+     <i class="fa-solid fa-play"></i>    
+
+     </div>   
+   <div class="dropdown" style="position: absolute;" >
+     <button  style="background-color: transparent; border: none; color: white; font-size: larger;" class="fa-solid fa-ellipsis-vertical" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+     </button>
+     <ul class="dropdown-menu dropdown-menu-dark" style="position: absolute;" aria-labelledby="dropdownMenuButton2">
+     <li><a class="dropdown-item" href="#">
+         <span> <i class="fa-solid fa-play"></i></span><span>Play Now</span></a></li>
+     <li class="addtoqueue"><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-plus"></i></span><span> Add To Queue</span> </a></li>
+     <li><a class="dropdown-item" href="#"><span><i class="fa-solid fa-list"></i></span><span>add to Favourites</span></a></li>
+     <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-circle-info"></i></span><span> get info</span></a></li>
+     </ul>
+ </div>     
+
+ </div>
+ </div>
+ <h6>no lie</h6>
+ <p>sean paul </p>
+  </div>
+  <div id="song">
+    <div>
+   <img class="songimage2" src="./home-images//latest english/no lie.jpg" alt="">
+   <div class="hovers">
+     <div class="playbutton2">
+       <i class="fa-solid fa-play"></i>    
+
+       </div> 
+     <div class="dropdown" style="position: absolute;" >
+       <button  style="background-color: transparent; border: none; color: white; font-size: larger;" class="fa-solid fa-ellipsis-vertical" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+       </button>
+       <ul class="dropdown-menu dropdown-menu-dark" style="position: absolute;" aria-labelledby="dropdownMenuButton2">
+       <li><a class="dropdown-item" href="#">
+           <span> <i class="fa-solid fa-play"></i></span><span>Play Now</span></a></li>
+       <li class="addtoqueue"><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-plus"></i></span><span> Add To Queue</span> </a></li>
+       <li><a class="dropdown-item" href="#"><span><i class="fa-solid fa-list"></i></span><span>add to Favourites</span></a></li>
+       <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-circle-info"></i></span><span> get info</span></a></li>
+       </ul>
+   </div>       
+
+     </div>
+   </div>
+   <h6>no lie</h6>
+   <p>sean paul </p>
+    </div>
+    <div id="song">
+    <div> 
+     <img class="songimage2" src="./home-images//latest english/no lie.jpg" alt="">
+     <div class="hovers">
+       <div class="playbutton2">
+         <i class="fa-solid fa-play"></i>    
+
+         </div>    
+       <div class="dropdown" style="position: absolute;" >
+         <button  style="background-color: transparent; border: none; color: white; font-size: larger;" class="fa-solid fa-ellipsis-vertical" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+         </button>
+         <ul class="dropdown-menu dropdown-menu-dark" style="position: absolute;" aria-labelledby="dropdownMenuButton2">
+         <li><a class="dropdown-item" href="#">
+             <span> <i class="fa-solid fa-play"></i></span><span>Play Now</span></a></li>
+         <li class="addtoqueue"><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-plus"></i></span><span> Add To Queue</span> </a></li>
+         <li><a class="dropdown-item" href="#"><span><i class="fa-solid fa-list"></i></span><span>add to Favourites</span></a></li>
+         <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-circle-info"></i></span><span> get info</span></a></li>
+         </ul>
+     </div>    
+ 
+     </div>
+     </div>
+     <h6>no lie</h6>
+     <p>sean paul </p>
+
+      </div>
+      <div id="song">
+     <div>   
+       <img class="songimage2" src="./home-images//latest english/no lie.jpg" alt="">
+       <div class="hovers">
+         <div class="playbutton2">
+           <i class="fa-solid fa-play"></i>    
+
+           </div>
+         <div class="dropdown" style="position: absolute;" >
+           <button  style="background-color: transparent; border: none; color: white; font-size: larger;" class="fa-solid fa-ellipsis-vertical" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+           </button>
+           <ul class="dropdown-menu dropdown-menu-dark" style="position: absolute;" aria-labelledby="dropdownMenuButton2">
+           <li><a class="dropdown-item" href="#">
+               <span> <i class="fa-solid fa-play"></i></span><span>Play Now</span></a></li>
+           <li class="addtoqueue"><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-plus"></i></span><span> Add To Queue</span> </a></li>
+           <li><a class="dropdown-item" href="#"><span><i class="fa-solid fa-list"></i></span><span>add to Favourites</span></a></li>
+           <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-circle-info"></i></span><span> get info</span></a></li>
+           </ul>
+       </div>      
+       </div>
+       </div>
+       <h6>no lie</h6>
+       <p>sean paul </p>
+        </div>
+        <div id="song">
+         <diV>
+         <img class="songimage2" src="./home-images//latest english/no lie.jpg" alt="">
+         <div class="hovers">
+           <div class="playbutton2">
+             <i class="fa-solid fa-play"></i>    
+ 
+             </div> 
+           <div class="dropdown" style="position: absolute;" >
+             <button  style="background-color: transparent; border: none; color: white; font-size: larger;" class="fa-solid fa-ellipsis-vertical" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+             </button>
+             <ul class="dropdown-menu dropdown-menu-dark" style="position: absolute;" aria-labelledby="dropdownMenuButton2">
+             <li><a class="dropdown-item" href="#">
+                 <span> <i class="fa-solid fa-play"></i></span><span>Play Now</span></a></li>
+             <li class="addtoqueue"><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-plus"></i></span><span> Add To Queue</span> </a></li>
+             <li><a class="dropdown-item" href="#"><span><i class="fa-solid fa-list"></i></span><span>add to Favourites</span></a></li>
+             <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-circle-info"></i></span><span> get info</span></a></li>
+             </ul>
+         </div>       
+     
+         </div>
+         </diV>
+
+         <h6>no lie</h6>
+         <p>sean paul </p>
+          </div>
+          <div id="song">
+            <div>
+        <img class="songimage2" src="./home-images//latest english/no lie.jpg" alt="">
+        <div class="hovers">
+         <div class="playbutton2">
+           <i class="fa-solid fa-play"></i>    
+
+           </div>
+         <div class="dropdown" style="position: absolute;" >
+           <button  style="background-color: transparent; border: none; color: white; font-size: larger;" class="fa-solid fa-ellipsis-vertical" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+           </button>
+           <ul class="dropdown-menu dropdown-menu-dark" style="position: absolute;" aria-labelledby="dropdownMenuButton2">
+           <li><a class="dropdown-item" href="#">
+               <span> <i class="fa-solid fa-play"></i></span><span>Play Now</span></a></li>
+           <li class="addtoqueue"><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-plus"></i></span><span> Add To Queue</span> </a></li>
+           <li><a class="dropdown-item" href="#"><span><i class="fa-solid fa-list"></i></span><span>add to Favourites</span></a></li>
+           <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-circle-info"></i></span><span> get info</span></a></li>
+           </ul>
+       </div>       
+   
+       </div>
+           </div>
+           <h6>no lie</h6>
+           <p>sean paul </p>
+            </div>
+            <div id="song">
+              <div>
+             <img class="songimage2" src="./home-images//latest english/no lie.jpg" alt="">
+             <div class="hovers">
+               <div class="playbutton2">
+                 <i class="fa-solid fa-play"></i>    
+     
+                 </div> 
+               <div class="dropdown" style="position: absolute;" >
+                 <button  style="background-color: transparent; border: none; color: white; font-size: larger;" class="fa-solid fa-ellipsis-vertical" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                 </button>
+                 <ul class="dropdown-menu dropdown-menu-dark" style="position: absolute;" aria-labelledby="dropdownMenuButton2">
+                 <li><a class="dropdown-item" href="#">
+                     <span> <i class="fa-solid fa-play"></i></span><span>Play Now</span></a></li>
+                 <li class="addtoqueue"><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-plus"></i></span><span> Add To Queue</span> </a></li>
+                 <li><a class="dropdown-item" href="#"><span><i class="fa-solid fa-list"></i></span><span>add to Favourites</span></a></li>
+                 <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-circle-info"></i></span><span> get info</span></a></li>
+                 </ul>
+             </div>       
+         
+             </div>
+             </div>
+         <h6>no lie</h6>
+          <p>sean paul </p>
+          </div>
+    
+          <div id="song">
+
+           <div>
+           <img class="songimage2" src="./home-images//latest english/no lie.jpg" alt="">
+           <div class="hovers">
+             <div class="playbutton2">
+               <i class="fa-solid fa-play"></i>    
+   
+               </div>  
+             <div class="dropdown" style="position: absolute;" >
+               <button  style="background-color: transparent; border: none; color: white; font-size: larger;" class="fa-solid fa-ellipsis-vertical" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+               </button>
+               <ul class="dropdown-menu dropdown-menu-dark" style="position: absolute;" aria-labelledby="dropdownMenuButton2">
+               <li><a class="dropdown-item" href="#">
+                   <span> <i class="fa-solid fa-play"></i></span><span>Play Now</span></a></li>
+               <li class="addtoqueue"><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-plus"></i></span><span> Add To Queue</span> </a></li>
+               <li><a class="dropdown-item" href="#"><span><i class="fa-solid fa-list"></i></span><span>add to Favourites</span></a></li>
+               <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-circle-info"></i></span><span> get info</span></a></li>
+               </ul>
+           </div>      
+       </div>
+           </div>
+           <h6>no lie</h6>
+           <p>sean paul </p>
+            </div>       
+  </div>
+
+     
+   
+ 
+<!-- LATEST HINDI   -->
+    
+<h3>latest hindi <p>see all</p></h3>
+<div class="latestenglish">
+  <div id="song">
+    <div>
+     <img class="songimage2" src="./home-images//latest english/asitwas.png" alt="">
+
+     <!-- HOVER -->
+     <div class="hovers">
+       <div onclick="onPlay()";" class="playbutton2">
+       <i class="fa-solid fa-play"></i>    
+       </div>
+       <div class="dropdown" style="position: absolute;" >
+         <button  style="background-color: transparent; border: none; color: white; font-size: larger;" class="fa-solid fa-ellipsis-vertical" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+         </button>
+         <ul class="dropdown-menu dropdown-menu-dark" style="position: absolute;" aria-labelledby="dropdownMenuButton2">
+         <li><a class="dropdown-item" href="#">
+             <span> <i class="fa-solid fa-play"></i></span><span>Play Now</span></a></li>
+         <li class="addtoqueue"><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-plus"></i></span><span> Add To Queue</span> </a></li>
+         <li><a class="dropdown-item" href="#"><span><i class="fa-solid fa-list"></i></span><span>add to Favourites</span></a></li>
+         <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-circle-info"></i></span><span> get info</span></a></li>
+         </ul>
+     </div>  
+ 
+     </div>
+    </div>
+      <h6>as it was</h6>
+      <p> harry style</p>
+  </div>
+
+<div id="song">
+<div>  
+ <img class="songimage2" src="./home-images/latest english/when you are gone.png" alt="">
+ <div class="hovers">
+   <div class="playbutton2">
+     <i class="fa-solid fa-play"></i>    
+
+     </div> 
+   <div class="dropdown" style="position: absolute;" >
+     <button  style="background-color: transparent; border: none; color: white; font-size: larger;" class="fa-solid fa-ellipsis-vertical" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+     </button>
+     <ul class="dropdown-menu dropdown-menu-dark" style="position: absolute;" aria-labelledby="dropdownMenuButton2">
+     <li><a class="dropdown-item" href="#">
+         <span> <i class="fa-solid fa-play"></i></span><span>Play Now</span></a></li>
+     <li class="addtoqueue"><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-plus"></i></span><span> Add To Queue</span> </a></li>
+     <li><a class="dropdown-item" href="#"><span><i class="fa-solid fa-list"></i></span><span>add to Favourites</span></a></li>
+     <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-circle-info"></i></span><span> get info</span></a></li>
+     </ul>
+ </div>       
+ </div>
+ </div>
+ <h6>when you are..</h6>
+ <p> shawn mendes</p>
+</div>
+<div id="song">
+<div>
+<img class="songimage2" src="./home-images//latest english/bananza.jpg" alt="">
+<div class="hovers">
+ <div class="playbutton2">
+   <i class="fa-solid fa-play"></i>    
+
+   </div>    
+ <div class="dropdown" style="position: absolute;" >
+   <button  style="background-color: transparent; border: none; color: white; font-size: larger;" class="fa-solid fa-ellipsis-vertical" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+   </button>
+   <ul class="dropdown-menu dropdown-menu-dark" style="position: absolute;" aria-labelledby="dropdownMenuButton2">
+   <li><a class="dropdown-item" href="#">
+       <span> <i class="fa-solid fa-play"></i></span><span>Play Now</span></a></li>
+   <li class="addtoqueue"><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-plus"></i></span><span> Add To Queue</span> </a></li>
+   <li><a class="dropdown-item" href="#"><span><i class="fa-solid fa-list"></i></span><span>add to Favourites</span></a></li>
+   <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-circle-info"></i></span><span> get info</span></a></li>
+   </ul>
+</div>    
+
+</div>
+</div>
+<h6>bananza</h6>
+<p> akon</p>
+</div> 
+<div id="song">
+<div>
+<img class="songimage2" src="./home-images//latest english/stay.jpg" alt="">
+<div class="hovers">
+<div class="playbutton2">
+ <i class="fa-solid fa-play"></i>    
+
+ </div>
+<div class="dropdown" style="position: absolute;" >
+ <button  style="background-color: transparent; border: none; color: white; font-size: larger;" class="fa-solid fa-ellipsis-vertical" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+ </button>
+ <ul class="dropdown-menu dropdown-menu-dark" style="position: absolute;" aria-labelledby="dropdownMenuButton2">
+ <li><a class="dropdown-item" href="#">
+     <span> <i class="fa-solid fa-play"></i></span><span>Play Now</span></a></li>
+ <li class="addtoqueue"><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-plus"></i></span><span> Add To Queue</span> </a></li>
+ <li><a class="dropdown-item" href="#"><span><i class="fa-solid fa-list"></i></span><span>add to Favourites</span></a></li>
+ <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-circle-info"></i></span><span> get info</span></a></li>
+ </ul>
+</div>       
+
+</div>
+</div>
+<h6>stay</h6>
+<p> justin bieber </p>
+</div>
+<div id="song">
+<div> 
+<img class="songimage2" src="./home-images//latest english/unstoppable.jpg" alt="">
+<div class="hovers">
+<div class="playbutton2">
+ <i class="fa-solid fa-play"></i>    
+
+ </div> 
+<div class="dropdown" style="position: absolute;" >
+ <button  style="background-color: transparent; border: none; color: white; font-size: larger;" class="fa-solid fa-ellipsis-vertical" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+ </button>
+ <ul class="dropdown-menu dropdown-menu-dark" style="position: absolute;" aria-labelledby="dropdownMenuButton2">
+ <li><a class="dropdown-item" href="#">
+     <span> <i class="fa-solid fa-play"></i></span><span>Play Now</span></a></li>
+ <li class="addtoqueue"><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-plus"></i></span><span> Add To Queue</span> </a></li>
+ <li><a class="dropdown-item" href="#"><span><i class="fa-solid fa-list"></i></span><span>add to Favourites</span></a></li>
+ <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-circle-info"></i></span><span> get info</span></a></li>
+ </ul>
+</div>       
+
+</div>
+</div>
+
+<h6>unstoppable</h6>
+<p> sia</p>
+</div> 
+<div id="song">
+<div>
+<img class="songimage2" src="./home-images//latest english/no lie.jpg" alt="">
+<div class="hovers">
+<div class="playbutton2">
+ <i class="fa-solid fa-play"></i>    
+
+ </div>   
+<div class="dropdown" style="position: absolute;" >
+ <button  style="background-color: transparent; border: none; color: white; font-size: larger;" class="fa-solid fa-ellipsis-vertical" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+ </button>
+ <ul class="dropdown-menu dropdown-menu-dark" style="position: absolute;" aria-labelledby="dropdownMenuButton2">
+ <li><a class="dropdown-item" href="#">
+     <span> <i class="fa-solid fa-play"></i></span><span>Play Now</span></a></li>
+ <li class="addtoqueue"><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-plus"></i></span><span> Add To Queue</span> </a></li>
+ <li><a class="dropdown-item" href="#"><span><i class="fa-solid fa-list"></i></span><span>add to Favourites</span></a></li>
+ <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-circle-info"></i></span><span> get info</span></a></li>
+ </ul>
+</div>     
+
+</div>
+</div>
+<h6>no lie</h6>
+<p>sean paul </p>
+</div>
+<div id="song">
+<div>
+<img class="songimage2" src="./home-images//latest english/no lie.jpg" alt="">
+<div class="hovers">
+ <div class="playbutton2">
+   <i class="fa-solid fa-play"></i>    
+
+   </div> 
+ <div class="dropdown" style="position: absolute;" >
+   <button  style="background-color: transparent; border: none; color: white; font-size: larger;" class="fa-solid fa-ellipsis-vertical" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+   </button>
+   <ul class="dropdown-menu dropdown-menu-dark" style="position: absolute;" aria-labelledby="dropdownMenuButton2">
+   <li><a class="dropdown-item" href="#">
+       <span> <i class="fa-solid fa-play"></i></span><span>Play Now</span></a></li>
+   <li class="addtoqueue"><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-plus"></i></span><span> Add To Queue</span> </a></li>
+   <li><a class="dropdown-item" href="#"><span><i class="fa-solid fa-list"></i></span><span>add to Favourites</span></a></li>
+   <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-circle-info"></i></span><span> get info</span></a></li>
+   </ul>
+</div>       
+
+ </div>
+</div>
+<h6>no lie</h6>
+<p>sean paul </p>
+</div>
+<div id="song">
+<div> 
+ <img class="songimage2" src="./home-images//latest english/no lie.jpg" alt="">
+ <div class="hovers">
+   <div class="playbutton2">
+     <i class="fa-solid fa-play"></i>    
+
+     </div>    
+   <div class="dropdown" style="position: absolute;" >
+     <button  style="background-color: transparent; border: none; color: white; font-size: larger;" class="fa-solid fa-ellipsis-vertical" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+     </button>
+     <ul class="dropdown-menu dropdown-menu-dark" style="position: absolute;" aria-labelledby="dropdownMenuButton2">
+     <li><a class="dropdown-item" href="#">
+         <span> <i class="fa-solid fa-play"></i></span><span>Play Now</span></a></li>
+     <li class="addtoqueue"><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-plus"></i></span><span> Add To Queue</span> </a></li>
+     <li><a class="dropdown-item" href="#"><span><i class="fa-solid fa-list"></i></span><span>add to Favourites</span></a></li>
+     <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-circle-info"></i></span><span> get info</span></a></li>
+     </ul>
+ </div>    
+
+ </div>
+ </div>
+ <h6>no lie</h6>
+ <p>sean paul </p>
+
+  </div>
+  <div id="song">
+ <div>   
+   <img class="songimage2" src="./home-images//latest english/no lie.jpg" alt="">
+   <div class="hovers">
+     <div class="playbutton2">
+       <i class="fa-solid fa-play"></i>    
+
+       </div>
+     <div class="dropdown" style="position: absolute;" >
+       <button  style="background-color: transparent; border: none; color: white; font-size: larger;" class="fa-solid fa-ellipsis-vertical" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+       </button>
+       <ul class="dropdown-menu dropdown-menu-dark" style="position: absolute;" aria-labelledby="dropdownMenuButton2">
+       <li><a class="dropdown-item" href="#">
+           <span> <i class="fa-solid fa-play"></i></span><span>Play Now</span></a></li>
+       <li class="addtoqueue"><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-plus"></i></span><span> Add To Queue</span> </a></li>
+       <li><a class="dropdown-item" href="#"><span><i class="fa-solid fa-list"></i></span><span>add to Favourites</span></a></li>
+       <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-circle-info"></i></span><span> get info</span></a></li>
+       </ul>
+   </div>      
+   </div>
+   </div>
+   <h6>no lie</h6>
+   <p>sean paul </p>
+    </div>
+    <div id="song">
+     <diV>
+     <img class="songimage2" src="./home-images//latest english/no lie.jpg" alt="">
+     <div class="hovers">
+       <div class="playbutton2">
+         <i class="fa-solid fa-play"></i>    
+
+         </div> 
+       <div class="dropdown" style="position: absolute;" >
+         <button  style="background-color: transparent; border: none; color: white; font-size: larger;" class="fa-solid fa-ellipsis-vertical" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+         </button>
+         <ul class="dropdown-menu dropdown-menu-dark" style="position: absolute;" aria-labelledby="dropdownMenuButton2">
+         <li><a class="dropdown-item" href="#">
+             <span> <i class="fa-solid fa-play"></i></span><span>Play Now</span></a></li>
+         <li class="addtoqueue"><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-plus"></i></span><span> Add To Queue</span> </a></li>
+         <li><a class="dropdown-item" href="#"><span><i class="fa-solid fa-list"></i></span><span>add to Favourites</span></a></li>
+         <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-circle-info"></i></span><span> get info</span></a></li>
+         </ul>
+     </div>       
+ 
+     </div>
+     </diV>
+
+     <h6>no lie</h6>
+     <p>sean paul </p>
+      </div>
+      <div id="song">
+        <div>
+    <img class="songimage2" src="./home-images//latest english/no lie.jpg" alt="">
+    <div class="hovers">
+     <div class="playbutton2">
+       <i class="fa-solid fa-play"></i>    
+
+       </div>
+     <div class="dropdown" style="position: absolute;" >
+       <button  style="background-color: transparent; border: none; color: white; font-size: larger;" class="fa-solid fa-ellipsis-vertical" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+       </button>
+       <ul class="dropdown-menu dropdown-menu-dark" style="position: absolute;" aria-labelledby="dropdownMenuButton2">
+       <li><a class="dropdown-item" href="#">
+           <span> <i class="fa-solid fa-play"></i></span><span>Play Now</span></a></li>
+       <li class="addtoqueue"><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-plus"></i></span><span> Add To Queue</span> </a></li>
+       <li><a class="dropdown-item" href="#"><span><i class="fa-solid fa-list"></i></span><span>add to Favourites</span></a></li>
+       <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-circle-info"></i></span><span> get info</span></a></li>
+       </ul>
+   </div>       
+
+   </div>
+       </div>
+       <h6>no lie</h6>
+       <p>sean paul </p>
+        </div>
+        <div id="song">
+          <div>
+         <img class="songimage2" src="./home-images//latest english/no lie.jpg" alt="">
+         <div class="hovers">
+           <div class="playbutton2">
+             <i class="fa-solid fa-play"></i>    
+ 
+             </div> 
+           <div class="dropdown" style="position: absolute;" >
+             <button  style="background-color: transparent; border: none; color: white; font-size: larger;" class="fa-solid fa-ellipsis-vertical" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+             </button>
+             <ul class="dropdown-menu dropdown-menu-dark" style="position: absolute;" aria-labelledby="dropdownMenuButton2">
+             <li><a class="dropdown-item" href="#">
+                 <span> <i class="fa-solid fa-play"></i></span><span>Play Now</span></a></li>
+             <li class="addtoqueue"><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-plus"></i></span><span> Add To Queue</span> </a></li>
+             <li><a class="dropdown-item" href="#"><span><i class="fa-solid fa-list"></i></span><span>add to Favourites</span></a></li>
+             <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-circle-info"></i></span><span> get info</span></a></li>
+             </ul>
+         </div>       
+     
+         </div>
+         </div>
+     <h6>no lie</h6>
+      <p>sean paul </p>
+      </div>
+
+      <div id="song">
+
+       <div>
+       <img class="songimage2" src="./home-images//latest english/no lie.jpg" alt="">
+       <div class="hovers">
+         <div class="playbutton2">
+           <i class="fa-solid fa-play"></i>    
+
+           </div>  
+         <div class="dropdown" style="position: absolute;" >
+           <button  style="background-color: transparent; border: none; color: white; font-size: larger;" class="fa-solid fa-ellipsis-vertical" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+           </button>
+           <ul class="dropdown-menu dropdown-menu-dark" style="position: absolute;" aria-labelledby="dropdownMenuButton2">
+           <li><a class="dropdown-item" href="#">
+               <span> <i class="fa-solid fa-play"></i></span><span>Play Now</span></a></li>
+           <li class="addtoqueue"><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-plus"></i></span><span> Add To Queue</span> </a></li>
+           <li><a class="dropdown-item" href="#"><span><i class="fa-solid fa-list"></i></span><span>add to Favourites</span></a></li>
+           <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-circle-info"></i></span><span> get info</span></a></li>
+           </ul>
+       </div>      
+   </div>
+       </div>
+       <h6>no lie</h6>
+       <p>sean paul </p>
+        </div>       
+</div>
+
+
+
+
+<!-- TOP ALBUMS -->
+
+<h3>top albums <p>see all</p> </h3>
+<div class="latestenglish">
+  <div id="song">
+    <div>
+     <img class="songimage2" src="./home-images//latest english/asitwas.png" alt="">
+
+     <!-- HOVER -->
+     <div class="hovers">
+       <div onclick="onPlay()";" class="playbutton2">
+       <i class="fa-solid fa-play"></i>    
+       </div>
+       <div class="dropdown" style="position: absolute;" >
+         <button  style="background-color: transparent; border: none; color: white; font-size: larger;" class="fa-solid fa-ellipsis-vertical" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+         </button>
+         <ul class="dropdown-menu dropdown-menu-dark" style="position: absolute;" aria-labelledby="dropdownMenuButton2">
+         <li><a class="dropdown-item" href="#">
+             <span> <i class="fa-solid fa-play"></i></span><span>Play Now</span></a></li>
+         <li class="addtoqueue"><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-plus"></i></span><span> Add To Queue</span> </a></li>
+         <li><a class="dropdown-item" href="#"><span><i class="fa-solid fa-list"></i></span><span>add to Favourites</span></a></li>
+         <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-circle-info"></i></span><span> get info</span></a></li>
+         </ul>
+     </div>  
+ 
+     </div>
+    </div>
+      <h6>as it was</h6>
+      <p> harry style</p>
+  </div>
+
+<div id="song">
+<div>  
+ <img class="songimage2" src="./home-images/latest english/when you are gone.png" alt="">
+ <div class="hovers">
+   <div class="playbutton2">
+     <i class="fa-solid fa-play"></i>    
+
+     </div> 
+   <div class="dropdown" style="position: absolute;" >
+     <button  style="background-color: transparent; border: none; color: white; font-size: larger;" class="fa-solid fa-ellipsis-vertical" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+     </button>
+     <ul class="dropdown-menu dropdown-menu-dark" style="position: absolute;" aria-labelledby="dropdownMenuButton2">
+     <li><a class="dropdown-item" href="#">
+         <span> <i class="fa-solid fa-play"></i></span><span>Play Now</span></a></li>
+     <li class="addtoqueue"><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-plus"></i></span><span> Add To Queue</span> </a></li>
+     <li><a class="dropdown-item" href="#"><span><i class="fa-solid fa-list"></i></span><span>add to Favourites</span></a></li>
+     <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-circle-info"></i></span><span> get info</span></a></li>
+     </ul>
+ </div>       
+ </div>
+ </div>
+ <h6>when you are..</h6>
+ <p> shawn mendes</p>
+</div>
+<div id="song">
+<div>
+<img class="songimage2" src="./home-images//latest english/bananza.jpg" alt="">
+<div class="hovers">
+ <div class="playbutton2">
+   <i class="fa-solid fa-play"></i>    
+
+   </div>    
+ <div class="dropdown" style="position: absolute;" >
+   <button  style="background-color: transparent; border: none; color: white; font-size: larger;" class="fa-solid fa-ellipsis-vertical" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+   </button>
+   <ul class="dropdown-menu dropdown-menu-dark" style="position: absolute;" aria-labelledby="dropdownMenuButton2">
+   <li><a class="dropdown-item" href="#">
+       <span> <i class="fa-solid fa-play"></i></span><span>Play Now</span></a></li>
+   <li class="addtoqueue"><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-plus"></i></span><span> Add To Queue</span> </a></li>
+   <li><a class="dropdown-item" href="#"><span><i class="fa-solid fa-list"></i></span><span>add to Favourites</span></a></li>
+   <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-circle-info"></i></span><span> get info</span></a></li>
+   </ul>
+</div>    
+
+</div>
+</div>
+<h6>bananza</h6>
+<p> akon</p>
+</div> 
+<div id="song">
+<div>
+<img class="songimage2" src="./home-images//latest english/stay.jpg" alt="">
+<div class="hovers">
+<div class="playbutton2">
+ <i class="fa-solid fa-play"></i>    
+
+ </div>
+<div class="dropdown" style="position: absolute;" >
+ <button  style="background-color: transparent; border: none; color: white; font-size: larger;" class="fa-solid fa-ellipsis-vertical" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+ </button>
+ <ul class="dropdown-menu dropdown-menu-dark" style="position: absolute;" aria-labelledby="dropdownMenuButton2">
+ <li><a class="dropdown-item" href="#">
+     <span> <i class="fa-solid fa-play"></i></span><span>Play Now</span></a></li>
+ <li class="addtoqueue"><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-plus"></i></span><span> Add To Queue</span> </a></li>
+ <li><a class="dropdown-item" href="#"><span><i class="fa-solid fa-list"></i></span><span>add to Favourites</span></a></li>
+ <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-circle-info"></i></span><span> get info</span></a></li>
+ </ul>
+</div>       
+
+</div>
+</div>
+<h6>stay</h6>
+<p> justin bieber </p>
+</div>
+<div id="song">
+<div> 
+<img class="songimage2" src="./home-images//latest english/unstoppable.jpg" alt="">
+<div class="hovers">
+<div class="playbutton2">
+ <i class="fa-solid fa-play"></i>    
+
+ </div> 
+<div class="dropdown" style="position: absolute;" >
+ <button  style="background-color: transparent; border: none; color: white; font-size: larger;" class="fa-solid fa-ellipsis-vertical" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+ </button>
+ <ul class="dropdown-menu dropdown-menu-dark" style="position: absolute;" aria-labelledby="dropdownMenuButton2">
+ <li><a class="dropdown-item" href="#">
+     <span> <i class="fa-solid fa-play"></i></span><span>Play Now</span></a></li>
+ <li class="addtoqueue"><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-plus"></i></span><span> Add To Queue</span> </a></li>
+ <li><a class="dropdown-item" href="#"><span><i class="fa-solid fa-list"></i></span><span>add to Favourites</span></a></li>
+ <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-circle-info"></i></span><span> get info</span></a></li>
+ </ul>
+</div>       
+
+</div>
+</div>
+
+<h6>unstoppable</h6>
+<p> sia</p>
+</div> 
+<div id="song">
+<div>
+<img class="songimage2" src="./home-images//latest english/no lie.jpg" alt="">
+<div class="hovers">
+<div class="playbutton2">
+ <i class="fa-solid fa-play"></i>    
+
+ </div>   
+<div class="dropdown" style="position: absolute;" >
+ <button  style="background-color: transparent; border: none; color: white; font-size: larger;" class="fa-solid fa-ellipsis-vertical" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+ </button>
+ <ul class="dropdown-menu dropdown-menu-dark" style="position: absolute;" aria-labelledby="dropdownMenuButton2">
+ <li><a class="dropdown-item" href="#">
+     <span> <i class="fa-solid fa-play"></i></span><span>Play Now</span></a></li>
+ <li class="addtoqueue"><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-plus"></i></span><span> Add To Queue</span> </a></li>
+ <li><a class="dropdown-item" href="#"><span><i class="fa-solid fa-list"></i></span><span>add to Favourites</span></a></li>
+ <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-circle-info"></i></span><span> get info</span></a></li>
+ </ul>
+</div>     
+
+</div>
+</div>
+<h6>no lie</h6>
+<p>sean paul </p>
+</div>
+<div id="song">
+<div>
+<img class="songimage2" src="./home-images//latest english/no lie.jpg" alt="">
+<div class="hovers">
+ <div class="playbutton2">
+   <i class="fa-solid fa-play"></i>    
+
+   </div> 
+ <div class="dropdown" style="position: absolute;" >
+   <button  style="background-color: transparent; border: none; color: white; font-size: larger;" class="fa-solid fa-ellipsis-vertical" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+   </button>
+   <ul class="dropdown-menu dropdown-menu-dark" style="position: absolute;" aria-labelledby="dropdownMenuButton2">
+   <li><a class="dropdown-item" href="#">
+       <span> <i class="fa-solid fa-play"></i></span><span>Play Now</span></a></li>
+   <li class="addtoqueue"><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-plus"></i></span><span> Add To Queue</span> </a></li>
+   <li><a class="dropdown-item" href="#"><span><i class="fa-solid fa-list"></i></span><span>add to Favourites</span></a></li>
+   <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-circle-info"></i></span><span> get info</span></a></li>
+   </ul>
+</div>       
+
+ </div>
+</div>
+<h6>no lie</h6>
+<p>sean paul </p>
+</div>
+<div id="song">
+<div> 
+ <img class="songimage2" src="./home-images//latest english/no lie.jpg" alt="">
+ <div class="hovers">
+   <div class="playbutton2">
+     <i class="fa-solid fa-play"></i>    
+
+     </div>    
+   <div class="dropdown" style="position: absolute;" >
+     <button  style="background-color: transparent; border: none; color: white; font-size: larger;" class="fa-solid fa-ellipsis-vertical" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+     </button>
+     <ul class="dropdown-menu dropdown-menu-dark" style="position: absolute;" aria-labelledby="dropdownMenuButton2">
+     <li><a class="dropdown-item" href="#">
+         <span> <i class="fa-solid fa-play"></i></span><span>Play Now</span></a></li>
+     <li class="addtoqueue"><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-plus"></i></span><span> Add To Queue</span> </a></li>
+     <li><a class="dropdown-item" href="#"><span><i class="fa-solid fa-list"></i></span><span>add to Favourites</span></a></li>
+     <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-circle-info"></i></span><span> get info</span></a></li>
+     </ul>
+ </div>    
+
+ </div>
+ </div>
+ <h6>no lie</h6>
+ <p>sean paul </p>
+
+  </div>
+  <div id="song">
+ <div>   
+   <img class="songimage2" src="./home-images//latest english/no lie.jpg" alt="">
+   <div class="hovers">
+     <div class="playbutton2">
+       <i class="fa-solid fa-play"></i>    
+
+       </div>
+     <div class="dropdown" style="position: absolute;" >
+       <button  style="background-color: transparent; border: none; color: white; font-size: larger;" class="fa-solid fa-ellipsis-vertical" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+       </button>
+       <ul class="dropdown-menu dropdown-menu-dark" style="position: absolute;" aria-labelledby="dropdownMenuButton2">
+       <li><a class="dropdown-item" href="#">
+           <span> <i class="fa-solid fa-play"></i></span><span>Play Now</span></a></li>
+       <li class="addtoqueue"><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-plus"></i></span><span> Add To Queue</span> </a></li>
+       <li><a class="dropdown-item" href="#"><span><i class="fa-solid fa-list"></i></span><span>add to Favourites</span></a></li>
+       <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-circle-info"></i></span><span> get info</span></a></li>
+       </ul>
+   </div>      
+   </div>
+   </div>
+   <h6>no lie</h6>
+   <p>sean paul </p>
+    </div>
+    <div id="song">
+     <diV>
+     <img class="songimage2" src="./home-images//latest english/no lie.jpg" alt="">
+     <div class="hovers">
+       <div class="playbutton2">
+         <i class="fa-solid fa-play"></i>    
+
+         </div> 
+       <div class="dropdown" style="position: absolute;" >
+         <button  style="background-color: transparent; border: none; color: white; font-size: larger;" class="fa-solid fa-ellipsis-vertical" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+         </button>
+         <ul class="dropdown-menu dropdown-menu-dark" style="position: absolute;" aria-labelledby="dropdownMenuButton2">
+         <li><a class="dropdown-item" href="#">
+             <span> <i class="fa-solid fa-play"></i></span><span>Play Now</span></a></li>
+         <li class="addtoqueue"><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-plus"></i></span><span> Add To Queue</span> </a></li>
+         <li><a class="dropdown-item" href="#"><span><i class="fa-solid fa-list"></i></span><span>add to Favourites</span></a></li>
+         <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-circle-info"></i></span><span> get info</span></a></li>
+         </ul>
+     </div>       
+ 
+     </div>
+     </diV>
+
+     <h6>no lie</h6>
+     <p>sean paul </p>
+      </div>
+      <div id="song">
+        <div>
+    <img class="songimage2" src="./home-images//latest english/no lie.jpg" alt="">
+    <div class="hovers">
+     <div class="playbutton2">
+       <i class="fa-solid fa-play"></i>    
+
+       </div>
+     <div class="dropdown" style="position: absolute;" >
+       <button  style="background-color: transparent; border: none; color: white; font-size: larger;" class="fa-solid fa-ellipsis-vertical" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+       </button>
+       <ul class="dropdown-menu dropdown-menu-dark" style="position: absolute;" aria-labelledby="dropdownMenuButton2">
+       <li><a class="dropdown-item" href="#">
+           <span> <i class="fa-solid fa-play"></i></span><span>Play Now</span></a></li>
+       <li class="addtoqueue"><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-plus"></i></span><span> Add To Queue</span> </a></li>
+       <li><a class="dropdown-item" href="#"><span><i class="fa-solid fa-list"></i></span><span>add to Favourites</span></a></li>
+       <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-circle-info"></i></span><span> get info</span></a></li>
+       </ul>
+   </div>       
+
+   </div>
+       </div>
+       <h6>no lie</h6>
+       <p>sean paul </p>
+        </div>
+        <div id="song">
+          <div>
+         <img class="songimage2" src="./home-images//latest english/no lie.jpg" alt="">
+         <div class="hovers">
+           <div class="playbutton2">
+             <i class="fa-solid fa-play"></i>    
+ 
+             </div> 
+           <div class="dropdown" style="position: absolute;" >
+             <button  style="background-color: transparent; border: none; color: white; font-size: larger;" class="fa-solid fa-ellipsis-vertical" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+             </button>
+             <ul class="dropdown-menu dropdown-menu-dark" style="position: absolute;" aria-labelledby="dropdownMenuButton2">
+             <li><a class="dropdown-item" href="#">
+                 <span> <i class="fa-solid fa-play"></i></span><span>Play Now</span></a></li>
+             <li class="addtoqueue"><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-plus"></i></span><span> Add To Queue</span> </a></li>
+             <li><a class="dropdown-item" href="#"><span><i class="fa-solid fa-list"></i></span><span>add to Favourites</span></a></li>
+             <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-circle-info"></i></span><span> get info</span></a></li>
+             </ul>
+         </div>       
+     
+         </div>
+         </div>
+     <h6>no lie</h6>
+      <p>sean paul </p>
+      </div>
+
+      <div id="song">
+
+       <div>
+       <img class="songimage2" src="./home-images//latest english/no lie.jpg" alt="">
+       <div class="hovers">
+         <div class="playbutton2">
+           <i class="fa-solid fa-play"></i>    
+
+           </div>  
+         <div class="dropdown" style="position: absolute;" >
+           <button  style="background-color: transparent; border: none; color: white; font-size: larger;" class="fa-solid fa-ellipsis-vertical" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+           </button>
+           <ul class="dropdown-menu dropdown-menu-dark" style="position: absolute;" aria-labelledby="dropdownMenuButton2">
+           <li><a class="dropdown-item" href="#">
+               <span> <i class="fa-solid fa-play"></i></span><span>Play Now</span></a></li>
+           <li class="addtoqueue"><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-plus"></i></span><span> Add To Queue</span> </a></li>
+           <li><a class="dropdown-item" href="#"><span><i class="fa-solid fa-list"></i></span><span>add to Favourites</span></a></li>
+           <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-circle-info"></i></span><span> get info</span></a></li>
+           </ul>
+       </div>      
+   </div>
+       </div>
+       <h6>no lie</h6>
+       <p>sean paul </p>
+        </div>       
+</div>
+
+
+
+<!-- ALL TIME Favourites -->
+
+<h3>all time Favourites <p>see all</p> </h3>
+
+<div id="latestenglish1">
+  <div id="song1">
+    <div>
+       <img id="songimage3" src="./home-images/latest hindi/chaandbaliya.jpg" alt="">
+       <div id="hovers1">
+        <div class="playbutton3">
+          <i  class="fa-solid fa-play"></i> 
+  
+           </div> 
+        <div class="dropdown" style="position: absolute;" >
+          <button  style="background-color: transparent; border: none; color: white; font-size: larger;" class="fa-solid fa-ellipsis-vertical" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+          </button>
+          <ul class="dropdown-menu dropdown-menu-dark" style="position: absolute;" aria-labelledby="dropdownMenuButton2">
+          <li><a class="dropdown-item" href="#">
+              <span> <i class="fa-solid fa-play"></i></span><span>Play Now</span></a></li>
+          <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-plus"></i></span><span> Add To Queue</span> </a></li>
+          <li><a class="dropdown-item" href="#"><span><i class="fa-solid fa-list"></i></span><span>add to Favourites</span></a></li>
+          <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-circle-info"></i></span><span> get info</span></a></li>
+          </ul>
+      </div>     
+      </div>
+      </div>
+      <h6>chaand baliya</h6>
+      <p>aditya a</p>
+  </div>
+
+<div id="song1">
+  <div> 
+    <img id="songimage3" src="./home-images/latest hindi//jaa rahe ho.jpg" alt="">
+    <div id="hovers1">
+      <div class="playbutton3">
+        <i  class="fa-solid fa-play"></i> 
+
+         </div>  
+      <div class="dropdown" style="position: absolute;" >
+        <button  style="background-color: transparent; border: none; color: white; font-size: larger;" class="fa-solid fa-ellipsis-vertical" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+        </button>
+        <ul class="dropdown-menu dropdown-menu-dark" style="position: absolute;" aria-labelledby="dropdownMenuButton2">
+        <li><a class="dropdown-item" href="#">
+            <span> <i class="fa-solid fa-play"></i></span><span>Play Now</span></a></li>
+        <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-plus"></i></span><span> Add To Queue</span> </a></li>
+        <li><a class="dropdown-item" href="#"><span><i class="fa-solid fa-list"></i></span><span>add to Favourites</span></a></li>
+        <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-circle-info"></i></span><span> get info</span></a></li>
+        </ul>
+    </div>      
+    </div>
+  </div>
+ <h6>jaa rhe ho</h6>
+ <p>yasser desai</p>
+</div>
+<div id="song1">
+  <div>
+    <img id="songimage3" src="./home-images/latest hindi/mereyara.jpg" alt="">
+    <div id="hovers1">
+      <div class="playbutton3">
+        <i  class="fa-solid fa-play"></i> 
+
+         </div> 
+      <div class="dropdown" style="position: absolute;" >
+        <button  style="background-color: transparent; border: none; color: white; font-size: larger;" class="fa-solid fa-ellipsis-vertical" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+        </button>
+        <ul class="dropdown-menu dropdown-menu-dark" style="position: absolute;" aria-labelledby="dropdownMenuButton2">
+        <li><a class="dropdown-item" href="#">
+            <span> <i class="fa-solid fa-play"></i></span><span>Play Now</span></a></li>
+        <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-plus"></i></span><span> Add To Queue</span> </a></li>
+        <li><a class="dropdown-item" href="#"><span><i class="fa-solid fa-list"></i></span><span>add to Favourites</span></a></li>
+        <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-circle-info"></i></span><span> get info</span></a></li>
+        </ul>
+    </div>       
+    </div>
+    </div>
+  <h6>mere yaara</h6>
+<p>arjit singh</p>
+</div>
+<div id="song1">
+  <div>
+<img id="songimage3" src="./home-images/latest hindi/maiyamainu.webp" alt="">
+<div id="hovers1">
+  <div class="playbutton3">
+    <i  class="fa-solid fa-play"></i> 
+
+     </div>   
+  <div class="dropdown" style="position: absolute;" >
+    <button  style="background-color: transparent; border: none; color: white; font-size: larger;" class="fa-solid fa-ellipsis-vertical" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+    </button>
+    <ul class="dropdown-menu dropdown-menu-dark" style="position: absolute;" aria-labelledby="dropdownMenuButton2">
+    <li><a class="dropdown-item" href="#">
+        <span> <i class="fa-solid fa-play"></i></span><span>Play Now</span></a></li>
+    <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-plus"></i></span><span> Add To Queue</span> </a></li>
+    <li><a class="dropdown-item" href="#"><span><i class="fa-solid fa-list"></i></span><span>add to Favourites</span></a></li>
+    <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-circle-info"></i></span><span> get info</span></a></li>
+    </ul>
+</div>    
+</div>
+</div>
+<h6>maiyya mainu</h6>
+<p> sachet paramp.. </p>
+</div>
+<div style="margin-bottom: 0px;" id="song1">
+ <div> 
+<img id="songimage3" src="./home-images/latest hindi/aashiquiaagayi.jpg" alt="">
+<div id="hovers1">
+  <div class="playbutton3">
+    <i  class="fa-solid fa-play"></i> 
+
+     </div> 
+  <div class="dropdown" style="position: absolute;" >
+    <button  style="background-color: transparent; border: none; color: white; font-size: larger;" class="fa-solid fa-ellipsis-vertical" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+    </button>
+    <ul class="dropdown-menu dropdown-menu-dark" style="position: absolute;" aria-labelledby="dropdownMenuButton2">
+    <li><a class="dropdown-item" href="#">
+        <span> <i class="fa-solid fa-play"></i></span><span>Play Now</span></a></li>
+    <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-plus"></i></span><span> Add To Queue</span> </a></li>
+    <li><a class="dropdown-item" href="#"><span><i class="fa-solid fa-list"></i></span><span>add to Favourites</span></a></li>
+    <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-circle-info"></i></span><span> get info</span></a></li>
+    </ul>
+</div>      
+</div>
+</div>
+<h6>aashiqui aa g..</h6>
+<p>arjit singh</p>
+</div>
+<div id="song1">
+  <div>
+  <img id="songimage3" src="./home-images/latest hindi/tulautaa.jpg" alt="">
+  <div id="hovers1">
+    <div class="playbutton3">
+      <i  class="fa-solid fa-play"></i> 
+
+       </div>   
+    <div class="dropdown" style="position: absolute;" >
+      <button  style="background-color: transparent; border: none; color: white; font-size: larger;" class="fa-solid fa-ellipsis-vertical" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+      </button>
+      <ul class="dropdown-menu dropdown-menu-dark" style="position: absolute;" aria-labelledby="dropdownMenuButton2">
+      <li><a class="dropdown-item" href="#">
+          <span> <i class="fa-solid fa-play"></i></span><span>Play Now</span></a></li>
+      <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-plus"></i></span><span> Add To Queue</span> </a></li>
+      <li><a class="dropdown-item" href="#"><span><i class="fa-solid fa-list"></i></span><span>add to Favourites</span></a></li>
+      <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-circle-info"></i></span><span> get info</span></a></li>
+      </ul>
+  </div>     
+  </div>
+  </div>
+<h6>tu laut aa</h6>
+<p>yaseer desai </p>
+</div>
+
+<div id="song1">
+  <div>
+  <img id="songimage3" src="./home-images/latest hindi/tulautaa.jpg" alt="">
+  <div id="hovers1">
+    <div class="playbutton3">
+      <i  class="fa-solid fa-play"></i> 
+
+       </div>    
+    <div class="dropdown" style="position: absolute;" >
+      <button  style="background-color: transparent; border: none; color: white; font-size: larger;" class="fa-solid fa-ellipsis-vertical" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+      </button>
+      <ul class="dropdown-menu dropdown-menu-dark" style="position: absolute;" aria-labelledby="dropdownMenuButton2">
+      <li><a class="dropdown-item" href="#">
+          <span> <i class="fa-solid fa-play"></i></span><span>Play Now</span></a></li>
+      <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-plus"></i></span><span> Add To Queue</span> </a></li>
+      <li><a class="dropdown-item" href="#"><span><i class="fa-solid fa-list"></i></span><span>add to Favourites</span></a></li>
+      <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-circle-info"></i></span><span> get info</span></a></li>
+      </ul>
+  </div>    
+  </div>
+  </div>
+  <h6>tu laut aa</h6>
+  <p>yaseer desai </p>
+  </div>
+
+  <div id="song1">
+    <div>
+    <img id="songimage3" src="./home-images/latest hindi/tulautaa.jpg" alt="">
+    <div id="hovers1">
+      <div class="playbutton3">
+        <i  class="fa-solid fa-play"></i> 
+
+         </div>  
+      <div class="dropdown" style="position: absolute;" >
+        <button  style="background-color: transparent; border: none; color: white; font-size: larger;" class="fa-solid fa-ellipsis-vertical" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+        </button>
+        <ul class="dropdown-menu dropdown-menu-dark" style="position: absolute;" aria-labelledby="dropdownMenuButton2">
+        <li><a class="dropdown-item" href="#">
+            <span> <i class="fa-solid fa-play"></i></span><span>Play Now</span></a></li>
+        <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-plus"></i></span><span> Add To Queue</span> </a></li>
+        <li><a class="dropdown-item" href="#"><span><i class="fa-solid fa-list"></i></span><span>add to Favourites</span></a></li>
+        <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-circle-info"></i></span><span> get info</span></a></li>
+        </ul>
+    </div>      
+    </div>
+    </div>
+    <h6>tu laut aa</h6>
+    <p>yaseer desai </p>
+    </div>
+
+    <div id="song1">
+      <div>
+      <img id="songimage3" src="./home-images/latest hindi/tulautaa.jpg" alt="">
+      <div id="hovers1">
+        <div class="playbutton3">
+          <i  class="fa-solid fa-play"></i> 
+  
+           </div> 
+        <div class="dropdown" style="position: absolute;" >
+          <button  style="background-color: transparent; border: none; color: white; font-size: larger;" class="fa-solid fa-ellipsis-vertical" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+          </button>
+          <ul class="dropdown-menu dropdown-menu-dark" style="position: absolute;" aria-labelledby="dropdownMenuButton2">
+          <li><a class="dropdown-item" href="#">
+              <span> <i class="fa-solid fa-play"></i></span><span>Play Now</span></a></li>
+          <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-plus"></i></span><span> Add To Queue</span> </a></li>
+          <li><a class="dropdown-item" href="#"><span><i class="fa-solid fa-list"></i></span><span>add to Favourites</span></a></li>
+          <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-circle-info"></i></span><span> get info</span></a></li>
+          </ul>
+      </div>       
+      </div>
+      </div>
+      <h6>tu laut aa</h6>
+      <p>yaseer desai </p>
+      </div>
+
+      <div id="song1">
+        <div>
+        <img id="songimage3" src="./home-images/latest hindi/tulautaa.jpg" alt="">
+        <div id="hovers1">
+          <div class="playbutton3">
+            <i  class="fa-solid fa-play"></i> 
+    
+             </div>  
+          <div class="dropdown" style="position: absolute;" >
+            <button  style="background-color: transparent; border: none; color: white; font-size: larger;" class="fa-solid fa-ellipsis-vertical" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+            </button>
+            <ul class="dropdown-menu dropdown-menu-dark" style="position: absolute;" aria-labelledby="dropdownMenuButton2">
+            <li><a class="dropdown-item" href="#">
+                <span> <i class="fa-solid fa-play"></i></span><span>Play Now</span></a></li>
+            <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-plus"></i></span><span> Add To Queue</span> </a></li>
+            <li><a class="dropdown-item" href="#"><span><i class="fa-solid fa-list"></i></span><span>add to Favourites</span></a></li>
+            <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-circle-info"></i></span><span> get info</span></a></li>
+            </ul>
+        </div>      
+        </div>
+        </div>
+        <h6>tu laut aa</h6>
+        <p>yaseer desai </p>
+        </div>
+
+        <div id="song1">
+          <div>
+          <img id="songimage3" src="./home-images/latest hindi/tulautaa.jpg" alt="">
+          <div id="hovers1">
+            <div class="playbutton3">
+              <i  class="fa-solid fa-play"></i> 
+      
+               </div>
+            <div class="dropdown" style="position: absolute;" >
+              <button  style="background-color: transparent; border: none; color: white; font-size: larger;" class="fa-solid fa-ellipsis-vertical" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+              </button>
+              <ul class="dropdown-menu dropdown-menu-dark" style="position: absolute;" aria-labelledby="dropdownMenuButton2">
+              <li><a class="dropdown-item" href="#">
+                  <span> <i class="fa-solid fa-play"></i></span><span>Play Now</span></a></li>
+              <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-plus"></i></span><span> Add To Queue</span> </a></li>
+              <li><a class="dropdown-item" href="#"><span><i class="fa-solid fa-list"></i></span><span>add to Favourites</span></a></li>
+              <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-circle-info"></i></span><span> get info</span></a></li>
+              </ul>
+          </div>       
+          </div>
+          </div>
+          <h6>tu laut aa</h6>
+          <p>yaseer desai </p>
+          </div>
+
+          <div id="song1">
+            <div>
+            <img id="songimage3" src="./home-images/latest hindi/tulautaa.jpg" alt="">
+            <div id="hovers1">
+              <div class="playbutton3">
+                <i  class="fa-solid fa-play"></i> 
+        
+                 </div> 
+              <div class="dropdown" style="position: absolute;" >
+                <button  style="background-color: transparent; border: none; color: white; font-size: larger;" class="fa-solid fa-ellipsis-vertical" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                </button>
+                <ul class="dropdown-menu dropdown-menu-dark" style="position: absolute;" aria-labelledby="dropdownMenuButton2">
+                <li><a class="dropdown-item" href="#">
+                    <span> <i class="fa-solid fa-play"></i></span><span>Play Now</span></a></li>
+                <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-plus"></i></span><span> Add To Queue</span> </a></li>
+                <li><a class="dropdown-item" href="#"><span><i class="fa-solid fa-list"></i></span><span>add to Favourites</span></a></li>
+                <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-circle-info"></i></span><span> get info</span></a></li>
+                </ul>
+            </div>       
+            </div>
+            </div>
+            <h6>tu laut aa</h6>
+            <p>yaseer desai </p>
+            </div>
+
+            <div id="song1">
+              <div>
+              <img id="songimage3" src="./home-images/latest hindi/tulautaa.jpg" alt="">
+              <div id="hovers1">
+                <div class="playbutton3">
+                  <i  class="fa-solid fa-play"></i> 
+          
+                   </div>
+                <div class="dropdown" style="position: absolute;" >
+                  <button  style="background-color: transparent; border: none; color: white; font-size: larger;" class="fa-solid fa-ellipsis-vertical" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                  </button>
+                  <ul class="dropdown-menu dropdown-menu-dark" style="position: absolute;" aria-labelledby="dropdownMenuButton2">
+                  <li><a class="dropdown-item" href="#">
+                      <span> <i class="fa-solid fa-play"></i></span><span>Play Now</span></a></li>
+                  <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-plus"></i></span><span> Add To Queue</span> </a></li>
+                  <li><a class="dropdown-item" href="#"><span><i class="fa-solid fa-list"></i></span><span>add to Favourites</span></a></li>
+                  <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-circle-info"></i></span><span> get info</span></a></li>
+                  </ul>
+              </div>       
+              </div>
+              </div>
+              <h6>tu laut aa</h6>
+              <p>yaseer desai </p>
+              </div>
+              
+              <div id="song1">
+                <div>
+                <img id="songimage3" src="./home-images/latest hindi/tulautaa.jpg" alt="">
+                <div id="hovers1">
+                  <div class="playbutton3">
+                    <i  class="fa-solid fa-play"></i> 
+            
+                     </div>   
+                  <div class="dropdown" style="position: absolute;" >
+                    <button  style="background-color: transparent; border: none; color: white; font-size: larger;" class="fa-solid fa-ellipsis-vertical" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-dark" style="position: absolute;" aria-labelledby="dropdownMenuButton2">
+                    <li><a class="dropdown-item" href="#">
+                        <span> <i class="fa-solid fa-play"></i></span><span>Play Now</span></a></li>
+                    <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-plus"></i></span><span> Add To Queue</span> </a></li>
+                    <li><a class="dropdown-item" href="#"><span><i class="fa-solid fa-list"></i></span><span>add to Favourites</span></a></li>
+                    <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-circle-info"></i></span><span> get info</span></a></li>
+                    </ul>
+                </div>     
+                </div>
+                </div>
+                <h6>tu laut aa</h6>
+                <p>yaseer desai </p>
+                </div>     
+  
+
+</div>
+
+
+<!-- LATIN TOP hits -->
+<h3>latin top hits <p>see all</p>  </h3>
+
+<div id="latestenglish1">
+  <div id="song1">
+    <div>
+       <img id="songimage3" src="./home-images/latest hindi/chaandbaliya.jpg" alt="">
+       <div id="hovers1">
+         <div class="playbutton3">
+        <i  class="fa-solid fa-play"></i> 
+
+         </div>
+        <div class="dropdown" style="position: absolute;" >
+          <button  style="background-color: transparent; border: none; color: white; font-size: larger;" class="fa-solid fa-ellipsis-vertical" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+          </button>
+          <ul class="dropdown-menu dropdown-menu-dark" style="position: absolute;" aria-labelledby="dropdownMenuButton2">
+          <li><a class="dropdown-item" href="#">
+              <span> <i class="fa-solid fa-play"></i></span><span>Play Now</span></a></li>
+          <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-plus"></i></span><span> Add To Queue</span> </a></li>
+          <li><a class="dropdown-item" href="#"><span><i class="fa-solid fa-list"></i></span><span>add to Favourites</span></a></li>
+          <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-circle-info"></i></span><span> get info</span></a></li>
+          </ul>
+      </div>       
+      </div>
+      </div>
+      <h6>chaand baliya</h6>
+      <p>aditya a</p>
+  </div>
+
+<div id="song1">
+  <div> 
+    <img id="songimage3" src="./home-images/latest hindi//jaa rahe ho.jpg" alt="">
+    <div id="hovers1">
+      <div class="playbutton3">
+        <i  class="fa-solid fa-play"></i> 
+
+         </div>
+      <div class="dropdown" style="position: absolute;" >
+        <button  style="background-color: transparent; border: none; color: white; font-size: larger;" class="fa-solid fa-ellipsis-vertical" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+        </button>
+        <ul class="dropdown-menu dropdown-menu-dark" style="position: absolute;" aria-labelledby="dropdownMenuButton2">
+        <li><a class="dropdown-item" href="#">
+            <span> <i class="fa-solid fa-play"></i></span><span>Play Now</span></a></li>
+        <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-plus"></i></span><span> Add To Queue</span> </a></li>
+        <li><a class="dropdown-item" href="#"><span><i class="fa-solid fa-list"></i></span><span>add to Favourites</span></a></li>
+        <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-circle-info"></i></span><span> get info</span></a></li>
+        </ul>
+    </div>      
+    </div>
+  </div>
+ <h6>jaa rhe ho</h6>
+ <p>yasser desai</p>
+</div>
+<div id="song1">
+  <div>
+    <img id="songimage3" src="./home-images/latest hindi/mereyara.jpg" alt="">
+    <div id="hovers1">
+      <div class="playbutton3">
+        <i  class="fa-solid fa-play"></i> 
+
+         </div>
+      <div class="dropdown" style="position: absolute;" >
+        <button  style="background-color: transparent; border: none; color: white; font-size: larger;" class="fa-solid fa-ellipsis-vertical" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+        </button>
+        <ul class="dropdown-menu dropdown-menu-dark" style="position: absolute;" aria-labelledby="dropdownMenuButton2">
+        <li><a class="dropdown-item" href="#">
+            <span> <i class="fa-solid fa-play"></i></span><span>Play Now</span></a></li>
+        <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-plus"></i></span><span> Add To Queue</span> </a></li>
+        <li><a class="dropdown-item" href="#"><span><i class="fa-solid fa-list"></i></span><span>add to Favourites</span></a></li>
+        <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-circle-info"></i></span><span> get info</span></a></li>
+        </ul>
+    </div>     
+    </div>
+    </div>
+  <h6>mere yaara</h6>
+<p>arjit singh</p>
+</div>
+<div id="song1">
+  <div>
+<img id="songimage3" src="./home-images/latest hindi/maiyamainu.webp" alt="">
+ <div id="hovers1">
+  <div class="playbutton3">
+    <i  class="fa-solid fa-play"></i> 
+
+     </div>
+  <div class="dropdown" style="position: absolute;" >
+    <button  style="background-color: transparent; border: none; color: white; font-size: larger;" class="fa-solid fa-ellipsis-vertical" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+    </button>
+    <ul class="dropdown-menu dropdown-menu-dark" style="position: absolute;" aria-labelledby="dropdownMenuButton2">
+    <li><a class="dropdown-item" href="#">
+        <span> <i class="fa-solid fa-play"></i></span><span>Play Now</span></a></li>
+    <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-plus"></i></span><span> Add To Queue</span> </a></li>
+    <li><a class="dropdown-item" href="#"><span><i class="fa-solid fa-list"></i></span><span>add to Favourites</span></a></li>
+    <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-circle-info"></i></span><span> get info</span></a></li>
+    </ul>
+</div>       
+</div>
+</div>
+<h6>maiyya mainu</h6>
+<p> sachet paramp.. </p>
+</div>
+<div style="margin-bottom: 0px;" id="song1">
+ <div> 
+<img id="songimage3" src="./home-images/latest hindi/aashiquiaagayi.jpg" alt="">
+<div id="hovers1">
+  <div class="playbutton3">
+    <i  class="fa-solid fa-play"></i> 
+
+     </div> 
+  <div class="dropdown" style="position: absolute;" >
+    <button  style="background-color: transparent; border: none; color: white; font-size: larger;" class="fa-solid fa-ellipsis-vertical" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+    </button>
+    <ul class="dropdown-menu dropdown-menu-dark" style="position: absolute;" aria-labelledby="dropdownMenuButton2">
+    <li><a class="dropdown-item" href="#">
+        <span> <i class="fa-solid fa-play"></i></span><span>Play Now</span></a></li>
+    <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-plus"></i></span><span> Add To Queue</span> </a></li>
+    <li><a class="dropdown-item" href="#"><span><i class="fa-solid fa-list"></i></span><span>add to Favourites</span></a></li>
+    <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-circle-info"></i></span><span> get info</span></a></li>
+    </ul>
+</div>       
+</div>
+</div>
+<h6>aashiqui aa g..</h6>
+<p>arjit singh</p>
+</div>
+<div id="song1">
+  <div>
+  <img id="songimage3" src="./home-images/latest hindi/tulautaa.jpg" alt="">
+  <div id="hovers1">
+    <div class="playbutton3">
+      <i  class="fa-solid fa-play"></i> 
+
+       </div>
+    <div class="dropdown" style="position: absolute;" >
+      <button  style="background-color: transparent; border: none; color: white; font-size: larger;" class="fa-solid fa-ellipsis-vertical" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+      </button>
+      <ul class="dropdown-menu dropdown-menu-dark" style="position: absolute;" aria-labelledby="dropdownMenuButton2">
+      <li><a class="dropdown-item" href="#">
+          <span> <i class="fa-solid fa-play"></i></span><span>Play Now</span></a></li>
+      <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-plus"></i></span><span> Add To Queue</span> </a></li>
+      <li><a class="dropdown-item" href="#"><span><i class="fa-solid fa-list"></i></span><span>add to Favourites</span></a></li>
+      <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-circle-info"></i></span><span> get info</span></a></li>
+      </ul>
+  </div>       
+  </div>
+  </div>
+<h6>tu laut aa</h6>
+<p>yaseer desai </p>
+</div>
+
+<div id="song1">
+  <div>
+  <img id="songimage3" src="./home-images/latest hindi/tulautaa.jpg" alt="">
+  <div id="hovers1">
+    <div class="playbutton3">
+      <i  class="fa-solid fa-play"></i> 
+
+       </div>
+    <div class="dropdown" style="position: absolute;" >
+      <button  style="background-color: transparent; border: none; color: white; font-size: larger;" class="fa-solid fa-ellipsis-vertical" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+      </button>
+      <ul class="dropdown-menu dropdown-menu-dark" style="position: absolute;" aria-labelledby="dropdownMenuButton2">
+      <li><a class="dropdown-item" href="#">
+          <span> <i class="fa-solid fa-play"></i></span><span>Play Now</span></a></li>
+      <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-plus"></i></span><span> Add To Queue</span> </a></li>
+      <li><a class="dropdown-item" href="#"><span><i class="fa-solid fa-list"></i></span><span>add to Favourites</span></a></li>
+      <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-circle-info"></i></span><span> get info</span></a></li>
+      </ul>
+  </div>        
+  </div>
+  </div>
+  <h6>tu laut aa</h6>
+  <p>yaseer desai </p>
+  </div>
+
+  <div id="song1">
+    <div>
+    <img id="songimage3" src="./home-images/latest hindi/tulautaa.jpg" alt="">
+    <div id="hovers1">
+      <div class="playbutton3">
+        <i  class="fa-solid fa-play"></i> 
+
+         </div>
+      <div class="dropdown" style="position: absolute;" >
+        <button  style="background-color: transparent; border: none; color: white; font-size: larger;" class="fa-solid fa-ellipsis-vertical" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+        </button>
+        <ul class="dropdown-menu dropdown-menu-dark" style="position: absolute;" aria-labelledby="dropdownMenuButton2">
+        <li><a class="dropdown-item" href="#">
+            <span> <i class="fa-solid fa-play"></i></span><span>Play Now</span></a></li>
+        <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-plus"></i></span><span> Add To Queue</span> </a></li>
+        <li><a class="dropdown-item" href="#"><span><i class="fa-solid fa-list"></i></span><span>add to Favourites</span></a></li>
+        <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-circle-info"></i></span><span> get info</span></a></li>
+        </ul>
+    </div>        
+    </div>
+    </div>
+    <h6>tu laut aa</h6>
+    <p>yaseer desai </p>
+    </div>
+
+    <div id="song1">
+      <div>
+      <img id="songimage3" src="./home-images/latest hindi/tulautaa.jpg" alt="">
+      <div id="hovers1">
+        <div class="playbutton3">
+          <i  class="fa-solid fa-play"></i> 
+  
+           </div>
+        <div class="dropdown" style="position: absolute;" >
+          <button  style="background-color: transparent; border: none; color: white; font-size: larger;" class="fa-solid fa-ellipsis-vertical" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+          </button>
+          <ul class="dropdown-menu dropdown-menu-dark" style="position: absolute;" aria-labelledby="dropdownMenuButton2">
+          <li><a class="dropdown-item" href="#">
+              <span> <i class="fa-solid fa-play"></i></span><span>Play Now</span></a></li>
+          <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-plus"></i></span><span> Add To Queue</span> </a></li>
+          <li><a class="dropdown-item" href="#"><span><i class="fa-solid fa-list"></i></span><span>add to Favourites</span></a></li>
+          <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-circle-info"></i></span><span> get info</span></a></li>
+          </ul>
+      </div>        
+      </div>
+      </div>
+      <h6>tu laut aa</h6>
+      <p>yaseer desai </p>
+      </div>
+
+      <div id="song1">
+        <div>
+        <img id="songimage3" src="./home-images/latest hindi/tulautaa.jpg" alt="">
+        <div id="hovers1">
+          <div class="playbutton3">
+            <i  class="fa-solid fa-play"></i> 
+    
+             </div>
+          <div class="dropdown" style="position: absolute;" >
+            <button  style="background-color: transparent; border: none; color: white; font-size: larger;" class="fa-solid fa-ellipsis-vertical" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+            </button>
+            <ul class="dropdown-menu dropdown-menu-dark" style="position: absolute;" aria-labelledby="dropdownMenuButton2">
+            <li><a class="dropdown-item" href="#">
+                <span> <i class="fa-solid fa-play"></i></span><span>Play Now</span></a></li>
+            <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-plus"></i></span><span> Add To Queue</span> </a></li>
+            <li><a class="dropdown-item" href="#"><span><i class="fa-solid fa-list"></i></span><span>add to Favourites</span></a></li>
+            <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-circle-info"></i></span><span> get info</span></a></li>
+            </ul>
+        </div>        
+        </div>
+        </div>
+        <h6>tu laut aa</h6>
+        <p>yaseer desai </p>
+        </div>
+
+        <div id="song1">
+          <div>
+          <img id="songimage3" src="./home-images/latest hindi/tulautaa.jpg" alt="">
+          <div id="hovers1">
+            <div class="playbutton3">
+              <i  class="fa-solid fa-play"></i> 
+      
+               </div>           
+            <div class="dropdown" style="position: absolute;" >
+              <button  style="background-color: transparent; border: none; color: white; font-size: larger;" class="fa-solid fa-ellipsis-vertical" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+              </button>
+              <ul class="dropdown-menu dropdown-menu-dark" style="position: absolute;" aria-labelledby="dropdownMenuButton2">
+              <li><a class="dropdown-item" href="#">
+                  <span> <i class="fa-solid fa-play"></i></span><span>Play Now</span></a></li>
+              <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-plus"></i></span><span> Add To Queue</span> </a></li>
+              <li><a class="dropdown-item" href="#"><span><i class="fa-solid fa-list"></i></span><span>add to Favourites</span></a></li>
+              <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-circle-info"></i></span><span> get info</span></a></li>
+              </ul>
+          </div>  
+          </div>
+          </div>
+          <h6>tu laut aa</h6>
+          <p>yaseer desai </p>
+          </div>
+
+          <div id="song1">
+            <div>
+            <img id="songimage3" src="./home-images/latest hindi/tulautaa.jpg" alt="">
+            <div id="hovers1">
+              <div class="playbutton3">
+                <i  class="fa-solid fa-play"></i> 
+        
+                 </div> 
+              <div class="dropdown" style="position: absolute;" >
+                <button  style="background-color: transparent; border: none; color: white; font-size: larger;" class="fa-solid fa-ellipsis-vertical" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                </button>
+                <ul class="dropdown-menu dropdown-menu-dark" style="position: absolute;" aria-labelledby="dropdownMenuButton2">
+                <li><a class="dropdown-item" href="#">
+                    <span> <i class="fa-solid fa-play"></i></span><span>Play Now</span></a></li>
+                <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-plus"></i></span><span> Add To Queue</span> </a></li>
+                <li><a class="dropdown-item" href="#"><span><i class="fa-solid fa-list"></i></span><span>add to Favourites</span></a></li>
+                <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-circle-info"></i></span><span> get info</span></a></li>
+                </ul>
+            </div>       
+            </div>
+            </div>
+            <h6>tu laut aa</h6>
+            <p>yaseer desai </p>
+            </div>
+
+            <div id="song1">
+              <div>
+              <img id="songimage3" src="./home-images/latest hindi/tulautaa.jpg" alt="">
+              <div id="hovers1">
+                <div class="playbutton3">
+                  <i  class="fa-solid fa-play"></i> 
+          
+                   </div>   
+                <div class="dropdown" style="position: absolute;" >
+                  <button  style="background-color: transparent; border: none; color: white; font-size: larger;" class="fa-solid fa-ellipsis-vertical" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                  </button>
+                  <ul class="dropdown-menu dropdown-menu-dark" style="position: absolute;" aria-labelledby="dropdownMenuButton2">
+                  <li><a class="dropdown-item" href="#">
+                      <span> <i class="fa-solid fa-play"></i></span><span>Play Now</span></a></li>
+                  <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-plus"></i></span><span> Add To Queue</span> </a></li>
+                  <li><a class="dropdown-item" href="#"><span><i class="fa-solid fa-list"></i></span><span>add to Favourites</span></a></li>
+                  <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-circle-info"></i></span><span> get info</span></a></li>
+                  </ul>
+              </div>     
+              </div>
+              </div>
+              <h6>tu laut aa</h6>
+              <p>yaseer desai </p>
+              </div>
+              
+              <div id="song1">
+                <div>
+                <img id="songimage3" src="./home-images/latest hindi/tulautaa.jpg" alt="">
+                <div id="hovers1">
+                  <div class="playbutton3">
+                    <i  class="fa-solid fa-play"></i> 
+            
+                     </div> 
+                  <div class="dropdown" style="position: absolute;" >
+                    <button  style="background-color: transparent; border: none; color: white; font-size: larger;" class="fa-solid fa-ellipsis-vertical" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-dark" style="position: absolute;" aria-labelledby="dropdownMenuButton2">
+                    <li><a class="dropdown-item" href="#">
+                        <span> <i class="fa-solid fa-play"></i></span><span>Play Now</span></a></li>
+                    <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-plus"></i></span><span> Add To Queue</span> </a></li>
+                    <li><a class="dropdown-item" href="#"><span><i class="fa-solid fa-list"></i></span><span>add to Favourites</span></a></li>
+                    <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-circle-info"></i></span><span> get info</span></a></li>
+                    </ul>
+                </div>       
+                </div>
+                </div>
+                <h6>tu laut aa</h6>
+                <p>yaseer desai </p>
+                </div>     
+  
+
+</div>
+
+
+
+
+<!-- TOP HINDI PLAYLIST -->
+<h3>top hindi playlists <p>see all</p></h3>
+<div class="latestenglish">
+  <div id="song">
+    <div>
+     <img class="songimage2" src="./home-images//latest english/asitwas.png" alt="">
+
+     <!-- HOVER -->
+     <div class="hovers">
+       <div onclick="onPlay()";" class="playbutton2">
+       <i class="fa-solid fa-play"></i>    
+       </div>
+       <div class="dropdown" style="position: absolute;" >
+         <button  style="background-color: transparent; border: none; color: white; font-size: larger;" class="fa-solid fa-ellipsis-vertical" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+         </button>
+         <ul class="dropdown-menu dropdown-menu-dark" style="position: absolute;" aria-labelledby="dropdownMenuButton2">
+         <li><a class="dropdown-item" href="#">
+             <span> <i class="fa-solid fa-play"></i></span><span>Play Now</span></a></li>
+         <li class="addtoqueue"><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-plus"></i></span><span> Add To Queue</span> </a></li>
+         <li><a class="dropdown-item" href="#"><span><i class="fa-solid fa-list"></i></span><span>add to Favourites</span></a></li>
+         <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-circle-info"></i></span><span> get info</span></a></li>
+         </ul>
+     </div>  
+ 
+     </div>
+    </div>
+      <h6>as it was</h6>
+      <p> harry style</p>
+  </div>
+
+<div id="song">
+<div>  
+ <img class="songimage2" src="./home-images/latest english/when you are gone.png" alt="">
+ <div class="hovers">
+   <div class="playbutton2">
+     <i class="fa-solid fa-play"></i>    
+
+     </div> 
+   <div class="dropdown" style="position: absolute;" >
+     <button  style="background-color: transparent; border: none; color: white; font-size: larger;" class="fa-solid fa-ellipsis-vertical" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+     </button>
+     <ul class="dropdown-menu dropdown-menu-dark" style="position: absolute;" aria-labelledby="dropdownMenuButton2">
+     <li><a class="dropdown-item" href="#">
+         <span> <i class="fa-solid fa-play"></i></span><span>Play Now</span></a></li>
+     <li class="addtoqueue"><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-plus"></i></span><span> Add To Queue</span> </a></li>
+     <li><a class="dropdown-item" href="#"><span><i class="fa-solid fa-list"></i></span><span>add to Favourites</span></a></li>
+     <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-circle-info"></i></span><span> get info</span></a></li>
+     </ul>
+ </div>       
+ </div>
+ </div>
+ <h6>when you are..</h6>
+ <p> shawn mendes</p>
+</div>
+<div id="song">
+<div>
+<img class="songimage2" src="./home-images//latest english/bananza.jpg" alt="">
+<div class="hovers">
+ <div class="playbutton2">
+   <i class="fa-solid fa-play"></i>    
+
+   </div>    
+ <div class="dropdown" style="position: absolute;" >
+   <button  style="background-color: transparent; border: none; color: white; font-size: larger;" class="fa-solid fa-ellipsis-vertical" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+   </button>
+   <ul class="dropdown-menu dropdown-menu-dark" style="position: absolute;" aria-labelledby="dropdownMenuButton2">
+   <li><a class="dropdown-item" href="#">
+       <span> <i class="fa-solid fa-play"></i></span><span>Play Now</span></a></li>
+   <li class="addtoqueue"><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-plus"></i></span><span> Add To Queue</span> </a></li>
+   <li><a class="dropdown-item" href="#"><span><i class="fa-solid fa-list"></i></span><span>add to Favourites</span></a></li>
+   <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-circle-info"></i></span><span> get info</span></a></li>
+   </ul>
+</div>    
+
+</div>
+</div>
+<h6>bananza</h6>
+<p> akon</p>
+</div> 
+<div id="song">
+<div>
+<img class="songimage2" src="./home-images//latest english/stay.jpg" alt="">
+<div class="hovers">
+<div class="playbutton2">
+ <i class="fa-solid fa-play"></i>    
+
+ </div>
+<div class="dropdown" style="position: absolute;" >
+ <button  style="background-color: transparent; border: none; color: white; font-size: larger;" class="fa-solid fa-ellipsis-vertical" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+ </button>
+ <ul class="dropdown-menu dropdown-menu-dark" style="position: absolute;" aria-labelledby="dropdownMenuButton2">
+ <li><a class="dropdown-item" href="#">
+     <span> <i class="fa-solid fa-play"></i></span><span>Play Now</span></a></li>
+ <li class="addtoqueue"><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-plus"></i></span><span> Add To Queue</span> </a></li>
+ <li><a class="dropdown-item" href="#"><span><i class="fa-solid fa-list"></i></span><span>add to Favourites</span></a></li>
+ <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-circle-info"></i></span><span> get info</span></a></li>
+ </ul>
+</div>       
+
+</div>
+</div>
+<h6>stay</h6>
+<p> justin bieber </p>
+</div>
+<div id="song">
+<div> 
+<img class="songimage2" src="./home-images//latest english/unstoppable.jpg" alt="">
+<div class="hovers">
+<div class="playbutton2">
+ <i class="fa-solid fa-play"></i>    
+
+ </div> 
+<div class="dropdown" style="position: absolute;" >
+ <button  style="background-color: transparent; border: none; color: white; font-size: larger;" class="fa-solid fa-ellipsis-vertical" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+ </button>
+ <ul class="dropdown-menu dropdown-menu-dark" style="position: absolute;" aria-labelledby="dropdownMenuButton2">
+ <li><a class="dropdown-item" href="#">
+     <span> <i class="fa-solid fa-play"></i></span><span>Play Now</span></a></li>
+ <li class="addtoqueue"><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-plus"></i></span><span> Add To Queue</span> </a></li>
+ <li><a class="dropdown-item" href="#"><span><i class="fa-solid fa-list"></i></span><span>add to Favourites</span></a></li>
+ <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-circle-info"></i></span><span> get info</span></a></li>
+ </ul>
+</div>       
+
+</div>
+</div>
+
+<h6>unstoppable</h6>
+<p> sia</p>
+</div> 
+<div id="song">
+<div>
+<img class="songimage2" src="./home-images//latest english/no lie.jpg" alt="">
+<div class="hovers">
+<div class="playbutton2">
+ <i class="fa-solid fa-play"></i>    
+
+ </div>   
+<div class="dropdown" style="position: absolute;" >
+ <button  style="background-color: transparent; border: none; color: white; font-size: larger;" class="fa-solid fa-ellipsis-vertical" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+ </button>
+ <ul class="dropdown-menu dropdown-menu-dark" style="position: absolute;" aria-labelledby="dropdownMenuButton2">
+ <li><a class="dropdown-item" href="#">
+     <span> <i class="fa-solid fa-play"></i></span><span>Play Now</span></a></li>
+ <li class="addtoqueue"><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-plus"></i></span><span> Add To Queue</span> </a></li>
+ <li><a class="dropdown-item" href="#"><span><i class="fa-solid fa-list"></i></span><span>add to Favourites</span></a></li>
+ <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-circle-info"></i></span><span> get info</span></a></li>
+ </ul>
+</div>     
+
+</div>
+</div>
+<h6>no lie</h6>
+<p>sean paul </p>
+</div>
+<div id="song">
+<div>
+<img class="songimage2" src="./home-images//latest english/no lie.jpg" alt="">
+<div class="hovers">
+ <div class="playbutton2">
+   <i class="fa-solid fa-play"></i>    
+
+   </div> 
+ <div class="dropdown" style="position: absolute;" >
+   <button  style="background-color: transparent; border: none; color: white; font-size: larger;" class="fa-solid fa-ellipsis-vertical" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+   </button>
+   <ul class="dropdown-menu dropdown-menu-dark" style="position: absolute;" aria-labelledby="dropdownMenuButton2">
+   <li><a class="dropdown-item" href="#">
+       <span> <i class="fa-solid fa-play"></i></span><span>Play Now</span></a></li>
+   <li class="addtoqueue"><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-plus"></i></span><span> Add To Queue</span> </a></li>
+   <li><a class="dropdown-item" href="#"><span><i class="fa-solid fa-list"></i></span><span>add to Favourites</span></a></li>
+   <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-circle-info"></i></span><span> get info</span></a></li>
+   </ul>
+</div>       
+
+ </div>
+</div>
+<h6>no lie</h6>
+<p>sean paul </p>
+</div>
+<div id="song">
+<div> 
+ <img class="songimage2" src="./home-images//latest english/no lie.jpg" alt="">
+ <div class="hovers">
+   <div class="playbutton2">
+     <i class="fa-solid fa-play"></i>    
+
+     </div>    
+   <div class="dropdown" style="position: absolute;" >
+     <button  style="background-color: transparent; border: none; color: white; font-size: larger;" class="fa-solid fa-ellipsis-vertical" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+     </button>
+     <ul class="dropdown-menu dropdown-menu-dark" style="position: absolute;" aria-labelledby="dropdownMenuButton2">
+     <li><a class="dropdown-item" href="#">
+         <span> <i class="fa-solid fa-play"></i></span><span>Play Now</span></a></li>
+     <li class="addtoqueue"><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-plus"></i></span><span> Add To Queue</span> </a></li>
+     <li><a class="dropdown-item" href="#"><span><i class="fa-solid fa-list"></i></span><span>add to Favourites</span></a></li>
+     <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-circle-info"></i></span><span> get info</span></a></li>
+     </ul>
+ </div>    
+
+ </div>
+ </div>
+ <h6>no lie</h6>
+ <p>sean paul </p>
+
+  </div>
+  <div id="song">
+ <div>   
+   <img class="songimage2" src="./home-images//latest english/no lie.jpg" alt="">
+   <div class="hovers">
+     <div class="playbutton2">
+       <i class="fa-solid fa-play"></i>    
+
+       </div>
+     <div class="dropdown" style="position: absolute;" >
+       <button  style="background-color: transparent; border: none; color: white; font-size: larger;" class="fa-solid fa-ellipsis-vertical" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+       </button>
+       <ul class="dropdown-menu dropdown-menu-dark" style="position: absolute;" aria-labelledby="dropdownMenuButton2">
+       <li><a class="dropdown-item" href="#">
+           <span> <i class="fa-solid fa-play"></i></span><span>Play Now</span></a></li>
+       <li class="addtoqueue"><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-plus"></i></span><span> Add To Queue</span> </a></li>
+       <li><a class="dropdown-item" href="#"><span><i class="fa-solid fa-list"></i></span><span>add to Favourites</span></a></li>
+       <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-circle-info"></i></span><span> get info</span></a></li>
+       </ul>
+   </div>      
+   </div>
+   </div>
+   <h6>no lie</h6>
+   <p>sean paul </p>
+    </div>
+    <div id="song">
+     <diV>
+     <img class="songimage2" src="./home-images//latest english/no lie.jpg" alt="">
+     <div class="hovers">
+       <div class="playbutton2">
+         <i class="fa-solid fa-play"></i>    
+
+         </div> 
+       <div class="dropdown" style="position: absolute;" >
+         <button  style="background-color: transparent; border: none; color: white; font-size: larger;" class="fa-solid fa-ellipsis-vertical" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+         </button>
+         <ul class="dropdown-menu dropdown-menu-dark" style="position: absolute;" aria-labelledby="dropdownMenuButton2">
+         <li><a class="dropdown-item" href="#">
+             <span> <i class="fa-solid fa-play"></i></span><span>Play Now</span></a></li>
+         <li class="addtoqueue"><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-plus"></i></span><span> Add To Queue</span> </a></li>
+         <li><a class="dropdown-item" href="#"><span><i class="fa-solid fa-list"></i></span><span>add to Favourites</span></a></li>
+         <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-circle-info"></i></span><span> get info</span></a></li>
+         </ul>
+     </div>       
+ 
+     </div>
+     </diV>
+
+     <h6>no lie</h6>
+     <p>sean paul </p>
+      </div>
+      <div id="song">
+        <div>
+    <img class="songimage2" src="./home-images//latest english/no lie.jpg" alt="">
+    <div class="hovers">
+     <div class="playbutton2">
+       <i class="fa-solid fa-play"></i>    
+
+       </div>
+     <div class="dropdown" style="position: absolute;" >
+       <button  style="background-color: transparent; border: none; color: white; font-size: larger;" class="fa-solid fa-ellipsis-vertical" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+       </button>
+       <ul class="dropdown-menu dropdown-menu-dark" style="position: absolute;" aria-labelledby="dropdownMenuButton2">
+       <li><a class="dropdown-item" href="#">
+           <span> <i class="fa-solid fa-play"></i></span><span>Play Now</span></a></li>
+       <li class="addtoqueue"><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-plus"></i></span><span> Add To Queue</span> </a></li>
+       <li><a class="dropdown-item" href="#"><span><i class="fa-solid fa-list"></i></span><span>add to Favourites</span></a></li>
+       <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-circle-info"></i></span><span> get info</span></a></li>
+       </ul>
+   </div>       
+
+   </div>
+       </div>
+       <h6>no lie</h6>
+       <p>sean paul </p>
+        </div>
+        <div id="song">
+          <div>
+         <img class="songimage2" src="./home-images//latest english/no lie.jpg" alt="">
+         <div class="hovers">
+           <div class="playbutton2">
+             <i class="fa-solid fa-play"></i>    
+ 
+             </div> 
+           <div class="dropdown" style="position: absolute;" >
+             <button  style="background-color: transparent; border: none; color: white; font-size: larger;" class="fa-solid fa-ellipsis-vertical" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+             </button>
+             <ul class="dropdown-menu dropdown-menu-dark" style="position: absolute;" aria-labelledby="dropdownMenuButton2">
+             <li><a class="dropdown-item" href="#">
+                 <span> <i class="fa-solid fa-play"></i></span><span>Play Now</span></a></li>
+             <li class="addtoqueue"><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-plus"></i></span><span> Add To Queue</span> </a></li>
+             <li><a class="dropdown-item" href="#"><span><i class="fa-solid fa-list"></i></span><span>add to Favourites</span></a></li>
+             <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-circle-info"></i></span><span> get info</span></a></li>
+             </ul>
+         </div>       
+     
+         </div>
+         </div>
+     <h6>no lie</h6>
+      <p>sean paul </p>
+      </div>
+
+      <div id="song">
+
+       <div>
+       <img class="songimage2" src="./home-images//latest english/no lie.jpg" alt="">
+       <div class="hovers">
+         <div class="playbutton2">
+           <i class="fa-solid fa-play"></i>    
+
+           </div>  
+         <div class="dropdown" style="position: absolute;" >
+           <button  style="background-color: transparent; border: none; color: white; font-size: larger;" class="fa-solid fa-ellipsis-vertical" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+           </button>
+           <ul class="dropdown-menu dropdown-menu-dark" style="position: absolute;" aria-labelledby="dropdownMenuButton2">
+           <li><a class="dropdown-item" href="#">
+               <span> <i class="fa-solid fa-play"></i></span><span>Play Now</span></a></li>
+           <li class="addtoqueue"><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-plus"></i></span><span> Add To Queue</span> </a></li>
+           <li><a class="dropdown-item" href="#"><span><i class="fa-solid fa-list"></i></span><span>add to Favourites</span></a></li>
+           <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-circle-info"></i></span><span> get info</span></a></li>
+           </ul>
+       </div>      
+   </div>
+       </div>
+       <h6>no lie</h6>
+       <p>sean paul </p>
+        </div>       
+</div>
+
+
+ 
+
+<!-- TOP ENLISH PLAYLIST -->
+<h3 >top english playlists <p>see all</p></h3>
+<div class="latestenglish">
+  <div id="song">
+    <div>
+     <img class="songimage2" src="./home-images//latest english/asitwas.png" alt="">
+
+     <!-- HOVER -->
+     <div class="hovers">
+       <div onclick="onPlay()";" class="playbutton2">
+       <i class="fa-solid fa-play"></i>    
+       </div>
+       <div class="dropdown" style="position: absolute;" >
+         <button  style="background-color: transparent; border: none; color: white; font-size: larger;" class="fa-solid fa-ellipsis-vertical" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+         </button>
+         <ul class="dropdown-menu dropdown-menu-dark" style="position: absolute;" aria-labelledby="dropdownMenuButton2">
+         <li><a class="dropdown-item" href="#">
+             <span> <i class="fa-solid fa-play"></i></span><span>Play Now</span></a></li>
+         <li class="addtoqueue"><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-plus"></i></span><span> Add To Queue</span> </a></li>
+         <li><a class="dropdown-item" href="#"><span><i class="fa-solid fa-list"></i></span><span>add to Favourites</span></a></li>
+         <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-circle-info"></i></span><span> get info</span></a></li>
+         </ul>
+     </div>  
+ 
+     </div>
+    </div>
+      <h6>as it was</h6>
+      <p> harry style</p>
+  </div>
+
+<div id="song">
+<div>  
+ <img class="songimage2" src="./home-images/latest english/when you are gone.png" alt="">
+ <div class="hovers">
+   <div class="playbutton2">
+     <i class="fa-solid fa-play"></i>    
+
+     </div> 
+   <div class="dropdown" style="position: absolute;" >
+     <button  style="background-color: transparent; border: none; color: white; font-size: larger;" class="fa-solid fa-ellipsis-vertical" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+     </button>
+     <ul class="dropdown-menu dropdown-menu-dark" style="position: absolute;" aria-labelledby="dropdownMenuButton2">
+     <li><a class="dropdown-item" href="#">
+         <span> <i class="fa-solid fa-play"></i></span><span>Play Now</span></a></li>
+     <li class="addtoqueue"><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-plus"></i></span><span> Add To Queue</span> </a></li>
+     <li><a class="dropdown-item" href="#"><span><i class="fa-solid fa-list"></i></span><span>add to Favourites</span></a></li>
+     <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-circle-info"></i></span><span> get info</span></a></li>
+     </ul>
+ </div>       
+ </div>
+ </div>
+ <h6>when you are..</h6>
+ <p> shawn mendes</p>
+</div>
+<div id="song">
+<div>
+<img class="songimage2" src="./home-images//latest english/bananza.jpg" alt="">
+<div class="hovers">
+ <div class="playbutton2">
+   <i class="fa-solid fa-play"></i>    
+
+   </div>    
+ <div class="dropdown" style="position: absolute;" >
+   <button  style="background-color: transparent; border: none; color: white; font-size: larger;" class="fa-solid fa-ellipsis-vertical" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+   </button>
+   <ul class="dropdown-menu dropdown-menu-dark" style="position: absolute;" aria-labelledby="dropdownMenuButton2">
+   <li><a class="dropdown-item" href="#">
+       <span> <i class="fa-solid fa-play"></i></span><span>Play Now</span></a></li>
+   <li class="addtoqueue"><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-plus"></i></span><span> Add To Queue</span> </a></li>
+   <li><a class="dropdown-item" href="#"><span><i class="fa-solid fa-list"></i></span><span>add to Favourites</span></a></li>
+   <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-circle-info"></i></span><span> get info</span></a></li>
+   </ul>
+</div>    
+
+</div>
+</div>
+<h6>bananza</h6>
+<p> akon</p>
+</div> 
+<div id="song">
+<div>
+<img class="songimage2" src="./home-images//latest english/stay.jpg" alt="">
+<div class="hovers">
+<div class="playbutton2">
+ <i class="fa-solid fa-play"></i>    
+
+ </div>
+<div class="dropdown" style="position: absolute;" >
+ <button  style="background-color: transparent; border: none; color: white; font-size: larger;" class="fa-solid fa-ellipsis-vertical" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+ </button>
+ <ul class="dropdown-menu dropdown-menu-dark" style="position: absolute;" aria-labelledby="dropdownMenuButton2">
+ <li><a class="dropdown-item" href="#">
+     <span> <i class="fa-solid fa-play"></i></span><span>Play Now</span></a></li>
+ <li class="addtoqueue"><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-plus"></i></span><span> Add To Queue</span> </a></li>
+ <li><a class="dropdown-item" href="#"><span><i class="fa-solid fa-list"></i></span><span>add to Favourites</span></a></li>
+ <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-circle-info"></i></span><span> get info</span></a></li>
+ </ul>
+</div>       
+
+</div>
+</div>
+<h6>stay</h6>
+<p> justin bieber </p>
+</div>
+<div id="song">
+<div> 
+<img class="songimage2" src="./home-images//latest english/unstoppable.jpg" alt="">
+<div class="hovers">
+<div class="playbutton2">
+ <i class="fa-solid fa-play"></i>    
+
+ </div> 
+<div class="dropdown" style="position: absolute;" >
+ <button  style="background-color: transparent; border: none; color: white; font-size: larger;" class="fa-solid fa-ellipsis-vertical" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+ </button>
+ <ul class="dropdown-menu dropdown-menu-dark" style="position: absolute;" aria-labelledby="dropdownMenuButton2">
+ <li><a class="dropdown-item" href="#">
+     <span> <i class="fa-solid fa-play"></i></span><span>Play Now</span></a></li>
+ <li class="addtoqueue"><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-plus"></i></span><span> Add To Queue</span> </a></li>
+ <li><a class="dropdown-item" href="#"><span><i class="fa-solid fa-list"></i></span><span>add to Favourites</span></a></li>
+ <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-circle-info"></i></span><span> get info</span></a></li>
+ </ul>
+</div>       
+
+</div>
+</div>
+
+<h6>unstoppable</h6>
+<p> sia</p>
+</div> 
+<div id="song">
+<div>
+<img class="songimage2" src="./home-images//latest english/no lie.jpg" alt="">
+<div class="hovers">
+<div class="playbutton2">
+ <i class="fa-solid fa-play"></i>    
+
+ </div>   
+<div class="dropdown" style="position: absolute;" >
+ <button  style="background-color: transparent; border: none; color: white; font-size: larger;" class="fa-solid fa-ellipsis-vertical" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+ </button>
+ <ul class="dropdown-menu dropdown-menu-dark" style="position: absolute;" aria-labelledby="dropdownMenuButton2">
+ <li><a class="dropdown-item" href="#">
+     <span> <i class="fa-solid fa-play"></i></span><span>Play Now</span></a></li>
+ <li class="addtoqueue"><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-plus"></i></span><span> Add To Queue</span> </a></li>
+ <li><a class="dropdown-item" href="#"><span><i class="fa-solid fa-list"></i></span><span>add to Favourites</span></a></li>
+ <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-circle-info"></i></span><span> get info</span></a></li>
+ </ul>
+</div>     
+
+</div>
+</div>
+<h6>no lie</h6>
+<p>sean paul </p>
+</div>
+<div id="song">
+<div>
+<img class="songimage2" src="./home-images//latest english/no lie.jpg" alt="">
+<div class="hovers">
+ <div class="playbutton2">
+   <i class="fa-solid fa-play"></i>    
+
+   </div> 
+ <div class="dropdown" style="position: absolute;" >
+   <button  style="background-color: transparent; border: none; color: white; font-size: larger;" class="fa-solid fa-ellipsis-vertical" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+   </button>
+   <ul class="dropdown-menu dropdown-menu-dark" style="position: absolute;" aria-labelledby="dropdownMenuButton2">
+   <li><a class="dropdown-item" href="#">
+       <span> <i class="fa-solid fa-play"></i></span><span>Play Now</span></a></li>
+   <li class="addtoqueue"><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-plus"></i></span><span> Add To Queue</span> </a></li>
+   <li><a class="dropdown-item" href="#"><span><i class="fa-solid fa-list"></i></span><span>add to Favourites</span></a></li>
+   <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-circle-info"></i></span><span> get info</span></a></li>
+   </ul>
+</div>       
+
+ </div>
+</div>
+<h6>no lie</h6>
+<p>sean paul </p>
+</div>
+<div id="song">
+<div> 
+ <img class="songimage2" src="./home-images//latest english/no lie.jpg" alt="">
+ <div class="hovers">
+   <div class="playbutton2">
+     <i class="fa-solid fa-play"></i>    
+
+     </div>    
+   <div class="dropdown" style="position: absolute;" >
+     <button  style="background-color: transparent; border: none; color: white; font-size: larger;" class="fa-solid fa-ellipsis-vertical" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+     </button>
+     <ul class="dropdown-menu dropdown-menu-dark" style="position: absolute;" aria-labelledby="dropdownMenuButton2">
+     <li><a class="dropdown-item" href="#">
+         <span> <i class="fa-solid fa-play"></i></span><span>Play Now</span></a></li>
+     <li class="addtoqueue"><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-plus"></i></span><span> Add To Queue</span> </a></li>
+     <li><a class="dropdown-item" href="#"><span><i class="fa-solid fa-list"></i></span><span>add to Favourites</span></a></li>
+     <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-circle-info"></i></span><span> get info</span></a></li>
+     </ul>
+ </div>    
+
+ </div>
+ </div>
+ <h6>no lie</h6>
+ <p>sean paul </p>
+
+  </div>
+  <div id="song">
+ <div>   
+   <img class="songimage2" src="./home-images//latest english/no lie.jpg" alt="">
+   <div class="hovers">
+     <div class="playbutton2">
+       <i class="fa-solid fa-play"></i>    
+
+       </div>
+     <div class="dropdown" style="position: absolute;" >
+       <button  style="background-color: transparent; border: none; color: white; font-size: larger;" class="fa-solid fa-ellipsis-vertical" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+       </button>
+       <ul class="dropdown-menu dropdown-menu-dark" style="position: absolute;" aria-labelledby="dropdownMenuButton2">
+       <li><a class="dropdown-item" href="#">
+           <span> <i class="fa-solid fa-play"></i></span><span>Play Now</span></a></li>
+       <li class="addtoqueue"><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-plus"></i></span><span> Add To Queue</span> </a></li>
+       <li><a class="dropdown-item" href="#"><span><i class="fa-solid fa-list"></i></span><span>add to Favourites</span></a></li>
+       <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-circle-info"></i></span><span> get info</span></a></li>
+       </ul>
+   </div>      
+   </div>
+   </div>
+   <h6>no lie</h6>
+   <p>sean paul </p>
+    </div>
+    <div id="song">
+     <diV>
+     <img class="songimage2" src="./home-images//latest english/no lie.jpg" alt="">
+     <div class="hovers">
+       <div class="playbutton2">
+         <i class="fa-solid fa-play"></i>    
+
+         </div> 
+       <div class="dropdown" style="position: absolute;" >
+         <button  style="background-color: transparent; border: none; color: white; font-size: larger;" class="fa-solid fa-ellipsis-vertical" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+         </button>
+         <ul class="dropdown-menu dropdown-menu-dark" style="position: absolute;" aria-labelledby="dropdownMenuButton2">
+         <li><a class="dropdown-item" href="#">
+             <span> <i class="fa-solid fa-play"></i></span><span>Play Now</span></a></li>
+         <li class="addtoqueue"><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-plus"></i></span><span> Add To Queue</span> </a></li>
+         <li><a class="dropdown-item" href="#"><span><i class="fa-solid fa-list"></i></span><span>add to Favourites</span></a></li>
+         <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-circle-info"></i></span><span> get info</span></a></li>
+         </ul>
+     </div>       
+ 
+     </div>
+     </diV>
+
+     <h6>no lie</h6>
+     <p>sean paul </p>
+      </div>
+      <div id="song">
+        <div>
+    <img class="songimage2" src="./home-images//latest english/no lie.jpg" alt="">
+    <div class="hovers">
+     <div class="playbutton2">
+       <i class="fa-solid fa-play"></i>    
+
+       </div>
+     <div class="dropdown" style="position: absolute;" >
+       <button  style="background-color: transparent; border: none; color: white; font-size: larger;" class="fa-solid fa-ellipsis-vertical" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+       </button>
+       <ul class="dropdown-menu dropdown-menu-dark" style="position: absolute;" aria-labelledby="dropdownMenuButton2">
+       <li><a class="dropdown-item" href="#">
+           <span> <i class="fa-solid fa-play"></i></span><span>Play Now</span></a></li>
+       <li class="addtoqueue"><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-plus"></i></span><span> Add To Queue</span> </a></li>
+       <li><a class="dropdown-item" href="#"><span><i class="fa-solid fa-list"></i></span><span>add to Favourites</span></a></li>
+       <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-circle-info"></i></span><span> get info</span></a></li>
+       </ul>
+   </div>       
+
+   </div>
+       </div>
+       <h6>no lie</h6>
+       <p>sean paul </p>
+        </div>
+        <div id="song">
+          <div>
+         <img class="songimage2" src="./home-images//latest english/no lie.jpg" alt="">
+         <div class="hovers">
+           <div class="playbutton2">
+             <i class="fa-solid fa-play"></i>    
+ 
+             </div> 
+           <div class="dropdown" style="position: absolute;" >
+             <button  style="background-color: transparent; border: none; color: white; font-size: larger;" class="fa-solid fa-ellipsis-vertical" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+             </button>
+             <ul class="dropdown-menu dropdown-menu-dark" style="position: absolute;" aria-labelledby="dropdownMenuButton2">
+             <li><a class="dropdown-item" href="#">
+                 <span> <i class="fa-solid fa-play"></i></span><span>Play Now</span></a></li>
+             <li class="addtoqueue"><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-plus"></i></span><span> Add To Queue</span> </a></li>
+             <li><a class="dropdown-item" href="#"><span><i class="fa-solid fa-list"></i></span><span>add to Favourites</span></a></li>
+             <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-circle-info"></i></span><span> get info</span></a></li>
+             </ul>
+         </div>       
+     
+         </div>
+         </div>
+     <h6>no lie</h6>
+      <p>sean paul </p>
+      </div>
+
+      <div id="song">
+
+       <div>
+       <img class="songimage2" src="./home-images//latest english/no lie.jpg" alt="">
+       <div class="hovers">
+         <div class="playbutton2">
+           <i class="fa-solid fa-play"></i>    
+
+           </div>  
+         <div class="dropdown" style="position: absolute;" >
+           <button  style="background-color: transparent; border: none; color: white; font-size: larger;" class="fa-solid fa-ellipsis-vertical" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+           </button>
+           <ul class="dropdown-menu dropdown-menu-dark" style="position: absolute;" aria-labelledby="dropdownMenuButton2">
+           <li><a class="dropdown-item" href="#">
+               <span> <i class="fa-solid fa-play"></i></span><span>Play Now</span></a></li>
+           <li class="addtoqueue"><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-plus"></i></span><span> Add To Queue</span> </a></li>
+           <li><a class="dropdown-item" href="#"><span><i class="fa-solid fa-list"></i></span><span>add to Favourites</span></a></li>
+           <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-circle-info"></i></span><span> get info</span></a></li>
+           </ul>
+       </div>      
+   </div>
+       </div>
+       <h6>no lie</h6>
+       <p>sean paul </p>
+        </div>       
+</div>
+
+
+<footer id="footer">
+
+  <div id="advertisement">
+     
+      <p id="adpara">
+        Tunex is the one-stop solution for all your music needs. Tunex offers you free, 
+        unlimited access to over 30 million Hindi Songs, 
+        Bollywood Music, English MP3 songs, Regional Music & Mirchi Play.
+      </p>
+  </div>
+  <div>
+    <h4 id="fheading">quicklinks </h4>
+    <div id="slotshead">
+      <div id="slots">
+        <h6>albums</h6>
+        <p>english</p>
+        <p>hindi</p>
+        <p>telugu</p>
+        <p>punjabi</p>
+        <p>tamil</p>
+        <p>kannada</p>
+        <p>bhojpuri</p>
+        <p>malayalam</p>
+        <p>marathi</p>
+        <p>bengali</p>
+        <p>gujrati songs </p>
+        <p>haryanvi</p>
+        <p style="color: red;" >see all</p>  
+      </div>
+
+      <div id="slots">
+        <h6>genres</h6>
+        <p>Bollywood songs</p>
+        <p>devotional songs</p>
+        <p>ghazals</p>
+        <p>bhajan</p>
+        <p>petriotic songs</p>
+        <p>kids songs</p>
+        <p>rock songs</p>
+        <p>disco songs</p>
+        <p>sufi songs</p>
+        <p>love songs</p>
+        <p style="color: red;" >see all</p>  
+      </div>
+      
+      <div id="slots">
+        <h6>artists</h6>
+        <p>arjit singh</p>
+        <p>neha kakkar</p>
+        <p>honey singh</p>
+        <p>atif aslam</p>
+        <p>a r rahman</p>
+        <p>lata mangeshkar</p>
+        <p>kishore kumar</p>
+        <p>armaan malik</p>
+        <p>sunidhi chauhan</p>
+        <p>nursat fateh ali khan</p>
+        <p>mohammed rafi</p>
+        <p>guru randhawa</p>
+        <p>justin bieber</p>
+        <p>coldplay</p>
+        <p style="color: red;" >see all</p>  
+      </div>
+      <div id="slots">
+        <h6>new release</h6>
+        <p>english songs</p>
+        <p>hindi songs</p>
+        <p>telugu songs</p>
+        <p>punjabi songs</p>
+        <p>tamil songs</p>
+        <p>kannada songs</p>
+        <p>bhojpuri songs</p>
+        <p>malayalam songs</p>
+        <p>marathi songs</p>
+        <p>bengali songs</p>
+        <p>gujrati songs </p>
+        <p>haryanvi songs</p>
+        <p>rajasthani songs</p>
+        <p>assamese songs </p>
+        <p>odisa songs</p>
+        <p style="color: red;" >see all</p>  
+      </div>   
+ 
+      
+      <div id="slots">
+        <h6>trending songs</h6>
+        <p>vibe song</p>
+        <p>hunuman chalisa</p>
+        <p>295</p>
+        <p>black & white</p>
+        <p>mast maula</p>
+        <p>dil galti kar baitha hai</p>
+        <p>party all night</p>
+        <p>manike mage hithe tamil</p>
+        <p>raataab lambiyan</p>
+        <p>baarish ki jaye</p>
+        <p>phoonk le</p>
+        <p>koi sehri babu</p>
+        <p>jugnu</p>
+        <p>mainu nai pehchaandi</p>
+        <p style="color: red;" >see all</p>  
+      </div>  
+      
+      <div id="slots">
+        <h6>new release</h6>
+        <p>english songs</p>
+        <p>hindi songs</p>
+        <p>telugu songs</p>
+        <p>punjabi songs</p>
+        <p>tamil songs</p>
+        <p>kannada songs</p>
+        <p>bhojpuri songs</p>
+        <p>malayalam songs</p>
+        <p>marathi songs</p>
+        <p>bengali songs</p>
+        <p>gujrati songs </p>
+        <p>haryanvi songs</p>
+        <p>rajasthani songs</p>
+        <p>assamese songs </p>
+        <p>odisa songs</p>
+        <p>assamese songs </p>
+        <p>odisa songs</p>
+        <p style="color: red;" >see all</p>  
+      </div>  
+      <div id="slots" style="margin-right: 69%;">
+        <h6>trending songs</h6>
+        <p>vibe song</p>
+        <p>hunuman chalisa</p>
+        <p>295</p>
+        <p>black & white</p>
+        <p>mast maula</p>
+        <p>dil galti kar baitha hai</p>
+        <p>party all night</p>
+        <p>manike mage hithe tamil</p>
+        <p>raataab lambiyan</p>
+        <p>jugnu</p>
+        <p>mainu nai pehchaandi</p>
+        <p style="color: red;" >see all</p>  
+      </div>  
+   
+    </div>
+
+
+   </div>
+   
+   <div id="tcbar">
+    <div id="tc">
+         <h6>about us</h6>
+         <p>|</p>
+         <h6>advertise with us</h6>
+         <p>|</p>
+         <h6> privacy policy</h6>
+         <p>|</p>
+         <h6> term of use</h6>
+         <p>|</p>
+         <h6> contact us</h6>
+         <p>|</p>
+         <h6> feedback</h6>
+         <p>|</p>
+         <h6> hello tunes</h6>
+    </div>
+    <div id="socialicons">
+     
+      <i id="icons" class="fa-brands fa-facebook-f"></i>
+      <i id="icons2" class="fa-brands fa-twitter"></i>
+      <i id="icons3" class="fa-brands fa-instagram"></i>
+
+    </div>
+    <div>
+
+    </div>
+    </div>
+    <p style="margin-left: 40%; color: rgb(156,158,152);"> 2022 © all rights reserved </p>
+  </div>
+
+</footer>
+
+    </main>
+
+ <!-- ASIDE    -->
+ <aside id="aside">
+     <div id="playlist">
+       <h3 style="margin-top: 10px;  margin-left: 0;">
+        queue
+      </h3>
+      <div class="dropdown2">
+        <button   class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+          Queue
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+          <li><a class="dropdown-item" href="#">Queue</a></li>
+          <li><a class="dropdown-item" href="#">playlist</a></li>
+          <li><a class="dropdown-item" href="#">Favourites </a></li>
+        </ul>
+      </div>
+      <div class="queuecloser">
+      <i class="fa-solid fa-xmark"></i>
+      </div>
+   </div>
+
+   <div id="queuelist" >
+     <div id="box1">
+       <img  id="boximage" src="./home-images//queue list/believer.jpg" >
+       <div class="hovers3">
+          <i class="fa-solid fa-play"></i>    
+       </div>  
+       <h6 id="boxheading">
+        believer
+       </h6>
+       <p id="boxp">imagine dragon</p>
+       <i id="boxicon" class="fa-regular fa-heart"></i>
+     </div>
+
+     <div id="box1">
+      <img  id="boximage" src="./home-images/queue list/peaches.jpg" >
+      <div class="hovers3">
+        <i class="fa-solid fa-play"></i>    
+     </div>
+      <h6 id="boxheading">
+       peaches
+      </h6>
+      <p id="boxp">justin bieber</p>
+      <i id="boxicon" class="fa-regular fa-heart"></i>
+    </div>
+    <div id="box1">
+      <img  id="boximage" src="./home-images/queue list/artworks-000523641915-lo2qzf-t500x500.jpg" >
+      <div class="hovers3">
+        <i class="fa-solid fa-play"></i>    
+     </div>
+      <h6 id="boxheading">
+       on my way
+      </h6>
+      <p id="boxp">alan walker</p>
+      <i id="boxicon" class="fa-regular fa-heart"></i>
+    </div>
+    <div id="box1">
+      <img  id="boximage" src="./home-images/queue list/closer.png" >
+      <div class="hovers3">
+        <i class="fa-solid fa-play"></i>    
+     </div>
+      <h6 id="boxheading">
+       closer
+      </h6>
+      <p id="boxp">chainsmoker</p>
+      <i id="boxicon" class="fa-regular fa-heart"></i>
+    </div>
+    <div id="box1">
+      <img  id="boximage" src="./home-images/queue list/safari.jpg" >
+      <div class="hovers3">
+        <i class="fa-solid fa-play"></i>    
+     </div>
+      <h6 id="boxheading">
+       safari
+      </h6>
+      <p id="boxp">serena</p>
+      <i id="boxicon" class="fa-regular fa-heart"></i>
+    </div>
+    <div id="box1">
+      <img  id="boximage" src="./home-images/queue list/jalebi baby.jpg" >
+      <div class="hovers3">
+        <i class="fa-solid fa-play"></i>    
+     </div>
+      <h6 id="boxheading">
+       jalebi baby
+      </h6>
+      <p id="boxp">teshar</p>
+      <i id="boxicon" class="fa-regular fa-heart"></i>
+    </div>
+    <div id="box1">
+      <img  id="boximage" src="./home-images//queue list/lightsdownlow.jpg" >
+      <div class="hovers3">
+        <i class="fa-solid fa-play"></i>    
+     </div>
+      <h6 id="boxheading">
+       lights down low
+      </h6>
+      <p id="boxp">max</p>
+      <i id="boxicon" class="fa-regular fa-heart"></i>
+    </div>
+    <div id="box1">
+      <img  id="boximage" src="./home-images//queue list/senorita.jpeg" >
+      <div class="hovers3">
+        <i class="fa-solid fa-play"></i>    
+     </div>
+      <h6 id="boxheading">
+       senorita
+      </h6>
+      <p id="boxp">shawn mendes</p>
+      <i id="boxicon" class="fa-regular fa-heart"></i>
+    </div>
+    <div id="box1">
+      <img  id="boximage" src="./home-images//queue list/alltimelow.png" >
+      <div class="hovers3">
+        <i class="fa-solid fa-play"></i>    
+     </div>
+      <h6 id="boxheading">
+       all time low
+      </h6>
+      <p id="boxp">jon bellion</p>
+      <i id="boxicon" class="fa-regular fa-heart"></i>
+    </div>
+    <div id="box1">
+      <img  id="boximage" src="./home-images//queue list/heatwaved.jpg" >
+      <div class="hovers3">
+        <i class="fa-solid fa-play"></i>    
+     </div>
+      <h6 id="boxheading">
+       heat waves
+      </h6>
+      <p id="boxp">glass animals</p>
+      <i id="boxicon" class="fa-regular fa-heart"></i>
+    </div>
+    <div id="box1">
+      <img  id="boximage" src="./home-images//queue list/whosays.jpg" >
+      <div class="hovers3">
+        <i class="fa-solid fa-play"></i>    
+     </div>
+      <h6 id="boxheading">
+       who says
+      </h6>
+      <p id="boxp">selena gomez</p>
+      <i id="boxicon" class="fa-regular fa-heart"></i>
+    </div>
+    <div id="box1">
+      <img  id="boximage" src="./home-images//queue list/oldtownroad.jpg" >
+      <div class="hovers3">
+        <i class="fa-solid fa-play"></i>    
+     </div>
+      <h6 id="boxheading">
+       old town road
+      </h6>
+      <p id="boxp">lil nas x</p>
+      <i id="boxicon" class="fa-regular fa-heart"></i>
+    </div>
+    <div id="box1">
+      <img  id="boximage" src="./home-images//queue list/yummy.png" >
+      <div class="hovers3">
+        <i class="fa-solid fa-play"></i>    
+     </div>
+      <h6 id="boxheading">
+       yummy
+      </h6>
+      <p id="boxp">justin bieber</p>
+      <i id="boxicon" class="fa-regular fa-heart"></i>
+    </div>
+    <div style="margin-bottom: 0px;" id="box1">
+    
+      <img  id="boximage" src="./home-images//queue list/circles.jpg" >
+      <div  class="hovers3">
+        <i class="fa-solid fa-play"></i>    
+     </div>
+      
+      <h6 id="boxheading">
+       circles
+      </h6>
+      <p id="boxp">post malone  </p>
+      <i id="boxicon" class="fa-regular fa-heart"></i>
+    </div>
+   </div>
+
+</div>
+    </aside>
+
+    <div id="musicbar">
+      <div id="songdetail" >
+      <img id="playimage"  src="./home-images/latest english/asitwas.png">
+      <div>
+        <h6>
+          as it was
+        </h6>
+        <p style="position: absolute; left: 6.5%; color: rgb(95,103,98); font-size: 0.8rem; top: 35px; ">
+          harry style
+        </p> 
+      </div>
+     </div>
+     <div id="playpause">
+      <i  class="fa-solid fa-shuffle"></i>
+      <div id="playn" >
+        <i class="fa-solid fa-backward-step"></i>
+        <div id="playbutton">
+        <i onclick="playsong()" id="play" class="fa-solid fa-play"></i>
+        <i onclick="pausesong()" id="pause" class="fa-solid fa-pause"></i>
+        </div>
+        <i class="fa-solid fa-forward-step"></i>
+      </div>
+      <i class="fa-solid fa-repeat"></i>      
+        </div>
+     <div id="duration">
+       <p >
+        00:00/03:37
+       </p>
+       <div id="volume">
+       <input  type="range" min="0" max="100" value="90" onchange="volume_change()" class="recent_volume">
+       </div>
+       <button>
+         Auto
+       </button>
+       <i style="color: rgb(237,28,36); font-size: 1rem;" id="volumeButton" class="fa-solid fa-volume-high"></i>
+       <i style="font-size: 1.1rem;" class="fa-solid fa-list"></i>
+
+      </div> 
+      <div style="position: absolute;" id="playbar" >
+        <!-- <div id="playrr"> -->
+         <input  type="range" name="" min="0" max="100" value="0.1" id="duration_slider" onchange="change_duration()">  
+        </div>
+      </div>  
+
+    </div>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>            
+<script type="text/javascript" src="./javascript/jquery.js">
+     
+</script>
+<script src="./javascript/home.js"> </script>
+    </body>
+</html> 

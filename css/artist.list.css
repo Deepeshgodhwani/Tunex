@@ -1,0 +1,523 @@
+
+
+
+ body{
+
+   background-color: rgb(12,16,39);
+   color: white;
+   text-transform: capitalize;
+   margin: 0px;
+   padding: 0px;
+}
+
+
+/* nav bar */
+ 
+#navbar{
+   padding-top: 10px;
+   display: flex;
+   margin-bottom: 30px;
+   align-items: center;
+   height: 70px;
+   width: 100%;
+   position: relative;
+   background-color: transparent;
+   }
+
+
+#sider{
+
+ background-color: rgb(12,15,18);
+}
+
+#sidericon{
+
+  font-size: 1.4rem;
+  color: white;
+  margin-left: 5px;
+  margin-bottom: 5px;
+}
+
+#sidericon:hover{
+
+  color:lightgray;
+}
+
+#offcanvasNavbar{
+
+
+  background-color:rgb(12,15,18); 
+  width: 22%;
+  color: white;
+}
+#userimage{
+
+  width: 35px; 
+  height: 35px;
+  opacity: 1;
+}
+
+#userimage2{
+
+  width: 35px; 
+  height: 35px;
+  position: absolute;
+  left: 18px;
+  opacity: 0;
+}
+
+
+
+#logo{
+  display: flex;
+  margin-left: 35px;
+  align-items: center;
+  width: 153px;
+  margin-bottom: 10px;
+  
+ 
+}
+#logoimage{
+  
+  border-radius: 22%;
+  width: 45px;
+  height: 45px;
+  margin-top: 10px;
+      
+}
+#title{
+
+   color: white;
+   font-size: 1.7rem;
+ }
+ 
+ #title:hover{
+ 
+   color: lightgray;
+ }
+
+#logoname{
+
+  color:rgb(250,50,53);
+  font-size: 1.7rem;
+  
+}
+
+#navpart2{
+ 
+  position: absolute; 
+  display: flex;
+  right: 70px;
+  width: 30%;
+ align-items: center;
+ justify-content: space-between;
+  
+}
+#searchbar{
+   
+  position: relative;
+  background-color:rgb(12,15,18) ;
+  width: 35%;
+  height: 35px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  margin-left: 5%;
+  border: 1px solid rgb(117,117,117);
+  margin-bottom: 8px;
+  
+}
+#searchinput{
+  
+  border: none;
+  background-color:rgb(12,15,18);
+  outline: none;
+  color: white;
+  width: 90%;
+  font-size: 0.8rem;
+  position: absolute;
+  left: 30px;
+  text-transform: capitalize;
+}
+
+#searchlogo{
+  color: rgb(117,117,117);
+  position: absolute;
+  left: 11px;
+  top: 11px;
+  margin-right: 20px;
+  font-size: 0.8rem;
+}
+
+#navpart2 i{
+
+  font-size: 1.5rem;
+  margin-right: 40px;
+  position: relative;
+  
+}
+
+#lightmode{
+
+  position: absolute;
+  left: 100px;
+  bottom: 8px;
+  width: 20px;
+  height: 20px; 
+  opacity: 1;
+  top: -20px;
+}
+
+#darkmode{
+
+  opacity: 0;
+  position: absolute;
+  left: 40px;
+  bottom: 8px;
+  font-size: 0rem;
+  color: rgb(117,117,117);
+    
+  
+
+}
+
+#logins{
+
+   font-weight: bold; 
+   margin-top: 5px;
+}
+
+#logins:hover{
+
+    color: lightgrey;
+}
+
+#language{
+
+  width: 40px;
+  height: 40px;
+ position: relative;
+ color:rgb(117,117,117) ;
+   margin-right: 5px;
+   bottom: 2px;
+ }
+
+#english{
+  position: absolute;
+  font-size: 0.9rem;
+  top:30%;
+  left :22px
+} 
+
+#hindi{
+   top:5px;
+   right: 17px;
+   position: absolute;
+   font-size: 0.9rem;
+}
+
+
+#podcast{
+
+ width: 110px;
+ position: relative;
+ height: 35px;
+ left: 85px;
+
+}
+#podcast:hover{
+
+  color:lightgrey;
+}
+
+#new{
+
+   background-color: red;
+  font-size: 0.6rem;
+  border-radius: 3px;
+  font-weight: bold;
+  height: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 10px;
+  top: -5px;
+  width: 27px;
+
+
+}
+
+#login{
+
+  position: absolute; 
+  left: 70px; 
+  margin-top:3px; 
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+#login:hover{
+
+  color:lightgrey;
+
+}
+
+
+#container{
+
+    background-color:rgb(12,15,18);
+    width: 63%;
+    height: 40vh;
+    margin-left: 6%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    
+}
+
+#part1{
+
+     width: 130rem;
+     height: 40vh;
+}
+
+#part2{
+
+   position: absolute;
+   display: flex;
+   justify-content: space-between;
+   width: 63%;
+   height: 40vh;
+   opacity: 0;
+}
+
+#artistposter{
+
+    width: 25%;
+    opacity: 0.9;
+}
+
+#information{
+
+    width: 71%;
+    height: 100%;
+    position: relative;
+    font-family: calibri;    
+}
+
+#follower{
+
+   position: absolute;
+   color: rgb(137,140,159);
+   right: 5%;
+   top: 12%;
+}
+
+#nameheading{
+  
+     position: absolute;
+     top: 4%;
+     font-size: 1.7rem;
+     font-family: calibri;
+}
+
+#title{
+    color: rgb(137,140,159);
+    position: absolute;
+    top: 22%;
+    font-size: 0.9rem;
+} 
+
+#briefpara{
+    
+     font-size: 0.8rem;
+     color:rgb(137,140,159);
+     width: 90%;
+     position: absolute;
+     top: 35%;
+}
+
+#playsongs{
+
+    position: relative;
+    top: 65%;
+}
+
+
+
+#playbutton{
+    
+
+   background: linear-gradient(45deg,rgb(214, 10, 255) , blue);   
+    border: none;
+    width: 27%;
+    height: 13%;
+    position: relative;
+    color: white;
+    text-transform: capitalize;
+    font-size: 1rem;
+}
+
+#playsongs p{
+
+    position: absolute;
+    left: 39%;
+    top: -14px;
+    font-size: 1.2rem;
+}
+
+
+#playsongs c{
+
+    position: absolute;
+    top: 45px;
+    color: rgb(137,140,159);
+    left: 0%;
+    font-size: 0.8rem;
+
+}
+
+#songslist{
+
+
+    width: 63%;
+    overflow: hidden;
+    height: auto;
+    margin-left: 6%;   
+
+}
+/* 
+#songslist::-webkit-scrollbar{
+   width: 0px;
+} */
+
+#box1{
+
+    display: flex;
+    height: 60px;
+    align-items: center;
+    position: relative;
+    background-color:rgb(53,54,58);
+    margin-bottom: 8px;
+    border-radius: 8px;
+
+}
+
+#box1:hover{
+
+   border: 1px solid grey;
+   border-radius: 8px;
+}
+
+
+#boximage{
+   
+    width: 5.5%;
+    height: 80%;
+    position: absolute;
+    left: 2%;
+}
+
+#boxheading{
+ 
+    position: absolute;
+    left: 9%;
+    top: 7px;
+    font-size: 1.2rem;
+}
+
+#boxp{
+  
+    position: absolute;
+    left: 9%;
+    top: 30px;
+    color:rgb(137,140,159);
+   font-size: 0.8rem;
+}
+
+#boxicon{
+ 
+    position: absolute;
+   display: flex;
+   justify-content: space-evenly;
+   right: 1px;
+   width: 14%;
+}
+
+
+#aside{
+
+   width: 23%;
+   position: absolute;
+   right: 5%;
+   top: 17%;
+   display: flex;
+   flex-direction: column;
+}
+
+#headings{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin-bottom: 15px;
+}
+
+#headings p{
+   color:rgb(137,140,159);
+   margin-top: 10px;
+}
+
+#box2{
+   width: 100%;
+   height: 90px;
+   position: relative;
+   display: flex;
+   align-items: center;
+   margin-bottom: 20px;
+
+}
+#boximage2{
+   
+    width: 27%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top: 6px
+
+}
+
+#boxheading2{
+   
+   position: absolute;
+   left:  100px;
+   top: 15px;
+   font-size: 1.2rem;
+   
+
+}
+
+#duration{
+   color:rgb(155,177,187);
+   position: absolute;
+   right: 5px;
+   font-size: 0.8rem;
+}
+#boxp2{
+  
+   font-size: 0.8rem;
+   position: absolute;
+   left: 100px;
+   top: 50px;
+   color: rgb(137,140,159);
+}
+
+#boxicon2{
+
+   position: absolute;
+   right: 2px;
+   top: 0px;
+   font-size: larger;
+}
+
+
