@@ -5,6 +5,7 @@
         <link rel="stylesheet"  href="./css/home.css">
         <script src="https://kit.fontawesome.com/992825dbbb.js" crossorigin="anonymous"></script>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
    <div id="head">       
@@ -23,7 +24,7 @@
        <nav  style="position: absolute; background-color: transparent;" >
         <div class="container-fluid" style="background-color: transparent;">
      
-          <button style="background-color: transparent; border: none; margin-bottom: 5px;"   type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+          <button id="menubutton" style="background-color: transparent; border: none; margin-bottom: 5px;"   type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
             <span  class="navbar-toggler-icon"><i id="sidericon" class="fa-solid fa-bars"></i> </span>
           </button>
           <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
@@ -49,8 +50,7 @@
                  
 
                </div>
-               <div style="position: absolute; bottom: 10px; left: 0px; border-top: 1px solid rgb(45,47,51);
-                   width: 100%; ">
+               <div id="quickaccess">
                <div style="margin-top: 20px;">
                 <h5 style="margin-left: 37px; margin-bottom: 10px;">Quick Access</h5>
                 <p style=" font-size: 0.9rem; margin-left: 37px;">Trending songs</p>
@@ -87,7 +87,7 @@
         </div>
 
           
-           <p style="font-weight: bold;">log in/sign up</p>
+           <p id="loginuser">log in/sign up</p>
        </div>
     </nav>
   
@@ -215,7 +215,7 @@
   <h6>stay</h6>
   <p> justin bieber </p>
   </div>
-  <div id="song">
+  <div  class="responsive" id="song">
    <div> 
   <img class="songimage2" src="./home-images//latest english/unstoppable.jpg" alt="">
   <div class="hovers">
@@ -241,7 +241,7 @@
   <h6>unstoppable</h6>
   <p> sia</p>
   </div> 
-  <div id="song">
+  <div  class="responsive" id="song">
     <div>
   <img class="songimage2" src="./home-images//latest english/no lie.jpg" alt="">
   <div class="hovers">
@@ -266,7 +266,7 @@
   <h6>no lie</h6>
   <p>sean paul </p>
    </div>
-   <div id="song">
+   <div   class="responsive" id="song">
      <div>
     <img class="songimage2" src="./home-images//latest english/no lie.jpg" alt="">
     <div class="hovers">
@@ -291,7 +291,7 @@
     <h6>no lie</h6>
     <p>sean paul </p>
      </div>
-     <div id="song">
+     <div  class="responsive" id="song">
      <div> 
       <img class="songimage2" src="./home-images//latest english/no lie.jpg" alt="">
       <div class="hovers">
@@ -317,7 +317,7 @@
       <p>sean paul </p>
 
        </div>
-       <div id="song">
+       <div  class="responsive" id="song">
       <div>   
         <img class="songimage2" src="./home-images//latest english/no lie.jpg" alt="">
         <div class="hovers">
@@ -341,7 +341,7 @@
         <h6>no lie</h6>
         <p>sean paul </p>
          </div>
-         <div id="song">
+         <div  class="responsive" id="song">
           <diV>
           <img class="songimage2" src="./home-images//latest english/no lie.jpg" alt="">
           <div class="hovers">
@@ -367,7 +367,7 @@
           <h6>no lie</h6>
           <p>sean paul </p>
            </div>
-           <div id="song">
+           <div  class="responsive" id="song">
              <div>
          <img class="songimage2" src="./home-images//latest english/no lie.jpg" alt="">
          <div class="hovers">
@@ -392,7 +392,7 @@
             <h6>no lie</h6>
             <p>sean paul </p>
              </div>
-             <div id="song">
+             <div  class="responsive" id="song">
                <div>
               <img class="songimage2" src="./home-images//latest english/no lie.jpg" alt="">
               <div class="hovers">
@@ -418,7 +418,7 @@
            <p>sean paul </p>
            </div>
      
-           <div id="song">
+           <div  class="responsive" id="song">
 
             <div>
             <img class="songimage2" src="./home-images//latest english/no lie.jpg" alt="">
@@ -494,7 +494,7 @@
       <p> latest <b style="font-weight: 500px;">indie</b> </p>
     
   </div>
-  <div class="song2" style="background-color: rgb(145,77,255);" >
+  <div class="song2" id="responsive" style="background-color: rgb(145,77,255);" >
     <div>
      <img class="songimage4" src="./home-images//latest english/asitwas.png" alt="">
      <div id="hovers2">
@@ -505,7 +505,7 @@
       <p> latest <b style="font-weight: 500px;">indie</b> </p>
     
   </div>
-  <div class="song2" style="margin-right: 0; background-color:rgb(123,182,59) ; ">
+  <div class="song2" id="responsive" style="margin-right: 0; background-color:rgb(123,182,59) ; ">
     <div>
      <img class="songimage4" src="./home-images//latest english/asitwas.png" alt="">
      <div id="hovers2">
@@ -523,7 +523,7 @@
       <h3 >popular artist </h3>
       <div id="popular-artist">
     
-        <div id="artist1">
+        <div id="artist1"  >
            
            <img class="artistsimage" src="./home-images/popular artists//image1.webp">
            <div class="hovers4">     
@@ -560,7 +560,7 @@
             <p>charlie puth</p>
             </div>                      
     
-        <div  id="artist1">
+        <div  id="artist1" class="responsive">
 
            <img class="artistsimage"src="./home-images/popular artists/image5.jpg">
              <a href="./artist-list.html" >  
@@ -570,7 +570,7 @@
             <br> <p>cold play</p>
           </div>  
          
-        <div id="artist1">
+        <div id="artist1" class="responsive">
 
             <img class="artistsimage" src="./home-images/popular artists/image6.webp">
             <div class="hovers4">     
@@ -578,7 +578,7 @@
             </div>
             <br> <p>zayn malik</p>
          </div>
-         <div id="artist1">
+         <div id="artist1" class="responsive">
 
           <img class="artistsimage" src="./home-images/popular artists/image6.webp">
           <div class="hovers4">     
@@ -608,63 +608,190 @@
      </div>
   
  <!-- LATEST ENGLISH    -->
-     <h3>latest english <p>see all</p></h3>
+  
+  <h3>latest english <p>see all</p></h3>
 
-     <div class="latestenglish">
-      <div id="song">
-        <div>
-         <img class="songimage2" src="./home-images//latest english/asitwas.png" alt="">
-
-         <!-- HOVER -->
-         <div class="hovers">
-           <div onclick="onPlay()";" class="playbutton2">
-           <i class="fa-solid fa-play"></i>    
-           </div>
-           <div class="dropdown" style="position: absolute;" >
-             <button  style="background-color: transparent; border: none; color: white; font-size: larger;" class="fa-solid fa-ellipsis-vertical" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
-             </button>
-             <ul class="dropdown-menu dropdown-menu-dark" style="position: absolute;" aria-labelledby="dropdownMenuButton2">
-             <li><a class="dropdown-item" href="#">
-                 <span> <i class="fa-solid fa-play"></i></span><span>Play Now</span></a></li>
-             <li class="addtoqueue"><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-plus"></i></span><span> Add To Queue</span> </a></li>
-             <li><a class="dropdown-item" href="#"><span><i class="fa-solid fa-list"></i></span><span>add to Favourites</span></a></li>
-             <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-circle-info"></i></span><span> get info</span></a></li>
-             </ul>
-         </div>  
-     
-         </div>
-        </div>
-          <h6>as it was</h6>
-          <p> harry style</p>
-      </div>
-   
+  <div class="latestenglish">
     <div id="song">
-    <div>  
-     <img class="songimage2" src="./home-images/latest english/when you are gone.png" alt="">
-     <div class="hovers">
-       <div class="playbutton2">
-         <i class="fa-solid fa-play"></i>    
+      <div>
+       <img class="songimage2" src="./home-images//latest english/asitwas.png" alt="">
 
-         </div> 
-       <div class="dropdown" style="position: absolute;" >
-         <button  style="background-color: transparent; border: none; color: white; font-size: larger;" class="fa-solid fa-ellipsis-vertical" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
-         </button>
-         <ul class="dropdown-menu dropdown-menu-dark" style="position: absolute;" aria-labelledby="dropdownMenuButton2">
-         <li><a class="dropdown-item" href="#">
-             <span> <i class="fa-solid fa-play"></i></span><span>Play Now</span></a></li>
-         <li class="addtoqueue"><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-plus"></i></span><span> Add To Queue</span> </a></li>
-         <li><a class="dropdown-item" href="#"><span><i class="fa-solid fa-list"></i></span><span>add to Favourites</span></a></li>
-         <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-circle-info"></i></span><span> get info</span></a></li>
-         </ul>
-     </div>       
-     </div>
-     </div>
-     <h6>when you are..</h6>
-     <p> shawn mendes</p>
+       <!-- HOVER -->
+       <div class="hovers">
+         <div onclick="onPlay()";" class="playbutton2">
+         <i class="fa-solid fa-play"></i>    
+         </div>
+         <div class="dropdown" style="position: absolute;" >
+           <button  style="background-color: transparent; border: none; color: white; font-size: larger;" class="fa-solid fa-ellipsis-vertical" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+           </button>
+           <ul class="dropdown-menu dropdown-menu-dark" style="position: absolute;" aria-labelledby="dropdownMenuButton2">
+           <li><a class="dropdown-item" href="#">
+               <span> <i class="fa-solid fa-play"></i></span><span>Play Now</span></a></li>
+           <li class="addtoqueue"><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-plus"></i></span><span> Add To Queue</span> </a></li>
+           <li><a class="dropdown-item" href="#"><span><i class="fa-solid fa-list"></i></span><span>add to Favourites</span></a></li>
+           <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-circle-info"></i></span><span> get info</span></a></li>
+           </ul>
+       </div>  
+   
+       </div>
+      </div>
+        <h6>as it was</h6>
+        <p> harry style</p>
+    </div>
+ 
+  <div id="song">
+  <div>  
+   <img class="songimage2" src="./home-images/latest english/when you are gone.png" alt="">
+   <div class="hovers">
+     <div class="playbutton2">
+       <i class="fa-solid fa-play"></i>    
+
+       </div> 
+     <div class="dropdown" style="position: absolute;" >
+       <button  style="background-color: transparent; border: none; color: white; font-size: larger;" class="fa-solid fa-ellipsis-vertical" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+       </button>
+       <ul class="dropdown-menu dropdown-menu-dark" style="position: absolute;" aria-labelledby="dropdownMenuButton2">
+       <li><a class="dropdown-item" href="#">
+           <span> <i class="fa-solid fa-play"></i></span><span>Play Now</span></a></li>
+       <li class="addtoqueue"><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-plus"></i></span><span> Add To Queue</span> </a></li>
+       <li><a class="dropdown-item" href="#"><span><i class="fa-solid fa-list"></i></span><span>add to Favourites</span></a></li>
+       <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-circle-info"></i></span><span> get info</span></a></li>
+       </ul>
+   </div>       
+   </div>
+   </div>
+   <h6>when you are..</h6>
+   <p> shawn mendes</p>
+</div>
+<div id="song">
+ <div>
+ <img class="songimage2" src="./home-images//latest english/bananza.jpg" alt="">
+ <div class="hovers">
+   <div class="playbutton2">
+     <i class="fa-solid fa-play"></i>    
+
+     </div>    
+   <div class="dropdown" style="position: absolute;" >
+     <button  style="background-color: transparent; border: none; color: white; font-size: larger;" class="fa-solid fa-ellipsis-vertical" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+     </button>
+     <ul class="dropdown-menu dropdown-menu-dark" style="position: absolute;" aria-labelledby="dropdownMenuButton2">
+     <li><a class="dropdown-item" href="#">
+         <span> <i class="fa-solid fa-play"></i></span><span>Play Now</span></a></li>
+     <li class="addtoqueue"><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-plus"></i></span><span> Add To Queue</span> </a></li>
+     <li><a class="dropdown-item" href="#"><span><i class="fa-solid fa-list"></i></span><span>add to Favourites</span></a></li>
+     <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-circle-info"></i></span><span> get info</span></a></li>
+     </ul>
+ </div>    
+
  </div>
- <div id="song">
-   <div>
-   <img class="songimage2" src="./home-images//latest english/bananza.jpg" alt="">
+ </div>
+ <h6>bananza</h6>
+ <p> akon</p>
+</div> 
+<div id="song">
+<div>
+<img class="songimage2" src="./home-images//latest english/stay.jpg" alt="">
+<div class="hovers">
+ <div class="playbutton2">
+   <i class="fa-solid fa-play"></i>    
+
+   </div>
+ <div class="dropdown" style="position: absolute;" >
+   <button  style="background-color: transparent; border: none; color: white; font-size: larger;" class="fa-solid fa-ellipsis-vertical" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+   </button>
+   <ul class="dropdown-menu dropdown-menu-dark" style="position: absolute;" aria-labelledby="dropdownMenuButton2">
+   <li><a class="dropdown-item" href="#">
+       <span> <i class="fa-solid fa-play"></i></span><span>Play Now</span></a></li>
+   <li class="addtoqueue"><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-plus"></i></span><span> Add To Queue</span> </a></li>
+   <li><a class="dropdown-item" href="#"><span><i class="fa-solid fa-list"></i></span><span>add to Favourites</span></a></li>
+   <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-circle-info"></i></span><span> get info</span></a></li>
+   </ul>
+</div>       
+
+</div>
+</div>
+<h6>stay</h6>
+<p> justin bieber </p>
+</div>
+<div  class="responsive" id="song">
+<div> 
+<img class="songimage2" src="./home-images//latest english/unstoppable.jpg" alt="">
+<div class="hovers">
+ <div class="playbutton2">
+   <i class="fa-solid fa-play"></i>    
+
+   </div> 
+ <div class="dropdown" style="position: absolute;" >
+   <button  style="background-color: transparent; border: none; color: white; font-size: larger;" class="fa-solid fa-ellipsis-vertical" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+   </button>
+   <ul class="dropdown-menu dropdown-menu-dark" style="position: absolute;" aria-labelledby="dropdownMenuButton2">
+   <li><a class="dropdown-item" href="#">
+       <span> <i class="fa-solid fa-play"></i></span><span>Play Now</span></a></li>
+   <li class="addtoqueue"><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-plus"></i></span><span> Add To Queue</span> </a></li>
+   <li><a class="dropdown-item" href="#"><span><i class="fa-solid fa-list"></i></span><span>add to Favourites</span></a></li>
+   <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-circle-info"></i></span><span> get info</span></a></li>
+   </ul>
+</div>       
+
+</div>
+</div>
+
+<h6>unstoppable</h6>
+<p> sia</p>
+</div> 
+<div  class="responsive" id="song">
+ <div>
+<img class="songimage2" src="./home-images//latest english/no lie.jpg" alt="">
+<div class="hovers">
+ <div class="playbutton2">
+   <i class="fa-solid fa-play"></i>    
+
+   </div>   
+ <div class="dropdown" style="position: absolute;" >
+   <button  style="background-color: transparent; border: none; color: white; font-size: larger;" class="fa-solid fa-ellipsis-vertical" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+   </button>
+   <ul class="dropdown-menu dropdown-menu-dark" style="position: absolute;" aria-labelledby="dropdownMenuButton2">
+   <li><a class="dropdown-item" href="#">
+       <span> <i class="fa-solid fa-play"></i></span><span>Play Now</span></a></li>
+   <li class="addtoqueue"><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-plus"></i></span><span> Add To Queue</span> </a></li>
+   <li><a class="dropdown-item" href="#"><span><i class="fa-solid fa-list"></i></span><span>add to Favourites</span></a></li>
+   <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-circle-info"></i></span><span> get info</span></a></li>
+   </ul>
+</div>     
+
+</div>
+</div>
+<h6>no lie</h6>
+<p>sean paul </p>
+</div>
+<div   class="responsive" id="song">
+  <div>
+ <img class="songimage2" src="./home-images//latest english/no lie.jpg" alt="">
+ <div class="hovers">
+   <div class="playbutton2">
+     <i class="fa-solid fa-play"></i>    
+
+     </div> 
+   <div class="dropdown" style="position: absolute;" >
+     <button  style="background-color: transparent; border: none; color: white; font-size: larger;" class="fa-solid fa-ellipsis-vertical" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+     </button>
+     <ul class="dropdown-menu dropdown-menu-dark" style="position: absolute;" aria-labelledby="dropdownMenuButton2">
+     <li><a class="dropdown-item" href="#">
+         <span> <i class="fa-solid fa-play"></i></span><span>Play Now</span></a></li>
+     <li class="addtoqueue"><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-plus"></i></span><span> Add To Queue</span> </a></li>
+     <li><a class="dropdown-item" href="#"><span><i class="fa-solid fa-list"></i></span><span>add to Favourites</span></a></li>
+     <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-circle-info"></i></span><span> get info</span></a></li>
+     </ul>
+ </div>       
+
+   </div>
+ </div>
+ <h6>no lie</h6>
+ <p>sean paul </p>
+  </div>
+  <div  class="responsive" id="song">
+  <div> 
+   <img class="songimage2" src="./home-images//latest english/no lie.jpg" alt="">
    <div class="hovers">
      <div class="playbutton2">
        <i class="fa-solid fa-play"></i>    
@@ -684,118 +811,18 @@
 
    </div>
    </div>
-   <h6>bananza</h6>
-   <p> akon</p>
- </div> 
-<div id="song">
-  <div>
- <img class="songimage2" src="./home-images//latest english/stay.jpg" alt="">
- <div class="hovers">
-   <div class="playbutton2">
-     <i class="fa-solid fa-play"></i>    
-
-     </div>
-   <div class="dropdown" style="position: absolute;" >
-     <button  style="background-color: transparent; border: none; color: white; font-size: larger;" class="fa-solid fa-ellipsis-vertical" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
-     </button>
-     <ul class="dropdown-menu dropdown-menu-dark" style="position: absolute;" aria-labelledby="dropdownMenuButton2">
-     <li><a class="dropdown-item" href="#">
-         <span> <i class="fa-solid fa-play"></i></span><span>Play Now</span></a></li>
-     <li class="addtoqueue"><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-plus"></i></span><span> Add To Queue</span> </a></li>
-     <li><a class="dropdown-item" href="#"><span><i class="fa-solid fa-list"></i></span><span>add to Favourites</span></a></li>
-     <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-circle-info"></i></span><span> get info</span></a></li>
-     </ul>
- </div>       
-
- </div>
- </div>
- <h6>stay</h6>
- <p> justin bieber </p>
- </div>
- <div id="song">
-  <div> 
- <img class="songimage2" src="./home-images//latest english/unstoppable.jpg" alt="">
- <div class="hovers">
-   <div class="playbutton2">
-     <i class="fa-solid fa-play"></i>    
-
-     </div> 
-   <div class="dropdown" style="position: absolute;" >
-     <button  style="background-color: transparent; border: none; color: white; font-size: larger;" class="fa-solid fa-ellipsis-vertical" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
-     </button>
-     <ul class="dropdown-menu dropdown-menu-dark" style="position: absolute;" aria-labelledby="dropdownMenuButton2">
-     <li><a class="dropdown-item" href="#">
-         <span> <i class="fa-solid fa-play"></i></span><span>Play Now</span></a></li>
-     <li class="addtoqueue"><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-plus"></i></span><span> Add To Queue</span> </a></li>
-     <li><a class="dropdown-item" href="#"><span><i class="fa-solid fa-list"></i></span><span>add to Favourites</span></a></li>
-     <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-circle-info"></i></span><span> get info</span></a></li>
-     </ul>
- </div>       
-
- </div>
- </div>
-
- <h6>unstoppable</h6>
- <p> sia</p>
- </div> 
- <div id="song">
-   <div>
- <img class="songimage2" src="./home-images//latest english/no lie.jpg" alt="">
- <div class="hovers">
-   <div class="playbutton2">
-     <i class="fa-solid fa-play"></i>    
-
-     </div>   
-   <div class="dropdown" style="position: absolute;" >
-     <button  style="background-color: transparent; border: none; color: white; font-size: larger;" class="fa-solid fa-ellipsis-vertical" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
-     </button>
-     <ul class="dropdown-menu dropdown-menu-dark" style="position: absolute;" aria-labelledby="dropdownMenuButton2">
-     <li><a class="dropdown-item" href="#">
-         <span> <i class="fa-solid fa-play"></i></span><span>Play Now</span></a></li>
-     <li class="addtoqueue"><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-plus"></i></span><span> Add To Queue</span> </a></li>
-     <li><a class="dropdown-item" href="#"><span><i class="fa-solid fa-list"></i></span><span>add to Favourites</span></a></li>
-     <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-circle-info"></i></span><span> get info</span></a></li>
-     </ul>
- </div>     
-
- </div>
- </div>
- <h6>no lie</h6>
- <p>sean paul </p>
-  </div>
-  <div id="song">
-    <div>
-   <img class="songimage2" src="./home-images//latest english/no lie.jpg" alt="">
-   <div class="hovers">
-     <div class="playbutton2">
-       <i class="fa-solid fa-play"></i>    
-
-       </div> 
-     <div class="dropdown" style="position: absolute;" >
-       <button  style="background-color: transparent; border: none; color: white; font-size: larger;" class="fa-solid fa-ellipsis-vertical" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
-       </button>
-       <ul class="dropdown-menu dropdown-menu-dark" style="position: absolute;" aria-labelledby="dropdownMenuButton2">
-       <li><a class="dropdown-item" href="#">
-           <span> <i class="fa-solid fa-play"></i></span><span>Play Now</span></a></li>
-       <li class="addtoqueue"><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-plus"></i></span><span> Add To Queue</span> </a></li>
-       <li><a class="dropdown-item" href="#"><span><i class="fa-solid fa-list"></i></span><span>add to Favourites</span></a></li>
-       <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-circle-info"></i></span><span> get info</span></a></li>
-       </ul>
-   </div>       
-
-     </div>
-   </div>
    <h6>no lie</h6>
    <p>sean paul </p>
+
     </div>
-    <div id="song">
-    <div> 
+    <div  class="responsive" id="song">
+   <div>   
      <img class="songimage2" src="./home-images//latest english/no lie.jpg" alt="">
      <div class="hovers">
        <div class="playbutton2">
          <i class="fa-solid fa-play"></i>    
 
-         </div>    
+         </div>
        <div class="dropdown" style="position: absolute;" >
          <button  style="background-color: transparent; border: none; color: white; font-size: larger;" class="fa-solid fa-ellipsis-vertical" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
          </button>
@@ -806,72 +833,20 @@
          <li><a class="dropdown-item" href="#"><span><i class="fa-solid fa-list"></i></span><span>add to Favourites</span></a></li>
          <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-circle-info"></i></span><span> get info</span></a></li>
          </ul>
-     </div>    
- 
+     </div>      
      </div>
      </div>
      <h6>no lie</h6>
      <p>sean paul </p>
-
       </div>
-      <div id="song">
-     <div>   
+      <div  class="responsive" id="song">
+       <diV>
        <img class="songimage2" src="./home-images//latest english/no lie.jpg" alt="">
        <div class="hovers">
          <div class="playbutton2">
            <i class="fa-solid fa-play"></i>    
 
-           </div>
-         <div class="dropdown" style="position: absolute;" >
-           <button  style="background-color: transparent; border: none; color: white; font-size: larger;" class="fa-solid fa-ellipsis-vertical" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
-           </button>
-           <ul class="dropdown-menu dropdown-menu-dark" style="position: absolute;" aria-labelledby="dropdownMenuButton2">
-           <li><a class="dropdown-item" href="#">
-               <span> <i class="fa-solid fa-play"></i></span><span>Play Now</span></a></li>
-           <li class="addtoqueue"><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-plus"></i></span><span> Add To Queue</span> </a></li>
-           <li><a class="dropdown-item" href="#"><span><i class="fa-solid fa-list"></i></span><span>add to Favourites</span></a></li>
-           <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-circle-info"></i></span><span> get info</span></a></li>
-           </ul>
-       </div>      
-       </div>
-       </div>
-       <h6>no lie</h6>
-       <p>sean paul </p>
-        </div>
-        <div id="song">
-         <diV>
-         <img class="songimage2" src="./home-images//latest english/no lie.jpg" alt="">
-         <div class="hovers">
-           <div class="playbutton2">
-             <i class="fa-solid fa-play"></i>    
- 
-             </div> 
-           <div class="dropdown" style="position: absolute;" >
-             <button  style="background-color: transparent; border: none; color: white; font-size: larger;" class="fa-solid fa-ellipsis-vertical" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
-             </button>
-             <ul class="dropdown-menu dropdown-menu-dark" style="position: absolute;" aria-labelledby="dropdownMenuButton2">
-             <li><a class="dropdown-item" href="#">
-                 <span> <i class="fa-solid fa-play"></i></span><span>Play Now</span></a></li>
-             <li class="addtoqueue"><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-plus"></i></span><span> Add To Queue</span> </a></li>
-             <li><a class="dropdown-item" href="#"><span><i class="fa-solid fa-list"></i></span><span>add to Favourites</span></a></li>
-             <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-circle-info"></i></span><span> get info</span></a></li>
-             </ul>
-         </div>       
-     
-         </div>
-         </diV>
-
-         <h6>no lie</h6>
-         <p>sean paul </p>
-          </div>
-          <div id="song">
-            <div>
-        <img class="songimage2" src="./home-images//latest english/no lie.jpg" alt="">
-        <div class="hovers">
-         <div class="playbutton2">
-           <i class="fa-solid fa-play"></i>    
-
-           </div>
+           </div> 
          <div class="dropdown" style="position: absolute;" >
            <button  style="background-color: transparent; border: none; color: white; font-size: larger;" class="fa-solid fa-ellipsis-vertical" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
            </button>
@@ -885,45 +860,44 @@
        </div>       
    
        </div>
-           </div>
-           <h6>no lie</h6>
-           <p>sean paul </p>
-            </div>
-            <div id="song">
-              <div>
-             <img class="songimage2" src="./home-images//latest english/no lie.jpg" alt="">
-             <div class="hovers">
-               <div class="playbutton2">
-                 <i class="fa-solid fa-play"></i>    
-     
-                 </div> 
-               <div class="dropdown" style="position: absolute;" >
-                 <button  style="background-color: transparent; border: none; color: white; font-size: larger;" class="fa-solid fa-ellipsis-vertical" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
-                 </button>
-                 <ul class="dropdown-menu dropdown-menu-dark" style="position: absolute;" aria-labelledby="dropdownMenuButton2">
-                 <li><a class="dropdown-item" href="#">
-                     <span> <i class="fa-solid fa-play"></i></span><span>Play Now</span></a></li>
-                 <li class="addtoqueue"><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-plus"></i></span><span> Add To Queue</span> </a></li>
-                 <li><a class="dropdown-item" href="#"><span><i class="fa-solid fa-list"></i></span><span>add to Favourites</span></a></li>
-                 <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-circle-info"></i></span><span> get info</span></a></li>
-                 </ul>
-             </div>       
-         
-             </div>
-             </div>
-         <h6>no lie</h6>
-          <p>sean paul </p>
-          </div>
-    
-          <div id="song">
+       </diV>
 
-           <div>
+       <h6>no lie</h6>
+       <p>sean paul </p>
+        </div>
+        <div  class="responsive" id="song">
+          <div>
+      <img class="songimage2" src="./home-images//latest english/no lie.jpg" alt="">
+      <div class="hovers">
+       <div class="playbutton2">
+         <i class="fa-solid fa-play"></i>    
+
+         </div>
+       <div class="dropdown" style="position: absolute;" >
+         <button  style="background-color: transparent; border: none; color: white; font-size: larger;" class="fa-solid fa-ellipsis-vertical" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+         </button>
+         <ul class="dropdown-menu dropdown-menu-dark" style="position: absolute;" aria-labelledby="dropdownMenuButton2">
+         <li><a class="dropdown-item" href="#">
+             <span> <i class="fa-solid fa-play"></i></span><span>Play Now</span></a></li>
+         <li class="addtoqueue"><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-plus"></i></span><span> Add To Queue</span> </a></li>
+         <li><a class="dropdown-item" href="#"><span><i class="fa-solid fa-list"></i></span><span>add to Favourites</span></a></li>
+         <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-circle-info"></i></span><span> get info</span></a></li>
+         </ul>
+     </div>       
+ 
+     </div>
+         </div>
+         <h6>no lie</h6>
+         <p>sean paul </p>
+          </div>
+          <div  class="responsive" id="song">
+            <div>
            <img class="songimage2" src="./home-images//latest english/no lie.jpg" alt="">
            <div class="hovers">
              <div class="playbutton2">
                <i class="fa-solid fa-play"></i>    
    
-               </div>  
+               </div> 
              <div class="dropdown" style="position: absolute;" >
                <button  style="background-color: transparent; border: none; color: white; font-size: larger;" class="fa-solid fa-ellipsis-vertical" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
                </button>
@@ -934,20 +908,47 @@
                <li><a class="dropdown-item" href="#"><span><i class="fa-solid fa-list"></i></span><span>add to Favourites</span></a></li>
                <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-circle-info"></i></span><span> get info</span></a></li>
                </ul>
-           </div>      
-       </div>
+           </div>       
+       
            </div>
-           <h6>no lie</h6>
-           <p>sean paul </p>
-            </div>       
-  </div>
+           </div>
+       <h6>no lie</h6>
+        <p>sean paul </p>
+        </div>
+  
+        <div  class="responsive" id="song">
 
+         <div>
+         <img class="songimage2" src="./home-images//latest english/no lie.jpg" alt="">
+         <div class="hovers">
+           <div class="playbutton2">
+             <i class="fa-solid fa-play"></i>    
+ 
+             </div>  
+           <div class="dropdown" style="position: absolute;" >
+             <button  style="background-color: transparent; border: none; color: white; font-size: larger;" class="fa-solid fa-ellipsis-vertical" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+             </button>
+             <ul class="dropdown-menu dropdown-menu-dark" style="position: absolute;" aria-labelledby="dropdownMenuButton2">
+             <li><a class="dropdown-item" href="#">
+                 <span> <i class="fa-solid fa-play"></i></span><span>Play Now</span></a></li>
+             <li class="addtoqueue"><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-plus"></i></span><span> Add To Queue</span> </a></li>
+             <li><a class="dropdown-item" href="#"><span><i class="fa-solid fa-list"></i></span><span>add to Favourites</span></a></li>
+             <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-circle-info"></i></span><span> get info</span></a></li>
+             </ul>
+         </div>      
+     </div>
+         </div>
+         <h6>no lie</h6>
+         <p>sean paul </p>
+          </div>       
+</div>
      
    
  
 <!-- LATEST HINDI   -->
     
 <h3>latest hindi <p>see all</p></h3>
+
 <div class="latestenglish">
   <div id="song">
     <div>
@@ -1050,7 +1051,7 @@
 <h6>stay</h6>
 <p> justin bieber </p>
 </div>
-<div id="song">
+<div  class="responsive" id="song">
 <div> 
 <img class="songimage2" src="./home-images//latest english/unstoppable.jpg" alt="">
 <div class="hovers">
@@ -1076,7 +1077,7 @@
 <h6>unstoppable</h6>
 <p> sia</p>
 </div> 
-<div id="song">
+<div  class="responsive" id="song">
 <div>
 <img class="songimage2" src="./home-images//latest english/no lie.jpg" alt="">
 <div class="hovers">
@@ -1101,7 +1102,7 @@
 <h6>no lie</h6>
 <p>sean paul </p>
 </div>
-<div id="song">
+<div   class="responsive" id="song">
 <div>
 <img class="songimage2" src="./home-images//latest english/no lie.jpg" alt="">
 <div class="hovers">
@@ -1126,7 +1127,7 @@
 <h6>no lie</h6>
 <p>sean paul </p>
 </div>
-<div id="song">
+<div  class="responsive" id="song">
 <div> 
  <img class="songimage2" src="./home-images//latest english/no lie.jpg" alt="">
  <div class="hovers">
@@ -1152,7 +1153,7 @@
  <p>sean paul </p>
 
   </div>
-  <div id="song">
+  <div  class="responsive" id="song">
  <div>   
    <img class="songimage2" src="./home-images//latest english/no lie.jpg" alt="">
    <div class="hovers">
@@ -1176,7 +1177,7 @@
    <h6>no lie</h6>
    <p>sean paul </p>
     </div>
-    <div id="song">
+    <div  class="responsive" id="song">
      <diV>
      <img class="songimage2" src="./home-images//latest english/no lie.jpg" alt="">
      <div class="hovers">
@@ -1202,7 +1203,7 @@
      <h6>no lie</h6>
      <p>sean paul </p>
       </div>
-      <div id="song">
+      <div  class="responsive" id="song">
         <div>
     <img class="songimage2" src="./home-images//latest english/no lie.jpg" alt="">
     <div class="hovers">
@@ -1227,7 +1228,7 @@
        <h6>no lie</h6>
        <p>sean paul </p>
         </div>
-        <div id="song">
+        <div  class="responsive" id="song">
           <div>
          <img class="songimage2" src="./home-images//latest english/no lie.jpg" alt="">
          <div class="hovers">
@@ -1253,7 +1254,7 @@
       <p>sean paul </p>
       </div>
 
-      <div id="song">
+      <div  class="responsive" id="song">
 
        <div>
        <img class="songimage2" src="./home-images//latest english/no lie.jpg" alt="">
@@ -1279,13 +1280,13 @@
        <p>sean paul </p>
         </div>       
 </div>
-
 
 
 
 <!-- TOP ALBUMS -->
 
 <h3>top albums <p>see all</p> </h3>
+
 <div class="latestenglish">
   <div id="song">
     <div>
@@ -1388,7 +1389,7 @@
 <h6>stay</h6>
 <p> justin bieber </p>
 </div>
-<div id="song">
+<div  class="responsive" id="song">
 <div> 
 <img class="songimage2" src="./home-images//latest english/unstoppable.jpg" alt="">
 <div class="hovers">
@@ -1414,7 +1415,7 @@
 <h6>unstoppable</h6>
 <p> sia</p>
 </div> 
-<div id="song">
+<div  class="responsive" id="song">
 <div>
 <img class="songimage2" src="./home-images//latest english/no lie.jpg" alt="">
 <div class="hovers">
@@ -1439,7 +1440,7 @@
 <h6>no lie</h6>
 <p>sean paul </p>
 </div>
-<div id="song">
+<div   class="responsive" id="song">
 <div>
 <img class="songimage2" src="./home-images//latest english/no lie.jpg" alt="">
 <div class="hovers">
@@ -1464,7 +1465,7 @@
 <h6>no lie</h6>
 <p>sean paul </p>
 </div>
-<div id="song">
+<div  class="responsive" id="song">
 <div> 
  <img class="songimage2" src="./home-images//latest english/no lie.jpg" alt="">
  <div class="hovers">
@@ -1490,7 +1491,7 @@
  <p>sean paul </p>
 
   </div>
-  <div id="song">
+  <div  class="responsive" id="song">
  <div>   
    <img class="songimage2" src="./home-images//latest english/no lie.jpg" alt="">
    <div class="hovers">
@@ -1514,7 +1515,7 @@
    <h6>no lie</h6>
    <p>sean paul </p>
     </div>
-    <div id="song">
+    <div  class="responsive" id="song">
      <diV>
      <img class="songimage2" src="./home-images//latest english/no lie.jpg" alt="">
      <div class="hovers">
@@ -1540,7 +1541,7 @@
      <h6>no lie</h6>
      <p>sean paul </p>
       </div>
-      <div id="song">
+      <div  class="responsive" id="song">
         <div>
     <img class="songimage2" src="./home-images//latest english/no lie.jpg" alt="">
     <div class="hovers">
@@ -1565,7 +1566,7 @@
        <h6>no lie</h6>
        <p>sean paul </p>
         </div>
-        <div id="song">
+        <div  class="responsive" id="song">
           <div>
          <img class="songimage2" src="./home-images//latest english/no lie.jpg" alt="">
          <div class="hovers">
@@ -1591,7 +1592,7 @@
       <p>sean paul </p>
       </div>
 
-      <div id="song">
+      <div  class="responsive" id="song">
 
        <div>
        <img class="songimage2" src="./home-images//latest english/no lie.jpg" alt="">
@@ -1617,7 +1618,6 @@
        <p>sean paul </p>
         </div>       
 </div>
-
 
 
 <!-- ALL TIME Favourites -->
@@ -1625,7 +1625,7 @@
 <h3>all time Favourites <p>see all</p> </h3>
 
 <div id="latestenglish1">
-  <div id="song1">
+  <div id="song1" >
     <div>
        <img id="songimage3" src="./home-images/latest hindi/chaandbaliya.jpg" alt="">
        <div id="hovers1">
@@ -1722,7 +1722,7 @@
 <h6>maiyya mainu</h6>
 <p> sachet paramp.. </p>
 </div>
-<div style="margin-bottom: 0px;" id="song1">
+<div style="margin-bottom: 0px;" id="song1" class="responsive">
  <div> 
 <img id="songimage3" src="./home-images/latest hindi/aashiquiaagayi.jpg" alt="">
 <div id="hovers1">
@@ -1746,7 +1746,7 @@
 <h6>aashiqui aa g..</h6>
 <p>arjit singh</p>
 </div>
-<div id="song1">
+<div id="song1" class="responsive">
   <div>
   <img id="songimage3" src="./home-images/latest hindi/tulautaa.jpg" alt="">
   <div id="hovers1">
@@ -1771,7 +1771,7 @@
 <p>yaseer desai </p>
 </div>
 
-<div id="song1">
+<div id="song1" class="responsive">
   <div>
   <img id="songimage3" src="./home-images/latest hindi/tulautaa.jpg" alt="">
   <div id="hovers1">
@@ -1796,7 +1796,7 @@
   <p>yaseer desai </p>
   </div>
 
-  <div id="song1">
+  <div id="song1" class="responsive">
     <div>
     <img id="songimage3" src="./home-images/latest hindi/tulautaa.jpg" alt="">
     <div id="hovers1">
@@ -1821,7 +1821,7 @@
     <p>yaseer desai </p>
     </div>
 
-    <div id="song1">
+    <div id="song1" class="responsive">
       <div>
       <img id="songimage3" src="./home-images/latest hindi/tulautaa.jpg" alt="">
       <div id="hovers1">
@@ -1846,7 +1846,7 @@
       <p>yaseer desai </p>
       </div>
 
-      <div id="song1">
+      <div id="song1" class="responsive">
         <div>
         <img id="songimage3" src="./home-images/latest hindi/tulautaa.jpg" alt="">
         <div id="hovers1">
@@ -1871,7 +1871,7 @@
         <p>yaseer desai </p>
         </div>
 
-        <div id="song1">
+        <div id="song1" class="responsive">
           <div>
           <img id="songimage3" src="./home-images/latest hindi/tulautaa.jpg" alt="">
           <div id="hovers1">
@@ -1896,7 +1896,7 @@
           <p>yaseer desai </p>
           </div>
 
-          <div id="song1">
+          <div id="song1" class="responsive">
             <div>
             <img id="songimage3" src="./home-images/latest hindi/tulautaa.jpg" alt="">
             <div id="hovers1">
@@ -1921,7 +1921,7 @@
             <p>yaseer desai </p>
             </div>
 
-            <div id="song1">
+            <div id="song1" class="responsive">
               <div>
               <img id="songimage3" src="./home-images/latest hindi/tulautaa.jpg" alt="">
               <div id="hovers1">
@@ -1946,7 +1946,7 @@
               <p>yaseer desai </p>
               </div>
               
-              <div id="song1">
+              <div id="song1" class="responsive">
                 <div>
                 <img id="songimage3" src="./home-images/latest hindi/tulautaa.jpg" alt="">
                 <div id="hovers1">
@@ -1979,7 +1979,7 @@
 <h3>latin top hits <p>see all</p>  </h3>
 
 <div id="latestenglish1">
-  <div id="song1">
+  <div id="song1" >
     <div>
        <img id="songimage3" src="./home-images/latest hindi/chaandbaliya.jpg" alt="">
        <div id="hovers1">
@@ -2076,7 +2076,7 @@
 <h6>maiyya mainu</h6>
 <p> sachet paramp.. </p>
 </div>
-<div style="margin-bottom: 0px;" id="song1">
+<div style="margin-bottom: 0px;" id="song1" class="responsive">
  <div> 
 <img id="songimage3" src="./home-images/latest hindi/aashiquiaagayi.jpg" alt="">
 <div id="hovers1">
@@ -2100,7 +2100,7 @@
 <h6>aashiqui aa g..</h6>
 <p>arjit singh</p>
 </div>
-<div id="song1">
+<div id="song1" class="responsive">
   <div>
   <img id="songimage3" src="./home-images/latest hindi/tulautaa.jpg" alt="">
   <div id="hovers1">
@@ -2125,7 +2125,7 @@
 <p>yaseer desai </p>
 </div>
 
-<div id="song1">
+<div id="song1" class="responsive">
   <div>
   <img id="songimage3" src="./home-images/latest hindi/tulautaa.jpg" alt="">
   <div id="hovers1">
@@ -2150,7 +2150,7 @@
   <p>yaseer desai </p>
   </div>
 
-  <div id="song1">
+  <div id="song1" class="responsive">
     <div>
     <img id="songimage3" src="./home-images/latest hindi/tulautaa.jpg" alt="">
     <div id="hovers1">
@@ -2175,7 +2175,7 @@
     <p>yaseer desai </p>
     </div>
 
-    <div id="song1">
+    <div id="song1" class="responsive">
       <div>
       <img id="songimage3" src="./home-images/latest hindi/tulautaa.jpg" alt="">
       <div id="hovers1">
@@ -2200,7 +2200,7 @@
       <p>yaseer desai </p>
       </div>
 
-      <div id="song1">
+      <div id="song1" class="responsive">
         <div>
         <img id="songimage3" src="./home-images/latest hindi/tulautaa.jpg" alt="">
         <div id="hovers1">
@@ -2225,7 +2225,7 @@
         <p>yaseer desai </p>
         </div>
 
-        <div id="song1">
+        <div id="song1" class="responsive">
           <div>
           <img id="songimage3" src="./home-images/latest hindi/tulautaa.jpg" alt="">
           <div id="hovers1">
@@ -2250,7 +2250,7 @@
           <p>yaseer desai </p>
           </div>
 
-          <div id="song1">
+          <div id="song1" class="responsive">
             <div>
             <img id="songimage3" src="./home-images/latest hindi/tulautaa.jpg" alt="">
             <div id="hovers1">
@@ -2275,7 +2275,7 @@
             <p>yaseer desai </p>
             </div>
 
-            <div id="song1">
+            <div id="song1" class="responsive">
               <div>
               <img id="songimage3" src="./home-images/latest hindi/tulautaa.jpg" alt="">
               <div id="hovers1">
@@ -2300,7 +2300,7 @@
               <p>yaseer desai </p>
               </div>
               
-              <div id="song1">
+              <div id="song1" class="responsive">
                 <div>
                 <img id="songimage3" src="./home-images/latest hindi/tulautaa.jpg" alt="">
                 <div id="hovers1">
@@ -2333,6 +2333,7 @@
 
 <!-- TOP HINDI PLAYLIST -->
 <h3>top hindi playlists <p>see all</p></h3>
+  
 <div class="latestenglish">
   <div id="song">
     <div>
@@ -2435,7 +2436,7 @@
 <h6>stay</h6>
 <p> justin bieber </p>
 </div>
-<div id="song">
+<div  class="responsive" id="song">
 <div> 
 <img class="songimage2" src="./home-images//latest english/unstoppable.jpg" alt="">
 <div class="hovers">
@@ -2461,7 +2462,7 @@
 <h6>unstoppable</h6>
 <p> sia</p>
 </div> 
-<div id="song">
+<div  class="responsive" id="song">
 <div>
 <img class="songimage2" src="./home-images//latest english/no lie.jpg" alt="">
 <div class="hovers">
@@ -2486,7 +2487,7 @@
 <h6>no lie</h6>
 <p>sean paul </p>
 </div>
-<div id="song">
+<div   class="responsive" id="song">
 <div>
 <img class="songimage2" src="./home-images//latest english/no lie.jpg" alt="">
 <div class="hovers">
@@ -2511,7 +2512,7 @@
 <h6>no lie</h6>
 <p>sean paul </p>
 </div>
-<div id="song">
+<div  class="responsive" id="song">
 <div> 
  <img class="songimage2" src="./home-images//latest english/no lie.jpg" alt="">
  <div class="hovers">
@@ -2537,7 +2538,7 @@
  <p>sean paul </p>
 
   </div>
-  <div id="song">
+  <div  class="responsive" id="song">
  <div>   
    <img class="songimage2" src="./home-images//latest english/no lie.jpg" alt="">
    <div class="hovers">
@@ -2561,7 +2562,7 @@
    <h6>no lie</h6>
    <p>sean paul </p>
     </div>
-    <div id="song">
+    <div  class="responsive" id="song">
      <diV>
      <img class="songimage2" src="./home-images//latest english/no lie.jpg" alt="">
      <div class="hovers">
@@ -2587,7 +2588,7 @@
      <h6>no lie</h6>
      <p>sean paul </p>
       </div>
-      <div id="song">
+      <div  class="responsive" id="song">
         <div>
     <img class="songimage2" src="./home-images//latest english/no lie.jpg" alt="">
     <div class="hovers">
@@ -2612,7 +2613,7 @@
        <h6>no lie</h6>
        <p>sean paul </p>
         </div>
-        <div id="song">
+        <div  class="responsive" id="song">
           <div>
          <img class="songimage2" src="./home-images//latest english/no lie.jpg" alt="">
          <div class="hovers">
@@ -2638,7 +2639,7 @@
       <p>sean paul </p>
       </div>
 
-      <div id="song">
+      <div  class="responsive" id="song">
 
        <div>
        <img class="songimage2" src="./home-images//latest english/no lie.jpg" alt="">
@@ -2670,6 +2671,7 @@
 
 <!-- TOP ENLISH PLAYLIST -->
 <h3 >top english playlists <p>see all</p></h3>
+
 <div class="latestenglish">
   <div id="song">
     <div>
@@ -2772,7 +2774,7 @@
 <h6>stay</h6>
 <p> justin bieber </p>
 </div>
-<div id="song">
+<div  class="responsive" id="song">
 <div> 
 <img class="songimage2" src="./home-images//latest english/unstoppable.jpg" alt="">
 <div class="hovers">
@@ -2798,7 +2800,7 @@
 <h6>unstoppable</h6>
 <p> sia</p>
 </div> 
-<div id="song">
+<div  class="responsive" id="song">
 <div>
 <img class="songimage2" src="./home-images//latest english/no lie.jpg" alt="">
 <div class="hovers">
@@ -2823,7 +2825,7 @@
 <h6>no lie</h6>
 <p>sean paul </p>
 </div>
-<div id="song">
+<div   class="responsive" id="song">
 <div>
 <img class="songimage2" src="./home-images//latest english/no lie.jpg" alt="">
 <div class="hovers">
@@ -2848,7 +2850,7 @@
 <h6>no lie</h6>
 <p>sean paul </p>
 </div>
-<div id="song">
+<div  class="responsive" id="song">
 <div> 
  <img class="songimage2" src="./home-images//latest english/no lie.jpg" alt="">
  <div class="hovers">
@@ -2874,7 +2876,7 @@
  <p>sean paul </p>
 
   </div>
-  <div id="song">
+  <div  class="responsive" id="song">
  <div>   
    <img class="songimage2" src="./home-images//latest english/no lie.jpg" alt="">
    <div class="hovers">
@@ -2898,7 +2900,7 @@
    <h6>no lie</h6>
    <p>sean paul </p>
     </div>
-    <div id="song">
+    <div  class="responsive" id="song">
      <diV>
      <img class="songimage2" src="./home-images//latest english/no lie.jpg" alt="">
      <div class="hovers">
@@ -2924,7 +2926,7 @@
      <h6>no lie</h6>
      <p>sean paul </p>
       </div>
-      <div id="song">
+      <div  class="responsive" id="song">
         <div>
     <img class="songimage2" src="./home-images//latest english/no lie.jpg" alt="">
     <div class="hovers">
@@ -2949,7 +2951,7 @@
        <h6>no lie</h6>
        <p>sean paul </p>
         </div>
-        <div id="song">
+        <div  class="responsive" id="song">
           <div>
          <img class="songimage2" src="./home-images//latest english/no lie.jpg" alt="">
          <div class="hovers">
@@ -2975,7 +2977,7 @@
       <p>sean paul </p>
       </div>
 
-      <div id="song">
+      <div  class="responsive" id="song">
 
        <div>
        <img class="songimage2" src="./home-images//latest english/no lie.jpg" alt="">
@@ -3001,7 +3003,6 @@
        <p>sean paul </p>
         </div>       
 </div>
-
 
 <footer id="footer">
 

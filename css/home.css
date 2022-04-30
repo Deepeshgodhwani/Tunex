@@ -72,6 +72,15 @@ body{
     color:lightgray;
 }
 
+#quickaccess{
+
+    position: absolute; 
+    bottom: 10px;
+    left: 0px;
+    border-top: 1px solid rgb(45,47,51);
+    width: 100%;
+}
+
 #offcanvasNavbar{
 
 
@@ -93,6 +102,11 @@ body{
     position: absolute;
     left: 18px;
     opacity: 0;
+}
+
+#loginuser{
+
+    font-weight: bold;
 }
 
 #title{
@@ -210,10 +224,10 @@ body{
 
 #language{
 
-    width: 40px;
-    height: 40px;
-   position: relative;
-   color:rgb(117,117,117) ;
+     width: 40px;
+     height: 40px;
+     position: relative;
+     color:rgb(117,117,117) ;
      margin-right: 5px;
      bottom: 7px;
    }
@@ -382,7 +396,7 @@ margin-right: 1%;
 
 #latestrelease{
 
-      width: 80%;
+      width: 85%;
       margin-top: 25px;
 }
 
@@ -400,6 +414,7 @@ margin-right: 1%;
    
     
 }
+
 
 #playlistheader{
     display: flex;
@@ -490,7 +505,6 @@ margin-right: 1%;
     top: 0;
     left: 0;
     border-radius:50%;
- 
     opacity: 0;
        
 }
@@ -694,7 +708,6 @@ margin-right: 1%;
     height: 170px;
     
 }
-
 
 
 #aside{
@@ -1307,9 +1320,345 @@ input[type="range"]::-webkit-slider-thumb{
 
 
 
+/* RESPONSIVE to mobile */
+
+
+@media (max-width:600px) {
+       
+    /* navbar */
+   
+     #navbar{
+
+        border-top: 2px solid red;
+     }
+    #searchbar{
+
+    
+        overflow: hidden;
+        opacity: 0;
+    }
+
+    #navpart2{
+
+        width: 70%;
+        right: 10px;
+    }
+    #podcast{
+
+        width: 0;
+        overflow: hidden;
+    }
+    #loginuser{
+
+        font-size: 0.8rem;
+    }
+    #lightmode{
+
+        left:130px;
+    }
+
+    #language{
+
+        width: 0;
+        overflow: hidden;
+    }
+    #logo{
+   
+          margin-left: 30px;
+          width: 145px;
+
+    }
+    #logoimage{
+
+        width: 40px ;
+        height:40px ;
+    }
+    #logoname{
+
+          
+    }
+
+    #login{
+
+        left:50px;
+        font-size: 0.9rem;
+        margin-top:5px;
+        margin-left: 5px;
+    }
+    #userimage2{
+
+        left: 5px;
+    }
+    #userimage{
+     
+         margin-left: -10px;
+        
+    }
+    #quickaccess{
+
+        width: 0;
+        overflow: hidden;
+    }
 
 
 
+    /* header image */
+    
+    .himage{
+   
+         width: 80%;
+
+    }
+
+    #slider{
+
+        -webkit-animation-name: slide_animation;
+        -webkit-animation-duration: 60s;
+        -webkit-animation-iteration-count:infinite;
+        -webkit-animation-direction:alternate;
+        -webkit-animation-play-state:running; 
+        position: relative;
+        width: 100%;
+        display: flex;
+    
+    
+    }
+    
+     @-webkit-keyframes slide_animation{
+    
+        0%{right:180px;}
+        1%{right: 180px;}
+        5%{right: 400px;}
+        10%{right: 400px;}
+        13%{right: 600px;}
+        15%{right: 600px;}
+        20%{right: 600px;}
+        23%{right: 800px;}
+        25%{right: 800px;}
+        30%{right: 600px;}
+        100%{right: 600px}
+       
+    } 
+
+    #sidericon{
+
+        color: red;
+    }
+
+
+    #offcanvasNavbar{
+
+
+         
+        width:50%;
+    }
+
+    /* main */
+   
+    /* popular artists */
+    
+    #popular-artist{
+        width: 100%;
+       margin-left: 0;
+       overflow: unset;
+       flex-wrap: wrap;
+       padding-left: 42px;
+       padding-right: 42px; 
+       justify-content: center;
+       row-gap: 30px;
+       margin-bottom: 50px;
+       justify-content: space-between;
+        
+    }
+
+    
+     .artistsimage{
+
+       border-radius: 50%;
+       width: 140px;
+       height: 140px;
+       
+    
+      }
+
+      
+    .hovers4{
+       width: 140px; 
+       height: 140px;
+    }
+    
+     #songscard{
+
+      width: 0;
+      overflow: hidden;
+      position: absolute;  
+
+    }
+
+     /* major colums */
+
+    .latestenglish{
+
+        width: 100%;
+        margin-left: 0;
+        overflow: unset;
+        flex-wrap: wrap;
+        padding-left: 22px;
+        padding-right: 10px; 
+        justify-content: center;
+        row-gap: 30px;
+        margin-bottom: -100px;
+       
+       
+    
+    }
+
+    .hovers{
+      
+         
+         height: 140px;
+      
+        }
+
+    #song p{
+        color:rgb(95,103,110);
+        margin-top: -5px;
+        margin-left: 5px;
+        font-size: 0.8rem;
+    }
+    #song h6{
+        margin-top: 10px;
+        margin-left: 5px;
+    }
+    
+    #song{
+   
+      width :140px;
+      position: relative;
+    
+    }
+
+    .songimage2{
+    
+       
+        width: 140px;
+        height: 140px;
+        
+    }
+
+
+    .responsive{
+
+        width: 0%;  
+        overflow: hidden;
+        height: 0;
+        position: absolute;
+    }
+
+    /* all time favourite */
+    
+    #latestenglish1{
+
+     
+        width: 100%;
+        margin-left:0; 
+        overflow: unset;
+        flex-wrap: wrap;
+        padding-left: 22px;
+        padding-right: 10px; 
+        justify-content: center;
+        row-gap: 30px;
+        margin-bottom: -100px;
+       
+
+    }
+    #song1{
+   
+        width :140px;    
+        
+    }
+
+    #song1 h6{
+        margin-top: 10px;
+    }
+
+    #songimage3{
+        width: 140px;
+        height: 140px;
+    }
+
+
+ 
+    /* indie music */
+ 
+   #latestenglish2{
+
+    width: 100%;
+    margin-left: 0;
+    overflow: unset;
+    flex-wrap: wrap;
+    padding-left: 22px;
+    padding-right: 10px; 
+    justify-content: center;
+    row-gap: 30px;
+    margin-bottom: 40px;
+    
+   
+
+    
+  
+   }
+
+   .song2{
+   
+    margin-top: 10px;
+    width :140px;
+    height: 140px;
+    
+        
+   }
+   .songimage4{
+
+     
+     width: 130px;
+     height: 90px;
+     margin-top: 5px;
+    
+
+   }
+   #responsive{
+
+    width: 0%;  
+    overflow: hidden;
+    height: 0;
+    opacity: 1;
+    position: absolute;
+}
+  
+  /* footer */
+  
+
+ #footer{
+
+    margin-top: 20px;
+ } 
+ #advertisement{
+
+    width: 100%;
+    height: 150px;
+    
+}
+
+   #adpara{
+     width: 80%;
+     font-size: 0.9rem;
+     word-spacing: 3px;
+     text-align: justify;
+
+}
+
+
+}
 
 
 
