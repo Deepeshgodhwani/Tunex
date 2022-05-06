@@ -5,36 +5,38 @@
     <!-- <link rel="stylesheet" href="./home.css"> -->
     <script src="https://kit.fontawesome.com/992825dbbb.js" crossorigin="anonymous"></script>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
-    <body style="background-color: rgb(12,15,18); color: white; text-transform: capitalize; margin: 0; padding: 0;">
-        
-      <nav id="navbar">
-        <div id="logo">
-          
-           <span id="logo">
+    <body>
 
-            <a href="#"> <img id="logoimage" src='./music.png'></a>
+   <div id="head2">  
+      <nav id="navbar2">
+        <div id="logo2">          
+           <span id="logo2">
+             <a href="../index.html">
+             <img id="logoimage2" src='../home-images/music.png'>
             </span>
-          <span id="logoname">
-                  <a href="#" style="text-decoration: none; color: red;"> tun<span style="font-size: 1.7rem; text-transform: none; color: white;" id="title">ex</span></a>
+          <span id="logoname2">
+                  <a href="../index.html" style="text-decoration: none; color: red; font-size: 1.7rem;"> tun<span style="font-size: 1.7rem; text-transform: none; color: white;" id="title">ex</span></a>
                 </span>
+              </a>
               
        </div> 
        <nav  style="position: absolute; background-color: transparent;" >
         <div class="container-fluid" style="background-color: transparent;">
      
           <button style="background-color: transparent; border: none; margin-bottom: 5px;"   type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-            <span  class="navbar-toggler-icon"><i id="sidericon" class="fa-solid fa-bars"></i> </span>
+            <span  class="navbar-toggler-icon"><i id="sidericon2" class="fa-solid fa-bars"></i> </span>
           </button>
           <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
             <div class="offcanvas-header">
               <div style="width: 100%; height: 100px; display: flex; justify-content: space-between; ">
                  <span>
-                   <img id="userimage" src="./user.png" alt="">
-                   <img id="userimage2" src="./user2.png">
+                   <img id="userimage3" src="../home-images/user.png" alt="">
+                   <img id="userimage4" src="../home-images/user2.png">
                  </span>
-                <span id="login">
-                    Login / Sign Up
+                <span id="login2">
+                    Login/SignUp
                 </span>
               <button  type="button" style="color: rgb(200,200,201); border: none; background-color: transparent; position: absolute; top: 20  px; font-size: 1.5rem; right: 10px;" class="fa-solid fa-xmark" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                <div style="margin-top: 70px; position: absolute; left: 40px; font-size: 1rem;">
@@ -49,8 +51,7 @@
                  
 
                </div>
-               <div style="position: absolute; bottom: 10px; left: 0px; border-top: 1px solid rgb(45,47,51);
-                   width: 100%; ">
+               <div id="quickaccess2">
                <div style="margin-top: 20px;">
                 <h5 style="margin-left: 37px; margin-bottom: 10px;">Quick Access</h5>
                 <p style=" font-size: 0.9rem; margin-left: 37px;">Trending songs</p>
@@ -67,41 +68,45 @@
           </div>
         </div>
       </nav> 
-       <div id="searchbar" >
-        <span><i id="searchlogo" class="fa-solid fa-magnifying-glass"></i></span>
-        <input id="searchinput" type="text" name="search" placeholder="Search artists, songs, album" required>
+       <div id="searchbar2" >
+        <span><i id="searchlogo2" class="fa-solid fa-magnifying-glass"></i></span>
+        <input id="searchinput2" type="text" name="search" placeholder="Search artists, songs, album" required>
         </div>     
 
-       <div id="navpart2">
-         <div id="podcast">
-          <p id="new">new</p>
+       <div id="navpart3">
+         <div id="podcast2">
+          <p id="new2">new</p>
          <p style="font-size: 1.1rem; font-weight: bold;">podcasts</p>
 
          </div>
-        <i id="lightmode" onclick="darkmode()"> <img style="width: 20px; height: 20px; margin-top: 15px;"  src="./sun.png" alt=""></i>
-        <i  id="darkmode" onclick="darkmode()" class="fa-solid fa-moon"></i>  
-        <div id="language">
-          <p id="english">A</p>
-          <p id="hindi">
+        <i id="lightmode2" onclick="darkmode()"> <img style="width: 20px; height: 20px; margin-top: 15px;"  src="../home-images/sun.png" alt=""></i>
+        <i  id="darkmode2" onclick="darkmode()" class="fa-solid fa-moon"></i>  
+        <div id="language2">
+          <p id="english2">A</p>
+          <p id="hindi2">
             अ</p>
         </div>
 
           
-           <p id="logins">log in/sign up</p>
+           <p id="logins2">log in/sign up</p>
        </div>
     </nav>
   
-        
-     <div>     
+           
+    <div class="coldplay">
+
      <div id="container">
-       <video controls >
-          <source src="./coldplayvideo.mp4" type="video/mp4" />
-       </video>
+    
          <div id="part2">
-        <img id="artistposter" src="./home-images/popular artists/coldplay.jpg">
+        
+          <img id="artistposter" src="../home-images/popular artists/coldplay.jpg">
+          <div class="hovers">
+            </div>
+      
+     
         <div id="information">
         <h3 id="nameheading">coldplay</h3>
-        <p id="title">british band </p>
+        <p id="title2">british band </p>
         <p id="follower">851 followers</p>
         <p id="briefpara" >
        
@@ -109,7 +114,7 @@
              through their intelligent and soulful songs . the band members are chris martin (lead vocals),jonny buckland 
              (lead guitar) and will champion (Drums)</p>
         <div id="playsongs" >
-            <button id="playbutton">
+            <button id="playbutton4">
                 play all
             </button>
             <p style="margin-top: 15px;">
@@ -120,105 +125,167 @@
       </div>
       </div>
      </div>
-
-     <div id="songslist">  
-        <div id="box1">
-            <img  id="boximage" src="./home-images//queue list/believer.jpg" >
-            <h4 id="boxheading">
-             believer
-            </h4>
-            <p id="boxp">imagine dragon</p>
-           
-             <div id="boxicon">
-                <i class="fa-solid fa-plus"></i>
-            <i class="fa-regular fa-heart"></i>
-            </div>
-          </div>
-          <div id="box1">
-            <img  id="boximage" src="./home-images//queue list/believer.jpg" >
-            <h4 id="boxheading">
-             believer
-            </h4>
-            <p id="boxp">imagine dragon</p>
-           
-             <div id="boxicon">
-                <i class="fa-solid fa-plus"></i>
-            <i class="fa-regular fa-heart"></i>
-            </div>
-          </div>
-          <div id="box1">
-            <img  id="boximage" src="./home-images//queue list/believer.jpg" >
-            <h4 id="boxheading">
-             believer
-            </h4>
-            <p id="boxp">imagine dragon</p>
-           
-             <div id="boxicon">
-                <i class="fa-solid fa-plus"></i>
-            <i class="fa-regular fa-heart"></i>
-            </div>
-          </div>
-          
-          <div id="box1">
-            <img  id="boximage" src="./home-images//queue list/believer.jpg" >
-            <h4 id="boxheading">
-             believer
-            </h4>
-            <p id="boxp">imagine dragon</p>
-           
-             <div id="boxicon">
-                <i class="fa-solid fa-plus"></i>
-            <i class="fa-regular fa-heart"></i>
-            </div>
-          </div>
+  
+     <!-- songs list   -->
       
-          <div id="box1">
-            <img  id="boximage" src="./home-images//queue list/believer.jpg" >
-            <h4 id="boxheading">
+     <div id="songslist"> 
+       
+      <div id="groups"> <p style="margin-left: 9%;">track</p>  <p id="artists">artists</p>
+        <p style="margin-right: 10px;">duration</p></div>
+        <div id="box3">
+            <p id="numbering">01</p>
+            <img  id="boximage3" src="../home-images//queue list/believer.jpg" >
+            <h4 class="boxheading3">
              believer
             </h4>
-            <p id="boxp">imagine dragon</p>
+            <p id="boxp3">imagine dragon</p>
            
-             <div id="boxicon">
-                <i class="fa-solid fa-plus"></i>
-            <i class="fa-regular fa-heart"></i>
+             <div class="playbutton3" id="boxicon3">
+              <i  class="fa-solid fa-play"></i>
+            <i style="margin-left: 20px;" class="fa-regular fa-heart"></i>
+
             </div>
+            <p id="duration2">04:00</p>
+
           </div>
-          <div id="box1">
-            <img  id="boximage" src="./home-images//queue list/believer.jpg" >
-            <h4 id="boxheading">
+          <div id="box3">
+            <p id="numbering">02</p>
+
+            <img   id="boximage3" src="../home-images//queue list/believer.jpg" >
+            <h4 class="boxheading3">
              believer
             </h4>
-            <p id="boxp">imagine dragon</p>
+            <p id="boxp3">imagine dragon</p>
            
-             <div id="boxicon">
-                <i class="fa-solid fa-plus"></i>
-            <i class="fa-regular fa-heart"></i>
+             <div class="playbutton3" id="boxicon3">
+              <i class="fa-solid fa-play"></i>
+            <i style="margin-left: 20px;" class="fa-regular fa-heart"></i>
+
             </div>
+            <p id="duration2" >04:00</p>
+
           </div>
-          <div id="box1">
-            <img  id="boximage" src="./home-images//queue list/believer.jpg" >
-            <h4 id="boxheading">
+          <div id="box3">
+            <p id="numbering">03</p>
+
+            <img  class="playbutton2" id="boximage3" src="../home-images//queue list/believer.jpg" >
+            <h4 class="boxheading3">
              believer
             </h4>
-            <p id="boxp">imagine dragon</p>
+            <p id="boxp3">imagine dragon</p>
            
-             <div id="boxicon">
-                <i class="fa-solid fa-plus"></i>
-            <i class="fa-regular fa-heart"></i>
+             <div  class="playbutton3" id="boxicon3">
+              <i class="fa-solid fa-play"></i>
+            <i style="margin-left: 20px;" class="fa-regular fa-heart"></i>
+
             </div>
+            <p id="duration2">04:00</p>
+
           </div>
+          <div id="box3">
+            <p id="numbering">04</p>
+
+            <img  id="boximage3" src="../home-images//queue list/believer.jpg" >
+            <h4 class="boxheading3">
+             believer
+            </h4>
+            <p id="boxp3">imagine dragon</p>
+           
+             <div class="playbutton3" id="boxicon3">
+              <i class="fa-solid fa-play"></i>
+            <i style="margin-left: 20px;" class="fa-regular fa-heart"></i>
+
+            </div>
+            <p id="duration2">04:00</p>
+
+          </div>
+          <div id="box3">
+            <p id="numbering">05</p>
+
+            <img  id="boximage3" src="../home-images//queue list/believer.jpg" >
+            <h4 class="boxheading3">
+             believer
+            </h4>
+            <p id="boxp3">imagine dragon</p>
+           
+             <div class="playbutton3" id="boxicon3">
+              <i class="fa-solid fa-play"></i>
+            <i style="margin-left: 20px;" class="fa-regular fa-heart"></i>
+
+            </div>
+            <p id="duration2">04:00</p>
+
+          </div>
+          <div id="box3">
+            <p id="numbering">06</p>
+
+            <img  id="boximage3" src="../home-images//queue list/believer.jpg" >
+            <h4 class="boxheading3">
+             believer
+            </h4>
+            <p id="boxp3">imagine dragon</p>
+           
+             <div  class="playbutton3" id="boxicon3">
+              <i class="fa-solid fa-play"></i>
+            <i style="margin-left: 20px;" class="fa-regular fa-heart"></i>
+
+            </div>
+            <p id="duration2" >04:00</p>
+
+          </div>
+          <div id="box3">
+            <p id="numbering">07</p>
+
+
+            <img  id="boximage3" src="../home-images//queue list/believer.jpg" >
+            <h4 class="boxheading3">
+             believer
+            </h4>
+            <p id="boxp3">imagine dragon</p>
+           
+             <div  class="playbutton3" id="boxicon3">
+              <i class="fa-solid fa-play"></i>
+            <i style="margin-left: 20px;" class="fa-regular fa-heart"></i>
+
+            </div>
+            <p id="duration2" >04:00</p>
+
+          </div>
+          <div id="box3" style="border-bottom: 1px solid rgb(50,50,50); margin-bottom: 50px;">
+            <p id="numbering">08</p>
+
+            <img  id="boximage3" src="../home-images//queue list/believer.jpg" >
+            <h4 class="boxheading3">
+             believer
+            </h4>
+            <p id="boxp3">imagine dragon</p>
+           
+             <div class="playbutton3" id="boxicon3">
+              <i class="fa-solid fa-play"></i>
+            <i style="margin-left: 20px;" class="fa-regular fa-heart"></i>
+
+            </div>
+            <p id="duration2">04:00</p>
+
+          </div>
+                 
      </div>
 
-     <aside id="aside">
-      <div id="headings">
+     </div>
+
+
+     
+      <!-- aside -->
+      
+     <aside id="aside2">
+      <div id="headings2">
           <h3>
               similiar artists
           </h3>
-          <p>veiw all</p>
+          <p style="color: red;">veiw all</p>
       </div>
       <div id="box2">
-        <img  id="boximage2" src="./home-images//queue list/believer.jpg" >
+        <img  id="boximage2" src="../home-images//queue list/believer.jpg" >
         <p id="boxheading2">
          imagine dragon
         </p>
@@ -229,17 +296,17 @@
             </button>
             <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
             <li><a class="dropdown-item" href="#">
-                <span> <i class="fa-solid fa-play"></i></span><span>Play Now</span></a></li>
-            <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-plus"></i></span><span> Add To Queue</span> </a></li>
-            <li><a class="dropdown-item" href="#"><span><i class="fa-solid fa-list"></i></span><span>add to Favourites</span></a></li>
-            <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-circle-info"></i></span><span> get info</span></a></li>
+                <span style="margin-right: 15px;"> <i class="fa-solid fa-play"></i></span><span>Play Now</span></a></li>
+            <li><a class="dropdown-item" href="#"><span style="margin-right: 10px;" >  <i class="fa-solid fa-plus"></i></span><span> Add To Queue</span> </a></li>
+            <li><a class="dropdown-item" href="#"><span style="margin-right: 12px;" ><i class="fa-solid fa-list"></i></span><span>add to Favourites</span></a></li>
+            <li><a class="dropdown-item" href="#"><span style="margin-right: 10px;" > <i class="fa-solid fa-circle-info"></i></span><span> get info</span></a></li>
 
             </ul>
         </div>
-        <p id="duration">4:00</p>
+        <p id="duration3">4:00</p>
       </div>
       <div id="box2">
-        <img  id="boximage2" src="./home-images//queue list/believer.jpg" >
+        <img  id="boximage2" src="../home-images//queue list/believer.jpg" >
         <p id="boxheading2">
          imagine dragon
         </p>
@@ -250,17 +317,17 @@
             </button>
             <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
             <li><a class="dropdown-item" href="#">
-                <span> <i class="fa-solid fa-play"></i></span><span>Play Now</span></a></li>
-            <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-plus"></i></span><span> Add To Queue</span> </a></li>
-            <li><a class="dropdown-item" href="#"><span><i class="fa-solid fa-list"></i></span><span>add to Favourites</span></a></li>
-            <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-circle-info"></i></span><span> get info</span></a></li>
+                <span style="margin-right: 15px;"> <i class="fa-solid fa-play"></i></span><span>Play Now</span></a></li>
+            <li><a class="dropdown-item" href="#"><span style="margin-right: 10px;">  <i class="fa-solid fa-plus"></i></span><span> Add To Queue</span> </a></li>
+            <li><a class="dropdown-item" href="#"><span style="margin-right: 12px;" ><i class="fa-solid fa-list"></i></span><span>add to Favourites</span></a></li>
+            <li><a class="dropdown-item" href="#"><span style="margin-right: 10px;" > <i class="fa-solid fa-circle-info"></i></span><span> get info</span></a></li>
 
             </ul>
         </div>
-        <p id="duration">4:00</p>
+        <p id="duration3">4:00</p>
       </div>
       <div id="box2">
-        <img  id="boximage2" src="./home-images//queue list/believer.jpg" >
+        <img  id="boximage2" src="../home-images//queue list/believer.jpg" >
         <p id="boxheading2">
          imagine dragon
         </p>
@@ -271,23 +338,314 @@
             </button>
             <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
             <li><a class="dropdown-item" href="#">
-                <span> <i class="fa-solid fa-play"></i></span><span>Play Now</span></a></li>
-            <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-plus"></i></span><span> Add To Queue</span> </a></li>
-            <li><a class="dropdown-item" href="#"><span><i class="fa-solid fa-list"></i></span><span>add to Favourites</span></a></li>
-            <li><a class="dropdown-item" href="#"><span> <i class="fa-solid fa-circle-info"></i></span><span> get info</span></a></li>
+                <span style="margin-right: 15px;" > <i class="fa-solid fa-play"></i></span><span>Play Now</span></a></li>
+            <li><a class="dropdown-item" href="#"><span style="margin-right: 10px;"> <i class="fa-solid fa-plus"></i></span><span> Add To Queue</span> </a></li>
+            <li><a class="dropdown-item" href="#"><span style="margin-right: 12px;"><i class="fa-solid fa-list"></i></span><span>add to Favourites</span></a></li>
+            <li><a class="dropdown-item" href="#"><span style="margin-right: 10px;"> <i class="fa-solid fa-circle-info"></i></span><span> get info</span></a></li>
 
             </ul>
         </div>
-        <p id="duration">4:00</p>
+        <p id="duration3">4:00</p>
       </div>
 
-      <h2>recently played</h2>
-      
+      <h3 id="headings2">recently played  <p>see all</p></h3>
+
+      <div id="queuelist2" >
+        <div id="box2">
+          <img  id="boximage" src="../home-images//queue list/believer.jpg" >
+          <div class="hovers3">
+             <i class="fa-solid fa-play"></i>    
+          </div>  
+          <h6 id="boxheading">
+           believer
+          </h6>
+          <p id="boxp">imagine dragon</p>
+          <i id="boxicon" class="fa-regular fa-heart"></i>
+        </div>
+   
+        <div id="box2">
+         <img  id="boximage" src="../home-images/queue list/peaches.jpg" >
+         <div class="hovers3">
+           <i class="fa-solid fa-play"></i>    
+        </div>
+         <h6 id="boxheading">
+          peaches
+         </h6>
+         <p id="boxp">justin bieber</p>
+         <i id="boxicon" class="fa-regular fa-heart"></i>
+       </div>
+       <div id="box2">
+         <img  id="boximage" src="../home-images/queue list/artworks-000523641915-lo2qzf-t500x500.jpg" >
+         <div class="hovers3">
+           <i class="fa-solid fa-play"></i>    
+        </div>
+         <h6 id="boxheading">
+          on my way
+         </h6>
+         <p id="boxp">alan walker</p>
+         <i id="boxicon" class="fa-regular fa-heart"></i>
+       </div>
+       <div id="box2">
+         <img  id="boximage" src="../home-images/queue list/closer.png" >
+         <div class="hovers3">
+           <i class="fa-solid fa-play"></i>    
+        </div>
+         <h6 id="boxheading">
+          closer
+         </h6>
+         <p id="boxp">chainsmoker</p>
+         <i id="boxicon" class="fa-regular fa-heart"></i>
+       </div>
+       <div id="box2">
+         <img  id="boximage" src="../home-images/queue list/safari.jpg" >
+         <div class="hovers3">
+           <i class="fa-solid fa-play"></i>    
+        </div>
+         <h6 id="boxheading">
+          safari
+         </h6>
+         <p id="boxp">serena</p>
+         <i id="boxicon" class="fa-regular fa-heart"></i>
+       </div>
      </aside>
+   
+    
+
+    <!-- music bar -->
+    <div id="musicbar">
+      <div id="songdetail" >
+      <img id="playimage"  src="../home-images/latest english/asitwas.png">
+      <div>
+        <h6>
+          As It Was
+        </h6>
+        <p id="parap">
+          Harry Style
+        </p> 
+      </div>
+     </div>
+     <div id="playpause">
+      <i id="responsive"  class="fa-solid fa-shuffle"></i>
+      <div id="playn" >
+        <i id="responsive" class="fa-solid fa-backward-step"></i>
+        <div id="playbutton">
+        <i onclick="playsong()" id="play" class="fa-solid fa-play"></i>
+        <i onclick="pausesong()" id="pause" class="fa-solid fa-pause"></i>
+        </div>
+        <i id="responsive" class="fa-solid fa-forward-step"></i>
+      </div>
+      <i id="responsive" class="fa-solid fa-repeat"></i>      
+        </div>
+     <div id="duration">
+       <p id="responsive" >
+        00:00/03:37
+       </p>
+       <div id="volume">
+       <input  id="responsive" type="range" min="0" max="100" value="90" onchange="volume_change()" class="recent_volume">
+       </div>
+       <button class="responsive">
+        <p  class="responsive">
+          Auto
+        </p> 
+       </button>
+       <i style="color: rgb(237,28,36); font-size: 1rem;" id="volumeButton" class="fa-solid fa-volume-high"></i>
+       <img id="listplay" src="../home-images/playlist.png">
+      </div> 
+      <div  id="playbar" >
+        <!-- <div id="playrr"> -->
+         <input style="position: relative;" type="range" name="" min="0" max="100" value="0" id="duration_slider" onchange="change_duration()">  
+        </div>
+      </div>  
+
+      <!-- FOOOOOOTER -->
+
+      <footer id="footer">
+
+        <div id="advertisement">
+           
+            <p id="adpara">
+              Tunex is the one-stop solution for all your music needs. Tunex offers you free, 
+              unlimited access to over 30 million Hindi Songs, 
+              Bollywood Music, English MP3 songs, Regional Music & Mirchi Play.
+            </p>
+        </div>
+        <div>
+          <h4 id="fheading">quicklinks </h4>
+          <div id="slotshead">
+            <div id="slots">
+              <h6>albums</h6>
+              <p>english</p>
+              <p>hindi</p>
+              <p>telugu</p>
+              <p>punjabi</p>
+              <p>tamil</p>
+              <p>kannada</p>
+              <p>bhojpuri</p>
+              <p>malayalam</p>
+              <p>marathi</p>
+              <p>bengali</p>
+              <p>gujrati songs </p>
+              <p>haryanvi</p>
+              <p style="color: red;" >see all</p>  
+            </div>
+      
+            <div id="slots">
+              <h6>genres</h6>
+              <p>Bollywood songs</p>
+              <p>devotional songs</p>
+              <p>ghazals</p>
+              <p>bhajan</p>
+              <p>petriotic songs</p>
+              <p>kids songs</p>
+              <p>rock songs</p>
+              <p>disco songs</p>
+              <p>sufi songs</p>
+              <p>love songs</p>
+              <p style="color: red;" >see all</p>  
+            </div>
+            
+            <div id="slots">
+              <h6>artists</h6>
+              <p>arjit singh</p>
+              <p>neha kakkar</p>
+              <p>honey singh</p>
+              <p>atif aslam</p>
+              <p>a r rahman</p>
+              <p>lata mangeshkar</p>
+              <p>kishore kumar</p>
+              <p>armaan malik</p>
+              <p>sunidhi chauhan</p>
+              <p>nursat fateh ali khan</p>
+              <p>mohammed rafi</p>
+              <p>guru randhawa</p>
+              <p>justin bieber</p>
+              <p>coldplay</p>
+              <p style="color: red;" >see all</p>  
+            </div>
+            <div id="slots">
+              <h6>new release</h6>
+              <p>english songs</p>
+              <p>hindi songs</p>
+              <p>telugu songs</p>
+              <p>punjabi songs</p>
+              <p>tamil songs</p>
+              <p>kannada songs</p>
+              <p>bhojpuri songs</p>
+              <p>malayalam songs</p>
+              <p>marathi songs</p>
+              <p>bengali songs</p>
+              <p>gujrati songs </p>
+              <p>haryanvi songs</p>
+              <p>rajasthani songs</p>
+              <p>assamese songs </p>
+              <p>odisa songs</p>
+              <p style="color: red;" >see all</p>  
+            </div>   
+       
+            
+            <div id="slots">
+              <h6>trending songs</h6>
+              <p>vibe song</p>
+              <p>hunuman chalisa</p>
+              <p>295</p>
+              <p>black & white</p>
+              <p>mast maula</p>
+              <p>dil galti kar baitha hai</p>
+              <p>party all night</p>
+              <p>manike mage hithe tamil</p>
+              <p>raataab lambiyan</p>
+              <p>baarish ki jaye</p>
+              <p>phoonk le</p>
+              <p>koi sehri babu</p>
+              <p>jugnu</p>
+              <p>mainu nai pehchaandi</p>
+              <p style="color: red;" >see all</p>  
+            </div>  
+            
+            <div id="slots">
+              <h6>new release</h6>
+              <p>english songs</p>
+              <p>hindi songs</p>
+              <p>telugu songs</p>
+              <p>punjabi songs</p>
+              <p>tamil songs</p>
+              <p>kannada songs</p>
+              <p>bhojpuri songs</p>
+              <p>malayalam songs</p>
+              <p>marathi songs</p>
+              <p>bengali songs</p>
+              <p>gujrati songs </p>
+              <p>haryanvi songs</p>
+              <p>rajasthani songs</p>
+              <p>assamese songs </p>
+              <p>odisa songs</p>
+              <p>assamese songs </p>
+              <p>odisa songs</p>
+              <p style="color: red;" >see all</p>  
+            </div>  
+            <div id="slots" style="margin-right: 69%;">
+              <h6>trending songs</h6>
+              <p>vibe song</p>
+              <p>hunuman chalisa</p>
+              <p>295</p>
+              <p>black & white</p>
+              <p>mast maula</p>
+              <p>dil galti kar baitha hai</p>
+              <p>party all night</p>
+              <p>manike mage hithe tamil</p>
+              <p>raataab lambiyan</p>
+              <p>jugnu</p>
+              <p>mainu nai pehchaandi</p>
+              <p style="color: red;" >see all</p>  
+            </div>  
+         
+          </div>
+      
+      
+         </div>
+         
+         <div id="tcbar">
+          <div id="tc">
+               <h6>about us</h6>
+               <p>|</p>
+               <h6>advertise with us</h6>
+               <p>|</p>
+               <h6> privacy policy</h6>
+               <p>|</p>
+               <h6> term of use</h6>
+               <p>|</p>
+               <h6> contact us</h6>
+               <p>|</p>
+               <h6> feedback</h6>
+               <p>|</p>
+               <h6> hello tunes</h6>
+          </div>
+          <div id="socialicons">
+           
+            <i id="icons" class="fa-brands fa-facebook-f"></i>
+            <i id="icons2" class="fa-brands fa-twitter"></i>
+            <i id="icons3" class="fa-brands fa-instagram"></i>
+      
+          </div>
+          <div>
+      
+          </div>
+          </div>
+          <p id="rights"> 2022 © all rights reserved </p>
+        
+      
+      </footer>
+      
+
+    </div>
+
+
+
 
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>            
       <script src="../javascript/jquery.js"></script>
-      <script src="../javascript/home.js"></script>
+      <script src="../javascript/home.js" ></script>
+        
     </body>
 
 </html>
