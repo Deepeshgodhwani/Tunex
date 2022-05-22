@@ -2779,14 +2779,14 @@ input[type="range"]::-webkit-slider-thumb{
   }
   
   .recent_volume{
-   
+  
+    
     
   }
   
   #volume{
   
     transform: rotate(90deg);
-  
     position: absolute;
     margin-bottom: 65%;
     margin-left: 50%;
@@ -3509,6 +3509,22 @@ input[type="range"]::-webkit-slider-thumb{
   
       
   } 
+
+
+  @media (min-width:1400px){
+
+    #navpart2{
+
+      width: 26%;
+    }
+
+    #navpart3{
+
+      width: 26%;
+      
+    }
+
+  }
 
 
 
