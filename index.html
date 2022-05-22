@@ -78,7 +78,7 @@
          <p style="font-size: 1.1rem; font-weight: bold;">podcasts</p>
 
          </div>
-        <i id="lightmode" onclick="darkmode()"> <img style="width: 20px; height: 20px;"  src="./home-images/sun.png" alt=""></i>
+        <i id="lightmode" onclick="darkmode()"> <img  style="width: 20px;" src="./home-images/sun.png" alt=""></i>
         <i  id="darkmode" onclick="darkmode()" class="fa-solid fa-moon"></i>  
         <div id="language">
           <p id="english">A</p>
@@ -97,7 +97,7 @@
 
 
 
-<div id="sectiondivider">
+<div id="sectiondivider"> 
     <main id="main">    
 
       <div id="headerimage">
@@ -124,7 +124,7 @@
 
           <!-- HOVER -->
           <div class="hovers">
-            <div onclick="onPlay()";" class="playbutton2">
+            <div onclick="onPlay()"; class="playbutton2">
             <i class="fa-solid fa-play"></i>    
             </div>
             <div class="dropdown" style="position: absolute;" >
@@ -448,8 +448,6 @@
             <p>fayahh beat</p>
              </div>       
    </div>
-
-
   <!-- top charts -->
  <h3>top charts <p style="right: 8%;">see all</p></h3>
    
@@ -1321,68 +1319,68 @@
 <h3 >popular artist </h3>
 <div id="popular-artist">
 
-  <div id="artist1">
+  <div  id="artist1">
      
-     <img  class="artistsimage" src="./home-images/popular artists//image1.webp"> 
-     <div onclick="artists('justin')" class="hovers4">     
+     <img  class="artistsimage" src="./home-images/queue list/New folder/justin.webp"> 
+     <div onclick="PageSwitch('justin')" class="hovers4">     
 
     </div>
-     <br> <p>justin bieber</p>   
+     <br> <p id="artname" >justin bieber</p>   
   </div>
   
   <div id="artist1">
 
-      <img class="artistsimage" src="./home-images/popular artists//image2.jpg">
-      <div class="hovers4">     
+      <img class="artistsimage" src="./home-images/queue list/New folder/edsheeran.webp">
+      <div onclick="PageSwitch('edsheeran')" class="hovers4">     
 
       </div>
-      <br> <p>ed sheeran</p>   
+      <br> <p id="artname">ed sheeran</p>   
 
    </div>
    
   <div id="artist1">
 
-      <img class="artistsimage" src="./home-images/popular artists/image3.jpg">
-      <div class="hovers4">     
+      <img class="artistsimage" src="./home-images/queue list/New folder/bellieellish.webp">
+      <div  onclick="PageSwitch('bellie')" class="hovers4">     
 
       </div>
-      <br> <p>bellie ellish</p>         
+      <br> <p id="artname">bellie ellish</p>         
    </div>
    
   <div id="artist1">
 
       <img class="artistsimage" src="./home-images/popular artists/image4.webp">
-      <div class="hovers4">     
+      <div onclick="PageSwitch('charlie')"  class="hovers4">     
 
       </div>
-      <p>charlie puth</p>
+      <p id="artname">charlie puth</p>
       </div>                      
 
   <div  id="artist1" class="responsive">
 
      <img class="artistsimage"src="./home-images/popular artists/image5.jpg">
-       <a href="./html/artist-list.html" >  
-         <div class="hovers4">     
 
-    </div></a>
-      <br> <p>cold play</p>
+         <div onclick="PageSwitch('coldplay')" class="hovers4">       
+
+    </div>
+      <br> <p id="artname">cold play</p>
     </div>  
    
   <div id="artist1" class="responsive">
 
       <img class="artistsimage" src="./home-images/popular artists/alanwalker.jpg">
-      <div class="hovers4">     
+      <div onclick="PageSwitch('alanwalker')" class="hovers4">     
 
       </div>
-      <br> <p>alan walker</p>
+      <br> <p id="artname">alan walker</p>
    </div>
    <div id="artist1" class="responsive">
 
     <img class="artistsimage" src="./home-images/popular artists/image6.webp">
-    <div class="hovers4">     
+    <div onclick="PageSwitch('zayn')" class="hovers4">     
 
     </div>
-    <br> <p>zayn malik</p>         
+    <br> <p id="artname">zayn malik</p>         
  </div>
 
 
@@ -3145,14 +3143,14 @@
 
    <div id="queuelist" >
      <div id="box1">
-       <img  id="boximage" src="./home-images//queue list/believer.jpg" >
+       <img  id="boximage" src="./home-images/latestrelease/alltimelowjonbellion.webp" >
        <div class="hovers3">
-          <i class="fa-solid fa-play"></i>    
-       </div>  
+          <i onclick="onPlay()" class="fa-solid fa-play"></i>    
+       </div> 
        <h6 id="boxheading">
-        believer
+        all time low
        </h6>
-       <p id="boxp">imagine dragon</p>
+       <p id="boxp">john bellion</p>
        <i id="boxicon" class="fa-regular fa-heart"></i>
      </div>
 
@@ -3303,17 +3301,17 @@
     </div>
    </div>
 
-</div>
+
       
 
     </aside>
 
-    <div id="musicbar">
+    <div style="bottom:20px ;" id="musicbar">
       <div id="songdetail" >
       <img id="playimage"  src="./home-images/latestrelease/alltimelowjonbellion.webp">
       <div>
         <h6>
-          All time low
+          All Time Low
         </h6>
         <p id="parap">
           Jon bellion
@@ -3345,7 +3343,7 @@
         </p> 
        </button>
        <i style="color: rgb(237,28,36); font-size: 1rem;" id="volumeButton" class="fa-solid fa-volume-high"></i>
-       <img id="listplay" src="./home-images/playlist.png">
+       <img  id="listplay" src="./home-images/playlist.png">
       </div> 
       <div  id="playbar" >
         <!-- <div id="playrr"> -->
@@ -3358,6 +3356,1717 @@
 
 
      <!-- page 2   popular artists -->
+
+
+     <div id="head2">             
+      <nav id="navbar2">
+        <div id="logo2">          
+           <span id="logo2">
+             <a href="./index.html">
+             <img id="logoimage2" src='./home-images/music.png'>
+            </span>
+          <span id="logoname2">
+                  <a href="./index.html" style="text-decoration: none; color: red; font-size: 1.7rem;"> tun<span style="font-size: 1.7rem; text-transform: none; color: white;" id="title3">ex</span></a>
+                </span>
+              </a>
+              
+       </div> 
+       <nav  style="position: absolute; background-color: transparent;" >
+        <div class="container-fluid" style="background-color: transparent;">
+     
+          <button style="background-color: transparent; border: none; margin-bottom: 5px;"   type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span  class="navbar-toggler-icon"><i id="sidericon2" class="fa-solid fa-bars"></i> </span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <div style="width: 100%; height: 100px; display: flex; justify-content: space-between; ">
+                 <span>
+                   <img id="userimage3" src="./home-images/user.png" alt="">
+                   <img id="userimage4" src="./home-images/user2.png">
+                 </span>
+                <span id="login2">
+                    Login/SignUp
+                </span>
+              <button  type="button" style="color: rgb(200,200,201); border: none; background-color: transparent; position: absolute; top: 20  px; font-size: 1.5rem; right: 10px;" class="fa-solid fa-xmark" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+               <div style="margin-top: 70px; position: absolute; left: 40px; font-size: 1rem;">
+                 <p style="color: red;">
+                   Home
+                 </p>
+                 <p>Radio</p>
+                 <p>Podcast</p>
+                 <p>My music</p>
+                 <p>India's music</p>
+                 <p> Language <br> (Set Music Language)</p>
+                 
+
+               </div>
+               <div id="quickaccess2">
+               <div style="margin-top: 20px;">
+                <h5 style="margin-left: 37px; margin-bottom: 10px;">Quick Access</h5>
+                <p style=" font-size: 0.9rem; margin-left: 37px;">Trending songs</p>
+                <p style="font-size: 0.9rem;  margin-left: 37px;">New songs</p>
+                <p style=" font-size: 0.9rem; margin-left: 37px;">Old songs</p>
+                <p style=" font-size: 0.9rem; margin-left: 37px;"> Album</p>
+                <p style=" font-size: 0.9rem; margin-left: 37px;"> artist</p>
+                
+                  </div>
+
+               </div>
+              </div>
+            </div>  
+          </div>
+        </div>
+      </nav> 
+       <div id="searchbar2" >
+        <span><i id="searchlogo2" class="fa-solid fa-magnifying-glass"></i></span>
+        <input id="searchinput2" type="text" name="search" placeholder="Search artists, songs, album" required>
+        </div>     
+
+       <div id="navpart3">
+         <div id="podcast2">
+          <p id="new2">new</p>
+          <a style="position:absolute;" id="welcomehome" href="./index.html">home</a>
+         <p style="font-size: 1.1rem; font-weight: bold;">podcasts</p>
+
+         </div>
+        <i id="lightmode2" onclick="darkmode()"> <img style="width: 20px; height: 20px; margin-top: 15px;"  src="./home-images/sun.png" alt=""></i>
+        <i  id="darkmode2" onclick="darkmode()" class="fa-solid fa-moon"></i>  
+        <div id="language2">
+          <p id="english2">A</p>
+          <p id="hindi2">
+            अ</p>
+        </div>
+
+          
+           <p id="logins2">log in/sign up</p>
+       </div>
+    </nav>
+  
+           
+    <div class="coldplay">
+
+     <div id="container">
+    
+         <div id="part2">
+        
+          <img id="artistposter" src="./home-images/popular artists/coldplay.jpg">
+          <div class="hovers5">
+            </div>
+      
+     
+        <div id="information">
+        <h3 id="nameheading2">coldplay</h3>
+        <p id="title2">british band </p>
+        <p id="follower">851 followers</p>
+        <p id="briefpara" >
+       
+             coldplay is a british music band that has enjoyed continuous success since thier inception in 1996
+             through their intelligent and soulful songs . the band members are chris martin (lead vocals),jonny buckland 
+             (lead guitar) and will champion (Drums)</p>
+        <div id="playsongs" >
+            <button id="playbutton5">
+                play all
+            </button>
+            <p style="margin-top: 15px;">
+                follow
+            </p>
+            <c>247 tracks | 1211 albums</c>
+        </div>
+      </div>
+      </div>
+     </div>
+  
+     <!-- songs list   -->
+      
+     <div id="songslist"> 
+       
+      <div id="groups"> <p style="margin-left: 9%;">track</p>  <p id="artists">artists</p>
+        <p style="margin-right: 10px;">duration</p></div>
+        <div  id="box3">
+            <p id="numbering">01</p>
+            <img  id="boximage3" src="./home-images//queue list/New folder/atlas.webp" >
+            <h4 class="boxheading3">
+             atlas
+            </h4>
+            <p id="boxp3">cold play</p>
+           
+             <div class="playbutton5" id="boxicon3">
+              <i  class="fa-solid fa-play"></i>
+            <i style="margin-left: 20px;" class="fa-regular fa-heart"></i>
+
+            </div>
+            <p id="duration2">02:45</p>
+
+          </div>
+          <div id="box3">
+            <p id="numbering">02</p>
+
+            <img   id="boximage3" src="./home-images//queue list/New folder/paradise.webp" >
+            <h4 class="boxheading3">
+             paradise
+            </h4>
+            <p id="boxp3">cold play</p>
+           
+             <div class="playbutton5" id="boxicon3">
+              <i class="fa-solid fa-play"></i>
+            <i style="margin-left: 20px;" class="fa-regular fa-heart"></i>
+
+            </div>
+            <p id="duration2" >03:50</p>
+
+          </div>
+          <div id="box3">
+            <p id="numbering">03</p>
+
+            <img  class="playbutton2" style="border-radius: 0;" id="boximage3" src="./home-images//queue list/New folder/charliebrown.webp" >
+            <h4 class="boxheading3">
+             charlie brown
+            </h4>
+            <p id="boxp3">cold play</p>
+           
+             <div  class="playbutton5" id="boxicon3">
+              <i class="fa-solid fa-play"></i>
+            <i style="margin-left: 20px;" class="fa-regular fa-heart"></i>
+
+            </div>
+            <p id="duration2">04:02</p>
+
+          </div>
+          <div id="box3">
+            <p id="numbering">04</p>
+
+            <img  id="boximage3" src="./home-images//queue list/New folder/hymmfortheweekend.webp" >
+            <h4 class="boxheading3">
+             hymm for the weekend
+            </h4>
+            <p id="boxp3">cold play</p>
+           
+             <div class="playbutton5" id="boxicon3">
+              <i class="fa-solid fa-play"></i>
+            <i style="margin-left: 20px;" class="fa-regular fa-heart"></i>
+
+            </div>
+            <p id="duration2">03:25</p>
+
+          </div>
+          <div id="box3">
+            <p id="numbering">05</p>
+
+            <img  id="boximage3" src="./home-images//queue list/New folder/up&up.webp" >
+            <h4 class="boxheading3">
+             up & up
+            </h4>
+            <p id="boxp3">cold play</p>
+           
+             <div class="playbutton5" id="boxicon3">
+              <i class="fa-solid fa-play"></i>
+            <i style="margin-left: 20px;" class="fa-regular fa-heart"></i>
+
+            </div>
+            <p id="duration2">04:15</p>
+
+          </div>
+          <div id="box3">
+            <p id="numbering">06</p>
+
+            <img  id="boximage3" src="./home-images//queue list/New folder/brother and sisters.webp" >
+            <h4 class="boxheading3">
+             brother and sisters
+            </h4>
+            <p id="boxp3">cold play</p>
+           
+             <div  class="playbutton5" id="boxicon3">
+              <i class="fa-solid fa-play"></i>
+            <i style="margin-left: 20px;" class="fa-regular fa-heart"></i>
+
+            </div>
+            <p id="duration2" >04:35</p>
+
+          </div>
+          <div id="box3">
+            <p id="numbering">07</p>
+
+
+            <img  id="boximage3" src="./home-images//queue list/New folder/illrememberyou.webp" >
+            <h4 class="boxheading3">
+             i'll remember you
+            </h4>
+           <p id="boxp3">cold play</p>
+           
+             <div  class="playbutton5" id="boxicon3">
+              <i class="fa-solid fa-play"></i>
+            <i style="margin-left: 20px;" class="fa-regular fa-heart"></i>
+
+            </div>
+            <p id="duration2" >04:15</p>
+
+          </div>
+          <div id="box3" style="border-bottom: 1px solid rgb(50,50,50); margin-bottom: 50px;">
+            <p id="numbering">08</p>
+
+            <img  id="boximage3" src="./home-images//queue list/New folder/onlysuperstition.webp" >
+            <h4 class="boxheading3">
+             only superstition
+            </h4>
+            <p id="boxp3">cold play</p>
+           
+             <div class="playbutton5" id="boxicon3">
+              <i class="fa-solid fa-play"></i>
+            <i style="margin-left: 20px;" class="fa-regular fa-heart"></i>
+
+            </div>
+            <p id="duration2">04:00</p>
+
+          </div>
+                 
+     </div>
+
+     </div>
+
+     <div class="justin">
+
+     <div id="container">
+    
+         <div id="part2">
+        
+          <img id="artistposter" src="./home-images/queue list/New folder/justin.webp">
+          <div class="hovers5">
+            </div>
+      
+     
+        <div id="information">
+        <h3 id="nameheading2">justin bieber</h3>
+        <p id="title2">singer</p>
+        <p id="follower">851 followers</p>
+        <p id="briefpara" >
+          Justin Drew Bieber, popularly known as Justin Bieber, is one of the most successful 
+          singers in the Hollywood music industry. His fabulous voice is what made him produce some
+          hit Justin Bieber songs in the Hollywood music industry.</p>
+        <div id="playsongs" >
+            <button id="playbutton5">
+                play all
+            </button>
+            <p style="margin-top: 15px;">
+                follow
+            </p>
+            <c>247 tracks | 1211 albums</c>
+        </div>
+      </div>
+      </div>
+     </div>
+  
+     <!-- songs list   -->
+      
+     <div id="songslist"> 
+       
+      <div id="groups"> <p style="margin-left: 9%;">track</p>  <p id="artists">artists</p>
+        <p style="margin-right: 10px;">duration</p></div>
+        <div  id="box3">
+            <p id="numbering">01</p>
+            <img  id="boximage3" src="./home-images//queue list/New folder/anyonej.webp" >
+            <h4 class="boxheading3">
+             anyone
+            </h4>
+            <p id="boxp3">justin bieber</p>
+           
+             <div class="playbutton5" id="boxicon3">
+              <i  class="fa-solid fa-play"></i>
+            <i style="margin-left: 20px;" class="fa-regular fa-heart"></i>
+
+            </div>
+            <p id="duration2">04:15</p>
+
+          </div>
+          <div id="box3">
+            <p id="numbering">02</p>
+
+            <img   id="boximage3" src="./home-images//queue list/New folder/holdon.webp" >
+            <h4 class="boxheading3">
+             hold on
+            </h4>
+            <p id="boxp3">justin bieber</p>
+           
+             <div class="playbutton5" id="boxicon3">
+              <i class="fa-solid fa-play"></i>
+            <i style="margin-left: 20px;" class="fa-regular fa-heart"></i>
+
+            </div>
+            <p id="duration2" >03:35</p>
+
+          </div>
+          <div id="box3">
+            <p id="numbering">03</p>
+
+            <img style="border-radius: 0;"  class="playbutton2" id="boximage3" src="./home-images//queue list/New folder/moodj.webp" >
+            <h4 class="boxheading3">
+             mood
+            </h4>
+            <p id="boxp3">justin bieber</p>
+           
+             <div  class="playbutton5" id="boxicon3">
+              <i class="fa-solid fa-play"></i>
+            <i style="margin-left: 20px;" class="fa-regular fa-heart"></i>
+
+            </div>
+            <p id="duration2">03:50</p>
+
+          </div>
+          <div id="box3">
+            <p id="numbering">04</p>
+
+            <img  id="boximage3" src="./home-images//queue list/New folder/peachesj.webp" >
+            <h4 class="boxheading3">
+             peaches
+            </h4>
+            <p id="boxp3">justin bieber</p>
+           
+             <div class="playbutton5" id="boxicon3">
+              <i class="fa-solid fa-play"></i>
+            <i style="margin-left: 20px;" class="fa-regular fa-heart"></i>
+
+            </div>
+            <p id="duration2">04:50
+            </p>
+
+          </div>
+          <div id="box3">
+            <p id="numbering">05</p>
+
+            <img  id="boximage3" src="./home-images//queue list/New folder/yummyj.webp" >
+            <h4 class="boxheading3">
+             yummy
+            </h4>
+            <p id="boxp3">justin bieber</p>
+           
+             <div class="playbutton5" id="boxicon3">
+              <i class="fa-solid fa-play"></i>
+            <i style="margin-left: 20px;" class="fa-regular fa-heart"></i>
+
+            </div>
+            <p id="duration2">02:57</p>
+
+          </div>
+          <div id="box3">
+            <p id="numbering">06</p>
+
+            <img  id="boximage3" src="./home-images//queue list/New folder/2uj.webp" >
+            <h4 class="boxheading3">
+             2 u
+            </h4>
+            <p id="boxp3">justin bieber</p>
+           
+             <div  class="playbutton5" id="boxicon3">
+              <i class="fa-solid fa-play"></i>
+            <i style="margin-left: 20px;" class="fa-regular fa-heart"></i>
+
+            </div>
+            <p id="duration2" >04:25
+            </p>
+
+          </div>
+          <div id="box3">
+            <p id="numbering">07</p>
+
+
+            <img  id="boximage3" src="./home-images//queue list/New folder/honest.jpg" >
+            <h4 class="boxheading3">             
+             honest
+            </h4>
+            <p id="boxp3">justin bieber</p>
+           
+             <div  class="playbutton5" id="boxicon3">
+              <i class="fa-solid fa-play"></i>
+            <i style="margin-left: 20px;" class="fa-regular fa-heart"></i>
+
+            </div>
+            <p id="duration2" >03:40</p>
+
+          </div>
+          <div id="box3" style="border-bottom: 1px solid rgb(50,50,50); margin-bottom: 50px;">
+            <p id="numbering">08</p>
+
+            <img  id="boximage3" src="./home-images//queue list/New folder/iamtheone.webp" >
+            <h4 class="boxheading3">
+             i am the one 
+            </h4>
+            <p id="boxp3">justin bieber</p>
+           
+             <div class="playbutton5" id="boxicon3">
+              <i class="fa-solid fa-play"></i>
+            <i style="margin-left: 20px;" class="fa-regular fa-heart"></i>
+
+            </div>
+            <p id="duration2">04:10</p>
+
+          </div>
+                 
+     </div>
+
+     </div>
+
+     <div class="bellie">
+
+      <div id="container">
+     
+          <div id="part2">
+         
+           <img id="artistposter" src="./home-images/queue list/New folder/bellieellish.webp">
+           <div class="hovers5">
+             </div>
+       
+      
+         <div id="information">
+         <h3 id="nameheading2">billie eilish</h3>
+         <p id="title2">american singer</p>
+         <p id="follower">2350 followers</p>
+         <p id="briefpara" >
+        
+          billie eilish  is an American singer-songwriter. She first gained public attention in 2015 with her debut single "Ocean Eyes", which was subsequently
+           released by Darkroom, an imprint of Interscope Records. </p>
+         <div id="playsongs" >
+             <button id="playbutton5">
+                 play all
+             </button>
+             <p style="margin-top: 15px;">
+                 follow
+             </p>
+             <c>157 tracks | 856 albums</c>
+         </div>
+       </div>
+       </div>
+      </div>
+   
+      <!-- songs list   -->
+       
+      <div id="songslist"> 
+        
+       <div id="groups"> <p style="margin-left: 9%;">track</p>  <p id="artists">artists</p>
+         <p style="margin-right: 10px;">duration</p></div>
+         <div  id="box3">
+             <p id="numbering">01</p>
+             <img  id="boximage3" src="./home-images//queue list/New folder/badguysbell.webp" >
+             <h4 class="boxheading3">
+              bad guys
+             </h4>
+             <p id="boxp3">billie eilish</p>
+            
+              <div class="playbutton5" id="boxicon3">
+               <i  class="fa-solid fa-play"></i>
+             <i style="margin-left: 20px;" class="fa-regular fa-heart"></i>
+ 
+             </div>
+             <p id="duration2">04.02</p>
+ 
+           </div>
+           <div id="box3">
+             <p id="numbering">02</p>
+ 
+             <img   id="boximage3" src="./home-images//queue list/New folder/boredbellie.webp" >
+             <h4 class="boxheading3">
+              bored
+             </h4>
+             <p id="boxp3">billie eilish</p>
+            
+              <div class="playbutton5" id="boxicon3">
+               <i class="fa-solid fa-play"></i>
+             <i style="margin-left: 20px;" class="fa-regular fa-heart"></i>
+ 
+             </div>
+             <p id="duration2" >03:50</p>
+ 
+           </div>
+           <div id="box3">
+             <p id="numbering">03</p>
+ 
+             <img  style="border-radius:0 ;" class="playbutton2" id="boximage3" src="./home-images//queue list/New folder/cuttingbyprecision.webp" >
+             <h4 class="boxheading3">
+              cutting by precision
+             </h4>
+             <p id="boxp3">billie eilish</p>
+            
+              <div  class="playbutton5" id="boxicon3">
+               <i class="fa-solid fa-play"></i>
+             <i style="margin-left: 20px;" class="fa-regular fa-heart"></i>
+ 
+             </div>
+             <p id="duration2">03:30</p>
+ 
+           </div>
+           <div id="box3">
+             <p id="numbering">04</p>
+ 
+             <img  id="boximage3" src="./home-images//queue list/New folder/iloveyoubellie.webp" >
+             <h4 class="boxheading3">
+              i love you
+             </h4>
+             <p id="boxp3">billie eilish</p>
+            
+              <div class="playbutton5" id="boxicon3">
+               <i class="fa-solid fa-play"></i>
+             <i style="margin-left: 20px;" class="fa-regular fa-heart"></i>
+ 
+             </div>
+             <p id="duration2">03.03</p>
+ 
+           </div>
+           <div id="box3">
+             <p id="numbering">05</p>
+ 
+             <img  id="boximage3" src="./home-images//queue list/New folder/lovelyed.webp" >
+             <h4 class="boxheading3">
+               lovely
+             </h4>
+             <p id="boxp3">billie eilish</p>
+            
+              <div class="playbutton5" id="boxicon3">
+               <i class="fa-solid fa-play"></i>
+             <i style="margin-left: 20px;" class="fa-regular fa-heart"></i>
+ 
+             </div>
+             <p id="duration2">04:20</p>
+ 
+           </div>
+           <div id="box3">
+             <p id="numbering">06</p>
+ 
+             <img  id="boximage3" src="./home-images//queue list/New folder/notimetodie.webp" >
+             <h4 class="boxheading3">
+              no time to die
+             </h4>
+             <p id="boxp3">billie eilish</p>
+            
+              <div  class="playbutton5" id="boxicon3">
+               <i class="fa-solid fa-play"></i>
+             <i style="margin-left: 20px;" class="fa-regular fa-heart"></i>
+ 
+             </div>
+             <p id="duration2" >04:30</p>
+ 
+           </div>
+           <div id="box3">
+             <p id="numbering">07</p>
+ 
+ 
+             <img  id="boximage3" src="./home-images//queue list/New folder/thereforeiambellie.webp" >
+             <h4 class="boxheading3">
+              therefore i am
+             </h4>
+             <p id="boxp3">billie eilish</p>
+            
+              <div  class="playbutton5" id="boxicon3">
+               <i class="fa-solid fa-play"></i>
+             <i style="margin-left: 20px;" class="fa-regular fa-heart"></i>
+ 
+             </div>
+             <p id="duration2" >02:54</p>
+ 
+           </div>
+           <div id="box3" style="border-bottom: 1px solid rgb(50,50,50); margin-bottom: 50px;">
+             <p id="numbering">08</p>
+ 
+             <img  id="boximage3" src="./home-images//queue list/New folder/bellyachebellie.webp" >
+             <h4 class="boxheading3">
+              bellyache
+             </h4>
+             <p id="boxp3">billie eilish</p>
+            
+              <div class="playbutton5" id="boxicon3">
+               <i class="fa-solid fa-play"></i>
+             <i style="margin-left: 20px;" class="fa-regular fa-heart"></i>
+ 
+             </div>
+             <p id="duration2">04:30</p>
+ 
+           </div>
+                  
+      </div>
+ 
+      </div>
+
+      <div class="edsheeran">
+
+        <div id="container">
+       
+            <div id="part2">
+           
+             <img id="artistposter" src="./home-images/queue list/New folder/edsheeran.webp">
+             <div class="hovers5">
+               </div>
+         
+        
+           <div id="information">
+           <h3 id="nameheading2">ed sheeran</h3>
+           <p id="title2">singer</p>
+           <p id="follower">1054 followers</p>
+           <p id="briefpara" >
+          
+            Whenever we talk about top English singers, we cannot afford to miss the name of Ed Sheeran. Hands down, he is one of the best singers and has given the audience some marvelous English songs to sing along with.
+           
+            </p>
+           <div id="playsongs" >
+               <button id="playbutton5">
+                   play all
+               </button>
+               <p style="margin-top: 15px;">
+                   follow
+               </p>
+               <c>280 tracks | 1500 albums</c>
+           </div>
+         </div>
+         </div>
+        </div>
+     
+        <!-- songs list   -->
+         
+        <div id="songslist"> 
+          
+         <div id="groups"> <p style="margin-left: 9%;">track</p>  <p id="artists">artists</p>
+           <p style="margin-right: 10px;">duration</p></div>
+           <div  id="box3">
+               <p id="numbering">01</p>
+               <img  id="boximage3" src="./home-images//queue list/New folder/afterglow.webp" >
+               <h4 class="boxheading3">
+                after glow
+               </h4>
+               <p id="boxp3">ed sheeran</p>
+              
+                <div class="playbutton5" id="boxicon3">
+                 <i  class="fa-solid fa-play"></i>
+               <i style="margin-left: 20px;" class="fa-regular fa-heart"></i>
+   
+               </div>
+               <p id="duration2">04:02</p>
+   
+             </div>
+             <div id="box3">
+               <p id="numbering">02</p>
+   
+               <img style="border-radius: 0;"  id="boximage3" src="./home-images//queue list/New folder/photographed.webp" >
+               <h4 class="boxheading3">
+                photograph
+               </h4>
+               <p id="boxp3">ed sheeran</p>
+              
+                <div class="playbutton5" id="boxicon3">
+                 <i class="fa-solid fa-play"></i>
+               <i style="margin-left: 20px;" class="fa-regular fa-heart"></i>
+   
+               </div>
+               <p id="duration2" >03:55</p>
+   
+             </div>
+             <div id="box3">
+               <p id="numbering">03</p>
+   
+               <img  class="playbutton2" id="boximage3" src="./home-images//queue list/New folder/shiversed.webp" >
+               <h4 class="boxheading3">
+                shivers
+               </h4>
+               <p id="boxp3">ed sheeran</p>
+              
+                <div  class="playbutton5" id="boxicon3">
+                 <i class="fa-solid fa-play"></i>
+               <i style="margin-left: 20px;" class="fa-regular fa-heart"></i>
+   
+               </div>
+               <p id="duration2">04:30</p>
+   
+             </div>
+             <div id="box3">
+               <p id="numbering">04</p>
+   
+               <img  id="boximage3" src="./home-images//queue list/New folder/perfected.webp" >
+               <h4 class="boxheading3">
+                perfect
+               </h4>
+               <p id="boxp3">ed sheeran</p>
+              
+                <div class="playbutton5" id="boxicon3">
+                 <i class="fa-solid fa-play"></i>
+               <i style="margin-left: 20px;" class="fa-regular fa-heart"></i>
+   
+               </div>
+               <p id="duration2">03:25</p>
+   
+             </div>
+             <div id="box3">
+               <p id="numbering">05</p>
+   
+               <img  id="boximage3" src="./home-images//queue list/New folder/beautifulepeopleed.webp" >
+               <h4 class="boxheading3">
+                beautiful people
+               </h4>
+               <p id="boxp3">ed sheeran</p>
+              
+                <div class="playbutton5" id="boxicon3">
+                 <i class="fa-solid fa-play"></i>
+               <i style="margin-left: 20px;" class="fa-regular fa-heart"></i>
+   
+               </div>
+               <p id="duration2">03:45</p>
+   
+             </div>
+             <div id="box3">
+               <p id="numbering">06</p>
+   
+               <img  id="boximage3" src="./home-images//queue list/New folder/badhabitsed.webp" >
+               <h4 class="boxheading3">
+                bad habits
+               </h4>
+               <p id="boxp3">ed sheeran</p>
+              
+                <div  class="playbutton5" id="boxicon3">
+                 <i class="fa-solid fa-play"></i>
+               <i style="margin-left: 20px;" class="fa-regular fa-heart"></i>
+   
+               </div>
+               <p id="duration2" >04:30</p>
+   
+             </div>
+             <div id="box3">
+               <p id="numbering">07</p>
+   
+   
+               <img  id="boximage3" src="./home-images//queue list/New folder/revivel.webp" >
+               <h4 class="boxheading3">
+                revival
+               </h4>
+               <p id="boxp3">eminem, ed sheeran</p>
+              
+                <div  class="playbutton5" id="boxicon3">
+                 <i class="fa-solid fa-play"></i>
+               <i style="margin-left: 20px;" class="fa-regular fa-heart"></i>
+   
+               </div>
+               <p id="duration2" >04:00</p>
+   
+             </div>
+             <div id="box3" style="border-bottom: 1px solid rgb(50,50,50); margin-bottom: 50px;">
+               <p id="numbering">08</p>
+   
+               <img  id="boximage3" src="./home-images//queue list/New folder/endgameed.webp" >
+               <h4 class="boxheading3">
+                end game
+               </h4>
+               <p id="boxp3">taylor swift, ed sheeran</p>
+              
+                <div class="playbutton5" id="boxicon3">
+                 <i class="fa-solid fa-play"></i>
+               <i style="margin-left: 20px;" class="fa-regular fa-heart"></i>
+   
+               </div>
+               <p id="duration2">04:04</p>
+   
+             </div>
+                    
+        </div>
+   
+        </div>
+
+        <div class="charlie">
+
+          <div id="container">
+         
+              <div id="part2">
+             
+               <img id="artistposter" src="./home-images/popular artists/image4.webp">
+               <div class="hovers5">
+                 </div>
+           
+          
+             <div id="information">
+             <h3 id="nameheading2">charlie puth</h3>
+             <p id="title2">american singer </p>
+             <p id="follower">50k followers</p>
+             <p id="briefpara" >
+            
+              There have been a lot of American singers who have had a great influence on the young generation. From those singers,
+               the one singer that has a special place in people's heart is none other than Charlie Puth . 
+              </p>
+             <div id="playsongs" >
+                 <button id="playbutton5">
+                     play all
+                 </button>
+                 <p style="margin-top: 15px;">
+                     follow
+                 </p>
+                 <c>530 tracks | 423 albums</c>
+             </div>
+           </div>
+           </div>
+          </div>
+       
+          <!-- songs list   -->
+           
+          <div id="songslist"> 
+            
+           <div id="groups"> <p style="margin-left: 9%;">track</p>  <p id="artists">artists</p>
+             <p style="margin-right: 10px;">duration</p></div>
+             <div  id="box3">
+                 <p id="numbering">01</p>
+                 <img  id="boximage3" src="./home-images/popular artists/attention.webp" >
+                 <h4 class="boxheading3">
+                  attention
+                 </h4>
+                 <p id="boxp3">charlie puth</p>
+                
+                  <div class="playbutton5" id="boxicon3">
+                   <i  class="fa-solid fa-play"></i>
+                 <i style="margin-left: 20px;" class="fa-regular fa-heart"></i>
+     
+                 </div>
+                 <p id="duration2">03:29</p>
+     
+               </div>
+               <div id="box3">
+                 <p id="numbering">02</p>
+     
+                 <img   id="boximage3" src="./home-images/popular artists/howlongch.webp" >
+                 <h4 class="boxheading3">
+                  how long
+                 </h4>
+                 <p id="boxp3">charlie puth</p>
+                
+                  <div class="playbutton5" id="boxicon3">
+                   <i class="fa-solid fa-play"></i>
+                 <i style="margin-left: 20px;" class="fa-regular fa-heart"></i>
+     
+                 </div>
+                 <p id="duration2" >04:05</p>
+     
+               </div>
+               <div id="box3">
+                 <p id="numbering">03</p>
+     
+                 <img style="border-radius:0 ;" class="playbutton2" id="boximage3" src="./home-images/popular artists/cheatingonyouchar.webp" >
+                 <h4 class="boxheading3">
+                  cheating on you
+                 </h4>
+                 <p id="boxp3">charlie puth</p>
+                
+                  <div  class="playbutton5" id="boxicon3">
+                   <i class="fa-solid fa-play"></i>
+                 <i style="margin-left: 20px;" class="fa-regular fa-heart"></i>
+     
+                 </div>
+                 <p id="duration2">2:50</p>
+     
+               </div>
+               <div id="box3">
+                 <p id="numbering">04</p>
+     
+                 <img  id="boximage3" src="./home-images/popular artists/dangerouslychar.webp" >
+                 <h4 class="boxheading3">
+                  dangerously
+                 </h4>
+                 <p id="boxp3">charlie puth</p>
+                
+                  <div class="playbutton5" id="boxicon3">
+                   <i class="fa-solid fa-play"></i>
+                 <i style="margin-left: 20px;" class="fa-regular fa-heart"></i>
+     
+                 </div>
+                 <p id="duration2">03:25</p>
+     
+               </div>
+               <div id="box3">
+                 <p id="numbering">05</p>
+     
+                 <img  id="boximage3" src="./home-images/popular artists/girlfriendchar.webp" >
+                 <h4 class="boxheading3">
+                  girlfriend
+                 </h4>
+                 <p id="boxp3">charlie puth</p>
+                
+                  <div class="playbutton5" id="boxicon3">
+                   <i class="fa-solid fa-play"></i>
+                 <i style="margin-left: 20px;" class="fa-regular fa-heart"></i>
+     
+                 </div>
+                 <p id="duration2">04:10</p>
+     
+               </div>
+               <div id="box3">
+                 <p id="numbering">06</p>
+     
+                 <img  id="boximage3" src="./home-images/popular artists/iwarnedmyselfchar.webp" >
+                 <h4 class="boxheading3">
+                  i warned myself
+                 </h4>
+                 <p id="boxp3">charlie puth</p>
+                
+                  <div  class="playbutton5" id="boxicon3">
+                   <i class="fa-solid fa-play"></i>
+                 <i style="margin-left: 20px;" class="fa-regular fa-heart"></i>
+     
+                 </div>
+                 <p id="duration2" >03.25</p>
+     
+               </div>
+               <div id="box3">
+                 <p id="numbering">07</p>
+     
+     
+                 <img  id="boximage3" src="./home-images/popular artists/lagirles.webp" >
+                 <h4 class="boxheading3">
+                  la girls
+                 </h4>
+                 <p id="boxp3">charlie puth</p>
+                
+                  <div  class="playbutton5" id="boxicon3">
+                   <i class="fa-solid fa-play"></i>
+                 <i style="margin-left: 20px;" class="fa-regular fa-heart"></i>
+     
+                 </div>
+                 <p id="duration2" >04:20 </p>
+     
+               </div>
+               <div id="box3" style="border-bottom: 1px solid rgb(50,50,50); margin-bottom: 50px;">
+                 <p id="numbering">08</p>
+     
+                 <img  id="boximage3" src="./home-images/popular artists/motherchar.webp" >
+                 <h4 class="boxheading3">
+                  mother
+                 </h4>
+                 <p id="boxp3">charlie puth</p>
+                
+                  <div class="playbutton5" id="boxicon3">
+                   <i class="fa-solid fa-play"></i>
+                 <i style="margin-left: 20px;" class="fa-regular fa-heart"></i>
+     
+                 </div>
+                 <p id="duration2">02:50</p>
+     
+               </div>
+                      
+          </div>
+     
+          </div>
+          <div class="alanwalker">
+
+            <div id="container">
+           
+                <div id="part2">
+               
+                 <img id="artistposter" src="./home-images/popular artists/alanwalker.jpg">
+                 <div class="hovers5">
+                   </div>
+             
+            
+               <div id="information">
+               <h3 id="nameheading2">alan walker</h3>
+               <p id="title2">norwegian dj</p>
+               <p id="follower">100k followers</p>
+               <p id="briefpara" >
+              
+                Alan Olav Walker (born 24 August 1997), formerly known by his stage name DJ Walkzz, 
+                is a Norwegian record producer and DJ. He is best known for his 2015 single 
+                "Faded,which received platinum certifications in over 10 different countries.</p>
+               <div id="playsongs" >
+                   <button id="playbutton5">
+                       play all
+                   </button>
+                   <p style="margin-top: 15px;">
+                       follow
+                   </p>
+                   <c>503 tracks | 1850 albums</c>
+               </div>
+             </div>
+             </div>
+            </div>
+         
+            <!-- songs list   -->
+             
+            <div id="songslist"> 
+              
+             <div id="groups"> <p style="margin-left: 9%;">track</p>  <p id="artists">artists</p>
+               <p style="margin-right: 10px;">duration</p></div>
+               <div  id="box3">
+                   <p id="numbering">01</p>
+                   <img  id="boximage3" src="./home-images/popular artists/darksidealan.webp" >
+                   <h4 class="boxheading3">
+                    dark side
+                   </h4>
+                   <p id="boxp3">alan walker</p>
+                  
+                    <div class="playbutton5" id="boxicon3">
+                     <i  class="fa-solid fa-play"></i>
+                   <i style="margin-left: 20px;" class="fa-regular fa-heart"></i>
+       
+                   </div>
+                   <p id="duration2">04:30</p>
+       
+                 </div>
+                 <div id="box3">
+                   <p id="numbering">02</p>
+       
+                   <img   id="boximage3" src="./home-images/popular artists/fadedalan.webp" >
+                   <h4 class="boxheading3">
+                    faded
+                   </h4>
+                   <p id="boxp3">alan walker</p>
+                  
+                    <div class="playbutton5" id="boxicon3">
+                     <i class="fa-solid fa-play"></i>
+                   <i style="margin-left: 20px;" class="fa-regular fa-heart"></i>
+       
+                   </div>
+                   <p id="duration2" >03:45</p>
+       
+                 </div>
+                 <div id="box3">
+                   <p id="numbering">03</p>
+       
+                   <img style="border-radius:0 ;"  class="playbutton2" id="boximage3" src="./home-images/popular artists/helloworldalan.jpg" >
+                   <h4 class="boxheading3">
+                    hello world
+                   </h4>
+                   <p id="boxp3">alan walker</p>
+                  
+                    <div  class="playbutton5" id="boxicon3">
+                     <i class="fa-solid fa-play"></i>
+                   <i style="margin-left: 20px;" class="fa-regular fa-heart"></i>
+       
+                   </div>
+                   <p id="duration2">03:50</p>
+       
+                 </div>
+                 <div id="box3">
+                   <p id="numbering">04</p>
+       
+                   <img  id="boximage3" src="./home-images/popular artists/ignitealan.webp" >
+                   <h4 class="boxheading3">
+                    ignite
+                   </h4>
+                   <p id="boxp3">alan walker</p>
+                  
+                    <div class="playbutton5" id="boxicon3">
+                     <i class="fa-solid fa-play"></i>
+                   <i style="margin-left: 20px;" class="fa-regular fa-heart"></i>
+       
+                   </div>
+                   <p id="duration2">02:20</p>
+       
+                 </div>
+                 <div id="box3">
+                   <p id="numbering">05</p>
+       
+                   <img  id="boximage3" src="./home-images/popular artists/lillyalan.webp" >
+                   <h4 class="boxheading3">
+                    lilly
+                   </h4>
+                   <p id="boxp3">alan walker</p>
+                  
+                    <div class="playbutton5" id="boxicon3">
+                     <i class="fa-solid fa-play"></i>
+                   <i style="margin-left: 20px;" class="fa-regular fa-heart"></i>
+       
+                   </div>
+                   <p id="duration2">03:50</p>
+       
+                 </div>
+                 <div id="box3">
+                   <p id="numbering">06</p>
+       
+                   <img  id="boximage3" src="./home-images/popular artists/playk-391,alan.webp" >
+                   <h4 class="boxheading3">
+                    play
+                   </h4>
+                   <p id="boxp3">k-391, alan walker</p>
+                  
+                    <div  class="playbutton5" id="boxicon3">
+                     <i class="fa-solid fa-play"></i>
+                   <i style="margin-left: 20px;" class="fa-regular fa-heart"></i>
+       
+                   </div>
+                   <p id="duration2" >04:50</p>
+       
+                 </div>
+                 <div id="box3">
+                   <p id="numbering">07</p>
+       
+       
+                   <img  id="boximage3" src="./home-images/popular artists/sorryalan.webp" >
+                   <h4 class="boxheading3">
+                    sorry
+                   </h4>
+                   <p id="boxp3">alan walker</p>
+                  
+                    <div  class="playbutton5" id="boxicon3">
+                     <i class="fa-solid fa-play"></i>
+                   <i style="margin-left: 20px;" class="fa-regular fa-heart"></i>
+       
+                   </div>
+                   <p id="duration2" >03:25</p>
+       
+                 </div>
+                 <div id="box3" style="border-bottom: 1px solid rgb(50,50,50); margin-bottom: 50px;">
+                   <p id="numbering">08</p>
+       
+                   <img  id="boximage3" src="./home-images/popular artists/routinedavidwhistle,alan.webp" >
+                   <h4 class="boxheading3">
+                    routine
+                   </h4>
+                   <p id="boxp3">david whistle, alan walker</p>
+                  
+                    <div class="playbutton5" id="boxicon3">
+                     <i class="fa-solid fa-play"></i>
+                   <i style="margin-left: 20px;" class="fa-regular fa-heart"></i>
+       
+                   </div>
+                   <p id="duration2">02:45</p>
+       
+                 </div>
+                        
+            </div>
+       
+            </div>
+            <div class="zayn">
+
+              <div id="container">
+             
+                  <div id="part2">
+                 
+                   <img id="artistposter" src="./home-images/popular artists">
+                   <div class="hovers5">
+                     </div>
+               
+              
+                 <div id="information">
+                 <h3 id="nameheading2">zayn malik</h3>
+                 <p id="title2">singer </p>
+                 <p id="follower">1,050 followers</p>
+                 <p id="briefpara" >
+                
+                  Zayn, is an English singer and songwriter. Zayn Malik first rose to prominence 
+                  when he auditioned as a solo artist for the British music competition The X Factor in 2010.
+                  After being eliminated as a solo performer, Malik was brought back into the competition,
+                   along with four other contestants.</p>
+                 <div id="playsongs" >
+                     <button id="playbutton5">
+                         play all
+                     </button>
+                     <p style="margin-top: 15px;">
+                         follow
+                     </p>
+                     <c>450 tracks | 1630 albums</c>
+                 </div>
+               </div>
+               </div>
+              </div>
+           
+              <!-- songs list   -->
+               
+              <div id="songslist"> 
+                
+               <div id="groups"> <p style="margin-left: 9%;">track</p>  <p id="artists">artists</p>
+                 <p style="margin-right: 10px;">duration</p></div>
+                 <div  id="box3">
+                     <p id="numbering">01</p>
+                     <img  id="boximage3" src="./home-images/popular artists/dusktilldownzayn.webp" >
+                     <h4 class="boxheading3">
+                      dusk till down
+                     </h4>
+                     <p id="boxp3">zayn malik</p>
+                    
+                      <div class="playbutton5" id="boxicon3">
+                       <i  class="fa-solid fa-play"></i>
+                     <i style="margin-left: 20px;" class="fa-regular fa-heart"></i>
+         
+                     </div>
+                     <p id="duration2">03:55</p>
+         
+                   </div>
+                   <div id="box3">
+                     <p id="numbering">02</p>
+         
+                     <img   id="boximage3" src="./home-images/popular artists/flames,R3HAB,zayn.webp" >
+                     <h4 class="boxheading3">
+                      flames
+                     </h4>
+                     <p id="boxp3">R3HAB ,zayn malik</p>
+                    
+                      <div class="playbutton5" id="boxicon3">
+                       <i class="fa-solid fa-play"></i>
+                     <i style="margin-left: 20px;" class="fa-regular fa-heart"></i>
+         
+                     </div>
+                     <p id="duration2" >04:25</p>
+         
+                   </div>
+                   <div id="box3">
+                     <p id="numbering">03</p>
+         
+                     <img  style="border-radius: 0;" class="playbutton2" id="boximage3" src="./home-images/popular artists/cruelsnakehipszayn.webp" >
+                     <h4 class="boxheading3">
+                      cruel
+                     </h4>
+                     <p id="boxp3">snakehips, zayn malik</p>
+                    
+                      <div  class="playbutton5" id="boxicon3">
+                       <i class="fa-solid fa-play"></i>
+                     <i style="margin-left: 20px;" class="fa-regular fa-heart"></i>
+         
+                     </div>
+                     <p id="duration2">03:20</p>
+         
+                   </div>
+                   <div id="box3">
+                     <p id="numbering">04</p>
+         
+                     <img  id="boximage3" src="./home-images/popular artists/likeiwouldzayn.webp" >
+                     <h4 class="boxheading3">
+                      like i would
+                     </h4>
+                     <p id="boxp3">zayn malik</p>
+                    
+                      <div class="playbutton5" id="boxicon3">
+                       <i class="fa-solid fa-play"></i>
+                     <i style="margin-left: 20px;" class="fa-regular fa-heart"></i>
+         
+                     </div>
+                     <p id="duration2">03:22</p>
+         
+                   </div>
+                   <div id="box3">
+                     <p id="numbering">05</p>
+         
+                     <img  id="boximage3" src="./home-images/popular artists/pillowtalkzaynmalik.webp" >
+                     <h4 class="boxheading3">
+                      pillow talk
+                     </h4>
+                     <p id="boxp3">zayn malik</p>
+                    
+                      <div class="playbutton5" id="boxicon3">
+                       <i class="fa-solid fa-play"></i>
+                     <i style="margin-left: 20px;" class="fa-regular fa-heart"></i>
+         
+                     </div>
+                     <p id="duration2">04:20</p>
+         
+                   </div>
+                   <div id="box3">
+                     <p id="numbering">06</p>
+         
+                     <img  id="boximage3" src="./home-images/popular artists/trampolineshaed,zayn.webp" >
+                     <h4 class="boxheading3">
+                       trampoline
+                     </h4>
+                     <p id="boxp3">shaed ,zayn malik</p>
+                    
+                      <div  class="playbutton5" id="boxicon3">
+                       <i class="fa-solid fa-play"></i>
+                     <i style="margin-left: 20px;" class="fa-regular fa-heart"></i>
+         
+                     </div>
+                     <p id="duration2" >03:30</p>
+         
+                   </div>
+                   <div id="box3">
+                     <p id="numbering">07</p>
+         
+         
+                     <img  id="boximage3" src="./home-images/popular artists/thereyouare,timbaland,zayn.webp" >
+                     <h4 class="boxheading3">
+                      they you are
+                     </h4>
+                     <p id="boxp3">timbaland, zayn malik</p>
+                    
+                      <div  class="playbutton5" id="boxicon3">
+                       <i class="fa-solid fa-play"></i>
+                     <i style="margin-left: 20px;" class="fa-regular fa-heart"></i>
+         
+                     </div>
+                     <p id="duration2" >02:55</p>
+         
+                   </div>
+                   <div id="box3" style="border-bottom: 1px solid rgb(50,50,50); margin-bottom: 50px;">
+                     <p id="numbering">08</p>
+         
+                     <img  id="boximage3" src="./home-images/popular artists/vibezzayn.webp" >
+                     <h4 class="boxheading3">
+                      vibez
+                     </h4>
+                     <p id="boxp3">zayn malik</p>
+                    
+                      <div class="playbutton5" id="boxicon3">
+                       <i class="fa-solid fa-play"></i>
+                     <i style="margin-left: 20px;" class="fa-regular fa-heart"></i>
+         
+                     </div>
+                     <p id="duration2">03:50</p>
+         
+                   </div>
+                          
+              </div>
+         
+              </div>
+
+
+     
+      <!-- aside -->
+      
+     <aside id="aside2">
+      <div style="margin-bottom: 10px;" id="headings2">
+          <h2 style="font-size: 1.6rem ;">
+              similiar artist
+          </h2>
+          <p style="color: red;">veiw all</p>
+      </div>
+      <div id="box2">
+        <img  id="boximage2" src="./home-images/queue list/sunflower.webp" >
+        <p id="boxheading2">
+         Post Malone
+        </p>
+        <p id="boxp2">sunflower</p>
+        <!-- <i id="boxicon2" class="fa-regular fa-heart"></i> -->
+        <div id="boxicon2" class="dropdown">
+            <button  style="background-color: transparent; border: none; color: rgb(140,158,171)" class="fa-solid fa-ellipsis" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+            </button>
+            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+            <li><a class="dropdown-item" href="#">
+                <span style="margin-right: 15px;"> <i class="fa-solid fa-play"></i></span><span>Play Now</span></a></li>
+            <li><a class="dropdown-item" href="#"><span style="margin-right: 10px;" >  <i class="fa-solid fa-plus"></i></span><span> Add To Queue</span> </a></li>
+            <li><a class="dropdown-item" href="#"><span style="margin-right: 12px;" ><i class="fa-solid fa-list"></i></span><span>add to Favourites</span></a></li>
+            <li><a class="dropdown-item" href="#"><span style="margin-right: 10px;" > <i class="fa-solid fa-circle-info"></i></span><span> get info</span></a></li>
+
+            </ul>
+        </div>
+        <p id="duration3">4:00</p>
+      </div>
+      <div id="box2">
+        <img  id="boximage2" src="./home-images//queue list/goodbye.webp" >
+        <p id="boxheading2">
+         post malone
+        </p>
+        <p id="boxp2">goodbye</p>
+        <!-- <i id="boxicon2" class="fa-regular fa-heart"></i> -->
+        <div id="boxicon2" class="dropdown">
+            <button  style="background-color: transparent; border: none; color: rgb(140,158,171)" class="fa-solid fa-ellipsis" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+            </button>
+            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+            <li><a class="dropdown-item" href="#">
+                <span style="margin-right: 15px;"> <i class="fa-solid fa-play"></i></span><span>Play Now</span></a></li>
+            <li><a class="dropdown-item" href="#"><span style="margin-right: 10px;">  <i class="fa-solid fa-plus"></i></span><span> Add To Queue</span> </a></li>
+            <li><a class="dropdown-item" href="#"><span style="margin-right: 12px;" ><i class="fa-solid fa-list"></i></span><span>add to Favourites</span></a></li>
+            <li><a class="dropdown-item" href="#"><span style="margin-right: 10px;" > <i class="fa-solid fa-circle-info"></i></span><span> get info</span></a></li>
+
+            </ul>
+        </div>
+        <p id="duration3">4:00</p>
+      </div>
+      <div id="box2">
+        <img  id="boximage2" src="./home-images//queue list/congratulations.webp" >
+        <p id="boxheading2">
+         post malone
+        </p>
+        <p id="boxp2">congratulations</p>
+        <!-- <i id="boxicon2" class="fa-regular fa-heart"></i> -->
+        <div id="boxicon2" class="dropdown">
+            <button  style="background-color: transparent; border: none; color: rgb(140,158,171)" class="fa-solid fa-ellipsis" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+            </button>
+            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+            <li><a class="dropdown-item" href="#">
+                <span style="margin-right: 15px;" > <i class="fa-solid fa-play"></i></span><span>Play Now</span></a></li>
+            <li><a class="dropdown-item" href="#"><span style="margin-right: 10px;"> <i class="fa-solid fa-plus"></i></span><span> Add To Queue</span> </a></li>
+            <li><a class="dropdown-item" href="#"><span style="margin-right: 12px;"><i class="fa-solid fa-list"></i></span><span>add to Favourites</span></a></li>
+            <li><a class="dropdown-item" href="#"><span style="margin-right: 10px;"> <i class="fa-solid fa-circle-info"></i></span><span> get info</span></a></li>
+
+            </ul>
+        </div>
+        <p id="duration3">4:00</p>
+      </div>
+
+      <h2 style="font-size: 1.6rem;" id="headings2">recently played  <p>see all</p></h2>
+
+      <div id="queuelist2" >
+        <div id="box2">
+          <img  id="boximage" src="./home-images//queue list/believer.jpg" >
+          <div class="hovers3">
+             <i class="fa-solid fa-play"></i>    
+          </div>  
+          <h6 id="boxheading">
+           believer
+          </h6>
+          <p id="boxp">imagine dragon</p>
+          <i id="boxicon" class="fa-regular fa-heart"></i>
+        </div>
+   
+        <div id="box2">
+         <img  id="boximage" src="./home-images/queue list/peaches.jpg" >
+         <div class="hovers3">
+           <i class="fa-solid fa-play"></i>    
+        </div>
+         <h6 id="boxheading">
+          peaches
+         </h6>
+         <p id="boxp">justin bieber</p>
+         <i id="boxicon" class="fa-regular fa-heart"></i>
+       </div>
+       <div id="box2">
+         <img  id="boximage" src="./home-images/queue list/artworks-000523641915-lo2qzf-t500x500.jpg" >
+         <div class="hovers3">
+           <i class="fa-solid fa-play"></i>    
+        </div>
+         <h6 id="boxheading">
+          on my way
+         </h6>
+         <p id="boxp">alan walker</p>
+         <i id="boxicon" class="fa-regular fa-heart"></i>
+       </div>
+       <div id="box2">
+         <img  id="boximage" src="./home-images/queue list/closer.png" >
+         <div class="hovers3">
+           <i class="fa-solid fa-play"></i>    
+        </div>
+         <h6 id="boxheading">
+          closer
+         </h6>
+         <p id="boxp">chainsmoker</p>
+         <i id="boxicon" class="fa-regular fa-heart"></i>
+       </div>
+       <div id="box2">
+         <img  id="boximage" src="./home-images/queue list/safari.jpg" >
+         <div class="hovers3">
+           <i class="fa-solid fa-play"></i>    
+        </div>
+         <h6 id="boxheading">
+          safari
+         </h6>
+         <p id="boxp">serena</p>
+         <i id="boxicon" class="fa-regular fa-heart"></i>
+       </div>
+     </aside>
+   
+    
+
+    <!-- music bar -->
+    <div id="musicbar">
+      <div id="songdetail" >
+      <img id="playimage"  src="../home-images/latest english/asitwas.png">
+      <div>
+        <h6>
+          As It Was
+        </h6>
+        <p id="parap">
+          Harry Style
+        </p> 
+      </div>
+     </div>
+     <div id="playpause">
+      <i id="responsive"  class="fa-solid fa-shuffle"></i>
+      <div id="playn" >
+        <i id="responsive" class="fa-solid fa-backward-step"></i>
+        <div id="playbutton">
+        <i onclick="playsong()" id="play" class="fa-solid fa-play"></i>
+        <i onclick="pausesong()" id="pause" class="fa-solid fa-pause"></i>
+        </div>
+        <i id="responsive" class="fa-solid fa-forward-step"></i>
+      </div>
+      <i id="responsive" class="fa-solid fa-repeat"></i>      
+        </div>
+     <div id="duration">
+       <p id="responsive" >
+        00:00/03:37
+       </p>
+       <div id="volume">
+       <input  id="responsive" type="range" min="0" max="100" value="90" onchange="volume_change()" class="recent_volume">
+       </div>
+       <button class="responsive">
+        <p  class="responsive">
+          Auto
+        </p> 
+       </button>
+       <i style="color: rgb(237,28,36); font-size: 1rem;" id="volumeButton" class="fa-solid fa-volume-high"></i>
+       <img id="listplay" src="../home-images/playlist.png">
+      </div> 
+      <div  id="playbar" >
+        <!-- <div id="playrr"> -->
+         <input style="position: relative;" type="range" name="" min="0" max="100" value="0" id="duration_slider" onchange="change_duration()">  
+        </div>
+      </div>  
+
+      <!-- FOOOOOOTER -->
+
+      <footer id="footer">
+
+        <div id="advertisement2">
+           
+            <p id="adpara2">
+              Tunex is the one-stop solution for all your music needs. Tunex offers you free, 
+              unlimited access to over 30 million Hindi Songs, 
+              Bollywood Music, English MP3 songs, Regional Music & Mirchi Play.
+            </p>
+        </div>
+        <div>
+          <h4 id="fheading">quicklinks </h4>
+          <div id="slotshead">
+            <div id="slots">
+              <h6>albums</h6>
+              <p>english</p>
+              <p>hindi</p>
+              <p>telugu</p>
+              <p>punjabi</p>
+              <p>tamil</p>
+              <p>kannada</p>
+              <p>bhojpuri</p>
+              <p>malayalam</p>
+              <p>marathi</p>
+              <p>bengali</p>
+              <p>gujrati songs </p>
+              <p>haryanvi</p>
+              <p style="color: red;" >see all</p>  
+            </div>
+      
+            <div id="slots">
+              <h6>genres</h6>
+              <p>Bollywood songs</p>
+              <p>devotional songs</p>
+              <p>ghazals</p>
+              <p>bhajan</p>
+              <p>petriotic songs</p>
+              <p>kids songs</p>
+              <p>rock songs</p>
+              <p>disco songs</p>
+              <p>sufi songs</p>
+              <p>love songs</p>
+              <p style="color: red;" >see all</p>  
+            </div>
+            
+            <div id="slots">
+              <h6>artists</h6>
+              <p>arjit singh</p>
+              <p>neha kakkar</p>
+              <p>honey singh</p>
+              <p>atif aslam</p>
+              <p>a r rahman</p>
+              <p>lata mangeshkar</p>
+              <p>kishore kumar</p>
+              <p>armaan malik</p>
+              <p>sunidhi chauhan</p>
+              <p>nursat fateh ali khan</p>
+              <p>mohammed rafi</p>
+              <p>guru randhawa</p>
+              <p>justin bieber</p>
+              <p>coldplay</p>
+              <p style="color: red;" >see all</p>  
+            </div>
+            <div id="slots">
+              <h6>new release</h6>
+              <p>english songs</p>
+              <p>hindi songs</p>
+              <p>telugu songs</p>
+              <p>punjabi songs</p>
+              <p>tamil songs</p>
+              <p>kannada songs</p>
+              <p>bhojpuri songs</p>
+              <p>malayalam songs</p>
+              <p>marathi songs</p>
+              <p>bengali songs</p>
+              <p>gujrati songs </p>
+              <p>haryanvi songs</p>
+              <p>rajasthani songs</p>
+              <p>assamese songs </p>
+              <p>odisa songs</p>
+              <p style="color: red;" >see all</p>  
+            </div>   
+       
+            
+            <div id="slots">
+              <h6>trending songs</h6>
+              <p>vibe song</p>
+              <p>hunuman chalisa</p>
+              <p>295</p>
+              <p>black & white</p>
+              <p>mast maula</p>
+              <p>dil galti kar baitha hai</p>
+              <p>party all night</p>
+              <p>manike mage hithe tamil</p>
+              <p>raataab lambiyan</p>
+              <p>baarish ki jaye</p>
+              <p>phoonk le</p>
+              <p>koi sehri babu</p>
+              <p>jugnu</p>
+              <p>mainu nai pehchaandi</p>
+              <p style="color: red;" >see all</p>  
+            </div>  
+            
+            <div id="slots">
+              <h6>new release</h6>
+              <p>english songs</p>
+              <p>hindi songs</p>
+              <p>telugu songs</p>
+              <p>punjabi songs</p>
+              <p>tamil songs</p>
+              <p>kannada songs</p>
+              <p>bhojpuri songs</p>
+              <p>malayalam songs</p>
+              <p>marathi songs</p>
+              <p>bengali songs</p>
+              <p>gujrati songs </p>
+              <p>haryanvi songs</p>
+              <p>rajasthani songs</p>
+              <p>assamese songs </p>
+              <p>odisa songs</p>
+              <p>assamese songs </p>
+              <p>odisa songs</p>
+              <p style="color: red;" >see all</p>  
+            </div>  
+            <div id="slots" style="margin-right: 69%;">
+              <h6>trending songs</h6>
+              <p>vibe song</p>
+              <p>hunuman chalisa</p>
+              <p>295</p>
+              <p>black & white</p>
+              <p>mast maula</p>
+              <p>dil galti kar baitha hai</p>
+              <p>party all night</p>
+              <p>manike mage hithe tamil</p>
+              <p>raataab lambiyan</p>
+              <p>jugnu</p>
+              <p>mainu nai pehchaandi</p>
+              <p style="color: red;" >see all</p>  
+            </div>  
+         
+          </div>
+      
+      
+         </div>
+         
+         <div id="tcbar">
+          <div id="tc">
+               <h6>about us</h6>
+               <p>|</p>
+               <h6>advertise with us</h6>
+               <p>|</p>
+               <h6> privacy policy</h6>
+               <p>|</p>
+               <h6> term of use</h6>
+               <p>|</p>
+               <h6> contact us</h6>
+               <p>|</p>
+               <h6> feedback</h6>
+               <p>|</p>
+               <h6> hello tunes</h6>
+          </div>
+          <div id="socialicons">
+           
+            <i id="icons" class="fa-brands fa-facebook-f"></i>
+            <i id="icons2" class="fa-brands fa-twitter"></i>
+            <i id="icons3" class="fa-brands fa-instagram"></i>
+      
+          </div>
+          <div>
+      
+          </div>
+          </div>
+          <p id="rights"> 2022 © all rights reserved </p>
+        
+      
+      </footer>
+      
+
+    </div>   
    
        
 

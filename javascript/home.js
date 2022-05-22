@@ -1,5 +1,8 @@
 
 {
+
+
+
     
        
    
@@ -9,76 +12,88 @@
 
 
           // adding songs in queue//
-           var songname=null; 
+           var songname=null;
+           var x=0; 
            var song =function(details){
              console.log(details);
                if(songname!==details.songname){
                       
-             $(`<div id='box1'> <img  id='boximage' src='${details.image}'><div class='hovers3'><i class='fa-solid fa-play'></i></div><h6 id='boxheading'>${details.songname}</h6><p id='boxp'>${details.artistname}</p><i id='boxicon' class='fa-regular fa-heart'></i></div>`).appendTo('#queuelist');
+                $(`<div id='box1'> <img  id='boximage' src='${details.image}'><div class='hovers3'><i class='fa-solid fa-play'></i></div><h6 id='boxheading'>${details.songname}</h6><p id='boxp'>${details.artistname}</p><i id='boxicon' class='fa-regular fa-heart'></i></div>`).appendTo('#queuelist');
                       songname=details.songname;
                }
-               
-             $('#aside').css({
 
-              width:'20%',
- 
-           })
-           $('#main').css({
- 
-             width:'80%'
-           })
-         $('.artistsimage').css({
- 
-         width:'140px',
-         height:'140px',
-         marginRight:'18px'
- 
-          })
-        $('.hovers4').css({
-        
-          width:'140px',
-          height:'140px',
-          marginRight:'18px'
-  
-         })
-        $('.songimage2').css({
- 
-          width:'133px',
-          height:'135px'
-        })
-         $('.hovers').css({
- 
-            width:'133px',
-            height:'135px'
-          })
-          $('.song2').css({
- 
-               height:'170px'
-           })
-    $('.songimage4').css({
-   
-     width:'130px', 
-     height:'120px'
-    })
-    
-    $('.latestenglish').css({
-   
-     marginBottom:'20px'
-    })
- 
-    $('#headerimage').css({
+               if(details==null||details!=null){
+
+
+                $('#aside').css({
+
+                  width:'20%',
      
-       width:'83%',
-       marginLeft:'7.5%'
- 
-     })
-      $('.himage').css({
+                 })
+                 $('#main').css({
      
-      width:'100%'
+                 width:'80%'
+                })
+               $('.artistsimage').css({
+     
+               width:'140px',
+               height:'140px',
+               marginRight:'18px'
+     
+              })
+              $('.hovers4').css({
+            
+              width:'140px',
+              height:'140px',
+              marginRight:'18px'
       
- 
-     })
-    
+             })
+             $('.songimage2').css({
+     
+              width:'133px',
+              height:'135px'
+            })
+             $('.hovers').css({
+     
+                width:'133px',
+                height:'135px'
+              })
+              $('.song2').css({
+     
+                   height:'170px'
+               })
+        $('.songimage4').css({
+       
+         width:'130px', 
+         height:'120px'
+        })
+        
+        $('.latestenglish').css({
+       
+         marginBottom:'20px'
+        })
+     
+        $('#headerimage').css({
+         
+           width:'83%',
+           marginLeft:'7.5%'
+     
+         })
+          $('.himage').css({
+         
+          width:'100%'
+          
+     
+         })
+
+               }
+                 
+               
+        
+
+               
+               
+               
     }  
   
     
@@ -187,7 +202,6 @@
              $('#lightmode').css({
               opacity:'0',
               fontSize:'0rem',
-              top:"-14px"
             })
             $('#sidericon').css({
              
@@ -204,7 +218,6 @@
           $('#lightmode2').css({
            opacity:'0',
            fontSize:'0rem',
-           top:"-14px"
          })
          $('#sidericon2').css({
           
@@ -214,12 +227,22 @@
              
             color:'black'
           })
+          $('#title3').css({
+             
+            color:'black'
+          })
           $('#advertisement').css({
              
               backgroundColor:'rgb(243,244,246)',
               color:'black'
             
           })
+          $('#advertisement2').css({
+             
+            backgroundColor:'rgb(243,244,246)',
+            color:'black'
+          
+        })
           $('.boxheading3').css({
              color:'black'
           })
@@ -271,6 +294,10 @@
           color:'black'
           
         })
+        $('#adpara2').css({
+          color:'black'
+          
+        })
          $('#musicbar').css({
              
             backgroundColor:'white'
@@ -281,7 +308,7 @@
              backgroundColor:'white'
           })
 
-          $('.hovers').css({
+          $('.hovers2').css({
 
             background: 'linear-gradient(180deg, transparent  ,white 97%)'
           })
@@ -306,6 +333,13 @@
               backgroundColor:'white',
               color:'black'
           })
+
+          $('#welcomehome').css({
+
+            color: 'black',
+            textDecoration: 'none'
+       
+          })
           
                $('#searchbar2').css({
            
@@ -323,9 +357,14 @@
               backgroundColor:'rgb(12,15,18)',
               color:'white'
             })
-            
+            $('#welcomehome').css({
 
-            $('.hovers').css({
+              color: 'white',
+              textDecoration: 'none'
+         
+            })
+
+            $('.hovers2').css({
 
               background: 'linear-gradient(180deg, transparent  ,rgb(12,15,18) 95%)'
             })
@@ -388,7 +427,17 @@
               
             
           })
+          $('#advertisement2').css({
+             
+            backgroundColor:'rgb(33,37,45)',
+            
+          
+        })
           $('#adpara').css({
+            color:'white'
+            
+          })
+          $('#adpara2').css({
             color:'white'
             
           })
@@ -396,13 +445,13 @@
             $('#lightmode').css({
               opacity:'1',
               fontSize:'1.2rem',
-              left:'90px'
+             
             })
             
             $('#lightmode2').css({
               opacity:'1',
               fontSize:'1.2rem',
-              left:'90px'
+             
             })
             $('#offcanvasNavbar').css({
 
@@ -456,6 +505,10 @@
              
           color:'white'
         })
+        $('#title3').css({
+             
+          color:'white'
+        })
         
       
           $('#searchbar').css({
@@ -482,14 +535,24 @@
 
       playbutton2.click(function(){
         $('#musicbar').css({
-          opacity:'1'
+          opacity:'1',
+          width: '85%',
+          height: '80px',
+          overflow:'none',
+          position:'fixed',
+          bottom:"20px"
       })
 
       })
 
       $('.hovers3').click(function(){
          $('#musicbar').css({
-           opacity:'1'
+           opacity:'1',
+           width: '85%',
+           height: '80px',
+           overflow:'none',
+           position:'fixed',
+           bottom:"20px"
          })
          
       })
@@ -499,17 +562,42 @@
 
        playbutton3.click(function(){
         $('#musicbar').css({
-          opacity:'1'
+          opacity:'1',
+          width: '85%',
+          height: '80px',
+          overflow:'none',
+          position:'fixed',
+          bottom:"20px"
       })
 
       })
 
       $('.hovers3').click(function(){
          $('#musicbar').css({
-           opacity:'1'
+           opacity:'1',
+           width: '85%',
+           height: '80px',
+           overflow:'none',
+           position:'fixed',
+           bottom:"20px"
          })
          
       })
+
+      let playbutton5 = $('.playbutton3');
+
+      playbutton5.click(function(){
+       $('#musicbar').css({
+         opacity:'1',
+         width: '85%',
+         height: '80px',
+         overflow:'none',
+         position:'fixed',
+         bottom:"20px"
+     })
+
+     })
+
      
 
 
@@ -557,7 +645,8 @@
         } 
      var pausesong =  function(){
 
-          track.pause();  
+          track.pause(); 
+          console.log(track.duration) 
           playingSong==false;
           $('#pause').css({
 
@@ -626,37 +715,112 @@
           
      })
 
+        var hide={
 
-  //  popular artists //
-            
- 
-       
-      
-              
-          $('.coldplay').css({
-
-             
-
-            width: 'auto',
-            overflow: 'none',
-            position: 'static'   
-            
-          })
-
-          $('.justinbieber').css({
-              
+          css:({
             width: '0',
+            position: 'absolute',
             overflow: 'hidden',
-            position: 'absolute' 
-        
-           
-         })
+            height: '0' 
+    
+        })       
+        }
+    
+        var PageSwitch= function(artistname){
      
+ 
+          $('#head').css({
+              width: '0',
+              position: 'absolute',
+              overflow: 'hidden',
+              height: '0' 
+      
+          })
+      
+          $('#head2').css({
+      
+              position:'static',
+              height:'auto',
+              overflow:'none',
+              width:'100%'  
+          }) 
 
-   
+          if(artistname=='coldplay'){
 
+            $('.coldplay').css({
+              width: 'auto',
+              overflow: 'none',
+              position: 'static' 
+
+            });
+      
+           }else{
+
+            $('.coldplay').css({
+              width: '0',
+              position: 'absolute',
+              overflow: 'hidden',
+              height: '0'
+
+           })
+             if(artistname=='justin'){
+                   
+                $('.justin').css({
+                  width: 'auto',
+                  overflow: 'none',
+                  position: 'static' 
+             })
+
+              }else if(artistname=='edsheeran'){
+
+                  $('.edsheeran').css({
+                    width: 'auto',
+                    overflow: 'none',
+                    position: 'static' 
+                 })
+               }
+               else if(artistname=='charlie'){
+
+                $('.charlie').css({
+                  width: 'auto',
+                  overflow: 'none',
+                  position: 'static' 
+               })
+             }else if(artistname=='bellie'){
+
+                $('.bellie').css({
+                  width: 'auto',
+                  overflow: 'none',
+                  position: 'static' 
+              })
+           } 
+            else if(artistname=='zayn'){
+
+            $('.zayn').css({
+              width: 'auto',
+              overflow: 'none',
+              position: 'static' 
+           })
+          }else if(artistname=='alanwalker'){
+
+            $('.alanwalker').css({
+              width: 'auto',
+              overflow: 'none',
+              position: 'static' 
+           })
+          }  
+
+              
+      }
+          
+      
+       }
+        
+      
+          
 
 }   
  
         
+    
 
