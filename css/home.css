@@ -1559,8 +1559,7 @@ input[type="range"]::-webkit-slider-thumb{
        border-radius: 50%;
        width: 130px;
        height: 130px;
-       
-    
+       border: 3px solid lightslategray;    
       }
    
       
@@ -2289,6 +2288,8 @@ input[type="range"]::-webkit-slider-thumb{
   
       width: 25%;
       opacity: 0.8;
+      border: 5px solid lightslategray;
+      border-radius: 15px;
   }
   
   .hovers2{
@@ -2358,14 +2359,15 @@ input[type="range"]::-webkit-slider-thumb{
   #playbutton5{
       
   
-      background: linear-gradient(45deg,rgb(214, 10, 255) , blue);   
+      background: red;  
       border: none;
       width: 27%;
-      height: 13%;
+      height: 35px;
       position: relative;
       color: white;
+      border-radius: 10px;
       text-transform: capitalize;
-      font-size: 1rem;
+      font-size: 1.2rem;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -2584,7 +2586,7 @@ input[type="range"]::-webkit-slider-thumb{
   }
   
   
-  /* recentlu played */
+  /* recently played */
   
   #headings2{
     display: flex;
@@ -3136,7 +3138,7 @@ input[type="range"]::-webkit-slider-thumb{
       margin-left: 0%;
       display: flex;
       justify-content: space-between;
-      margin-bottom: 30px;
+      margin-bottom:0px;
       /* border: 1px solid red; */
       justify-content: center;
       position: relative;
@@ -3157,12 +3159,13 @@ input[type="range"]::-webkit-slider-thumb{
   
   #artistposter{
   
-    width: 42%;
+    width: 40%;
     opacity: 0.9;
-    height: 90%;
-    margin-left: 10px;
+    height: 70%;
+    margin-left: 20px;
     border: none;
-  
+    border: 2px solid lightslategray;
+    border-radius: 15px;  
   }
   
   .hovers2{
@@ -3179,7 +3182,7 @@ input[type="range"]::-webkit-slider-thumb{
   
   #information{
   
-    width: 65%;
+    width: 60%;
     height: 100%;
     position: relative;
     font-family: calibri;  
@@ -3194,6 +3197,7 @@ input[type="range"]::-webkit-slider-thumb{
     color: rgb(137,140,159);
     right: 5%;
     top: 3%;
+    font-size: 0;
       
   
   }
@@ -3207,17 +3211,17 @@ input[type="range"]::-webkit-slider-thumb{
   #nameheading2{
    
       position: absolute;
-      top: 6%;
-      font-size: 1rem;
+      top: 26%;
+      font-size: 1.7rem;
       font-family: calibri;
-      left: 19px;
+      left: 18%;
   }
   
   #title2{
      color: rgb(137,140,159);
      position: absolute;
      top: 17%;
-     font-size: 0.9rem;
+     font-size:0;
      left: 23px;
   } 
   
@@ -3228,24 +3232,32 @@ input[type="range"]::-webkit-slider-thumb{
     margin-left: 25px;
     margin-top: -10px;
     text-align: justify;
-    width: 85%;
+    /* width: 85%; */
+    width: 0;
+    height: 0;
+    font-size: 0;
+    overflow: hidden;
+    position: absolute;
   
   }
   
   #playbutton5{
   
-      left: 50px;
-      top: 25px;
-      width: 45%;
-      height: 12%;
+      left: 43px;
+      top: -16px;
+      width: 51%;
+      height: 35px;
+      background: red;
+      color: white;
+      border-radius: 15px;
   }
   
   #playsongs c{
   
-         left: 29px;
-         top: 55px;
-         width: 0;
-         font-size: 0;
+         left: 32px;
+         top: -51px;
+         width: 100%;
+         font-size: 0.8rem;
   }
   
      /* songs list */
@@ -3254,14 +3266,18 @@ input[type="range"]::-webkit-slider-thumb{
   
      width: 100%;
      margin-left: 0;
+
   }
    
   #box3{
     
       width: 100%;
-      border-top: none;
+      
       border-bottom: 1px solid rgb(50,50,50);
     
+  }
+  .editing{
+    border-top: 1px solid rgb(50,50,50);
   }
   
   #box3:hover{
